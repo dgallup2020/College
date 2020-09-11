@@ -1,0 +1,68 @@
+FEBRURARY 25TH NOTES:
+upcoming mid-term soon. Quiz next tuesday include bash scripting so do the
+assignments and practice. Will have loops and other things
+
+COMMON SCRIPTING UTILITIES & PROGRAMS:
+>tac <--- cat files in reverse
+>colrm <--- remove character columns from the input/file. 
+       colrm <start> [<and>] 
+       ex. ps aux | grep -v root | colrm 16 60
+>cut <--- removes sections from eahc line of input
+     -f # - comma seperated lit of fields to emit.
+     -d c - delimininator character
+>tee [files] <--- reads from stdin & writes to stdout + files. 
+     ex. make | tee compile.log
+>env <--- run a program in a modified environment.
+     -i <env> <--- sets up an environment space seperate name=value pairs
+>date <--- print or set the system date
+
+PROCESSES & THREADS:
+-Processes are started with the fork(2) system call, which duplicates the
+calling process in its entirety, memory pages are made copy or write, so
+nothing duplicated in memory until those memory pages are written to. Each new
+process has its own Process ID (pid), memory, I/O descriptor, etc...
+
+pid = fork(); and fork off into the original parent (pid = 1 & pid = 0
+(parent) )  childs always point back to its parent. 
+
+-Threads are created w/ clone(2) or clone2(2) system calls, which is like
+fork() but allows the calling process/thread to determine what aspcets of the
+calling process are either shared or copied such as memory space, FS
+information, I/O descriptors, signals etc. 
+(more sharing, less copying) 
+
+-while a process is running it is usually in one of the following states:
+(R) running - the process is executing in normal user space. 
+(S) interruptible sleep - the process has either given up its time slice or
+has been pre-empted by the kernel into giving up its time. 
+(D) Uninterruptible sleep - the process is waiting on I/O to complete, usually
+means it is waiting for a kernal system call to return. 
+(T) Stopped - the process execution has been temporarily suspended by a job
+control signal (SIG-STOP / SIGTSTP) until it is continued by SIG-CONT signal. 
+(X/Z) Dead/Zombie - the proccess has completed and has either been reaped (X -
+should never acutally see this) or is waiting to be reaped (Z). The exit
+status is gleaned from wait(2) system call by the parent. 
+
+-when a process finishes it returns its exit status code (additional info
+about resource usage during its execution may also available.) that is to be
+given to the parent process via the wait(2) system call. Until a process has
+been waitied on (ie reaped) it will appear a zombie. If for some reason the
+parent is not around, the init process (PID 1) inherits the dead process and
+waits on it. 
+
+VIEWING PROCESSES:
+>ps <--- report a snapshot of all the processes
+   -eLF or auxm <--- view threads
+>pstree <--- view of processes in a tree like format
+>top <--- view processes continue
+>htop ^
+
+ATRIBUTES OF PROCESS/THREADS:
+** Memory (+stack, share memory objects) that is further divided into:
+   -VSZ (virtual size) the amount of memory of all in memory objects
+associated w/ the process, including non-resident (swapped ot disk /
+over-comitted non-used) pages & shared memory objects
+   -size - the total size of the heap & stack
+   -RSS (resident set size) - for the most part the amount of memory that is
+specifically resident ot th eparticular process (the non-swapped heap &
+stack). 

@@ -1,0 +1,37 @@
+cs47103: Dylan Gallup
+
+HW 4 QUESTIONS:
+Part 4a:
+
+Used space for first time:
+65Mi
+Used space for second time:
+65Mi
+Used space for third time:
+547Mi
+What is happening?:
+When the current abstraction of the program is running, The heap is gradually growing larger as the loop continues since the space
+allocated is located on the stack. 
+Maximum Before Malloc Returns NULL:
+7625
+
+Grading note - memory-user.c seg faulting (as of 10/29)
+
+Part 4b:
+
+Do the address values make sense:
+the heap starts at 0x7fe4df685010
+and the start starts at 0x400790
+
+The first three mappings start at the beginning of the stack, since there are 3
+arguments, ./a.out 1000 & to put on the stack.
+Following that shortly there are the addresses after the heap starts, which is
+where the malloc allocates memory to for the array we are changing. The
+mapping shows 1024004 kbytes being mapped which is estimated to be near 1000
+mbytes. The final address is where the last address being accessed is, which is near the kernel.  
+
+Part 4c:
+
+Problem 19.2
+For 1024 pages: 1 trial = 23.437500 ns; 5 trials = 22.460938; 10 trials =
+20.800781

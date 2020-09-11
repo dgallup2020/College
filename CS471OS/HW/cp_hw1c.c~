@@ -1,0 +1,67 @@
+// Jeff says - comments not sufficient
+
+
+//okay!
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<fcntl.h>
+#include<string.h>
+#include<unistd.h>
+#include<time.h>
+//author: dylan gallup
+//cs47103: copy program
+//purpose: this program takes two files (src and dest) and copies the src in the dest
+//in read and write intervals of the size of the specified buffer in the command line
+//finally, the last  argument determines whether to make the file read in is 
+
+int main(int argc, char *argv[]){
+	
+	if(argc < 5){
+		printf("Usage: ./cp_hw1c src dest bufferSize syncOrNo\n");
+		exit(0);
+	}
+
+
+	
+	int src = open(argv[1], O_RDONLY);
+		if(src == -1){
+			printf("Error opening file for reading\n");
+			exit(0);
+		}
+	int dest;
+	if(!strcmp("O_SYNC", argv[4])){
+		dest = open(argv[2],O_WRONLY | O_CREAT | O_TRUNC | O_SYNC, S_IRWXU);
+       			if(dest == -1) {
+				printf("Error opening file for writing\n");
+				exit(0);
+		}	
+	}
+	else if(!strcmp("NORMAL", argv[4])){
+		dest = open(argv[2],O_WRONLY | O_CREAT | O_TRUNC, S_IRWXU);
+			if(dest == -1){
+				printf("Error opening file for writing\n");
+				exit(0);
+			}
+	}
+	else{
+		printf("please decide on syncOrNo: O_SYNC or NORMAL\n");
+			exit(0);
+
+	}
+
+
+
+	ssize_t count;
+	char *string = (char *)malloc(sizeof(unsigned char) * (atoi(argv[3])));
+	do{
+		count = read(src, string, atoi(argv[3]));
+		write(dest, string, count);
+	}
+	while(count > 0);
+
+	free(string);
+	close(src);
+	close(dest);
+return 0;
+}

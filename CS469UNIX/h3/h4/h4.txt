@@ -1,0 +1,52 @@
+CS469 Sp20 HW #4	10 points
+
+Using a UNIX text editor of your choice, edit this file and answer the following
+questions. Use the "man" command to reference any of the named commands. When
+asked how to do something, write out the command you would use to do it.
+
+1.(1pt) "ln" command to make _hard_ links to all the files, in the current
+  directory, beginning with "r", followed by 2 hex-digits (0-9, a-f or A-F)
+  and ending with ".mod" into the target directory "foo/bar/":
+
+
+2.(1pt) "grep" command to recursively look for files containing the case
+  insensitive string "search" starting from the current directory. The command
+  should print the name of the files that contain the match, one line of context
+  above and below the match as well as the line numbers:
+
+
+3.(1pt) "grep" command to find all the user-names in /etc/passwd that start with
+  an 'sba':
+
+
+4.(5pts/1pt each) "find" commands to perform find the following:
+  a) A case-insensitive search for files located in /net/web that begin with
+     "my" and end with ".php". Output files in ls format:
+
+
+  b) All the files in /tmp that have not been modified in more than 30 days 
+     (hint: read section TESTS about numeric arguments):
+
+
+  c) All files in /tmp that have been modified in the last 24 hours:
+
+
+  d) All files in /bin that have their setuid bit set:
+
+
+  e) All files in /tmp that are greater than 5MB in size and are NOT owned by
+     root (hint: read the section on OPERATORS):
+
+
+5.(1pt) "dd" command to create a file called 'test' that is 1MB in size and
+  contains nothing but null bytes (hint: /dev/zero is full of null bytes):
+
+
+6.(1pt, 1/2pt each) "gzip" commands to:
+  a) compress the test file created above
+
+
+  b) print the uncompressed size and compression ratio of the newly compressed
+     file:
+
+

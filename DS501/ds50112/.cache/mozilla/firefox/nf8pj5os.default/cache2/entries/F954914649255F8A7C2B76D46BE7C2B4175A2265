@@ -1,0 +1,1870 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML lang="en">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Pragma" NAME="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" NAME="Cache-Control" CONTENT="no-cache">
+<LINK REL="stylesheet" HREF="/css/web_defaultmenu.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="/css/web_defaultprint.css" TYPE="text/css" media="print">
+<TITLE>Class Schedule Listing</TITLE>
+<META HTTP-EQUIV="Content-Script-Type" NAME="Default_Script_Language" CONTENT="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="headerwrapperdiv">
+<DIV class="pageheaderdiv1">
+<A HREF="#main_content" onMouseover="window.status='Go to Main Content'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Go to Main Content'; return true" onBlur="window.status=''; return true" class="skiplinks">Go to Main Content</A>
+<H1> </H1></DIV><DIV class="headerlinksdiv">
+</DIV>
+<TABLE  CLASS="plaintable" SUMMARY="This table displays Menu Items and Banner Search textbox."
+         WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<DIV class="headerlinksdiv2">
+&nbsp;
+</div>
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<SPAN class="pageheaderlinks">
+<A HREF="/isu/wtlhelp/twghhelp.htm" accesskey="H" onClick="popup = window.open('/isu/wtlhelp/twghhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</A>
+|
+<A HREF="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</A>
+</span>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="pagetitlediv">
+<TABLE  CLASS="plaintable" SUMMARY="This table displays title and static header displays."
+   WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<H2>Class Schedule Listing</H2>
+</TD>
+<TD CLASS="pldefault">
+&nbsp;
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<DIV class="staticheaders">
+Fall 2019<br>
+Apr 15, 2019<br>
+</div>
+</TD>
+</TR>
+<TR>
+<TD class="bg3" width="100%" colSpan=3><IMG SRC="/wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD>
+</TR>
+</TABLE>
+<a name="main_content"></a>
+</DIV>
+<DIV class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<BR>
+<DIV class="infotextdiv"><TABLE  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><TR><TD CLASS="indefault"><SPAN class="infotext"> <font size="+1"><center><a href="http://indiana-state.bncollege.com/webapp/wcs/stores/servlet/TBWizardView?catalogId=10001&storeId=20053&langId=-1" target='_NEW'>View Text Book Requirements</a></center>
+</font><br><b>Course Fees:</b> Fees vary by course.  Fee information is located by clicking on the hyperlink associated with the individual section. <br><br>
+<b>Distance Education Delivery Fees:</b> All distance courses carry a Distance Education Delivery Fee. The distance fee is $50 for graduate courses and $30 for 
+
+undergraduate courses.  
+<br> <br>  <a href="https://www.indstate.edu/registrar">Important Dates and Refund Schedules</a></SPAN></TD></TR></TABLE><P></DIV>
+<INPUT TYPE="hidden" NAME="sel_crn" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="assoc_term_in" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="ADD_BTN" VALUE="dummy">
+<TABLE  CLASS="datadisplaytable" SUMMARY="This layout table is used to present the sections found" width="100%"><CAPTION class="captiontext">Sections Found</CAPTION>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=51837">Fundamentals of Computing - 51837 - CS 101 - 301</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>TransferIN 
+<BR>
+<BR>
+Online/Distance Campus
+<BR>
+Online Asynchronous Schedule Type
+<BR>
+Online Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=101&amp;sel_crse_end=101&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">&nbsp;</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">Online Asynchronous</TD>
+<TD CLASS="dddefault">Luke Benjamin  May (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Luke.May@indstate.edu"    target="Luke B. May" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50192">Intro Computer Sci - 50192 - CS 151 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Summer, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=151&amp;sel_crse_end=151&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">10:00 am - 10:50 am</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Robert William  Sternfeld (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Robert.Sternfeld@indstate.edu"    target="Robert W. Sternfeld" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=51026">Intro Computer Sci - 51026 - CS 151 - 002</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Summer, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=151&amp;sel_crse_end=151&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">9:00 am - 9:50 am</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Jeffrey J  Kinne (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Jeffrey.Kinne@indstate.edu"    target="Jeffrey J. Kinne" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=51127">Intro Computer Sci - 51127 - CS 151 - 003</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Summer, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=151&amp;sel_crse_end=151&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">11:00 am - 11:50 am</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Adam Brent  Davenport (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:adavenport9@sycamores.indstate.edu"    target="Adam B. Davenport" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=53706">HON:Intro Computer Science - 53706 - CS 151 - 004</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Summer, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=151&amp;sel_crse_end=151&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">9:00 am - 9:50 am</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Jeffrey J  Kinne (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Jeffrey.Kinne@indstate.edu"    target="Jeffrey J. Kinne" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50193">Web Programming - 50193 - CS 170 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=170&amp;sel_crse_end=170&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">9:30 am - 10:45 am</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Robert William  Sternfeld (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Robert.Sternfeld@indstate.edu"    target="Robert W. Sternfeld" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=53707">Web Programming - 53707 - CS 170 - 002</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=170&amp;sel_crse_end=170&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">8:00 am - 8:50 am</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Robert William  Sternfeld (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Robert.Sternfeld@indstate.edu"    target="Robert W. Sternfeld" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50959">Computer Science I - 50959 - CS 201 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Hybrid Instructional Method
+<BR>
+       4.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=201&amp;sel_crse_end=201&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">3:30 pm - 4:45 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Luke Benjamin  May (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Luke.May@indstate.edu"    target="Luke B. May" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">4:00 pm - 4:50 pm</TD>
+<TD CLASS="dddefault">WF</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Luke Benjamin  May (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Luke.May@indstate.edu"    target="Luke B. May" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50801">Computer Science II - 50801 - CS 202 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       4.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=202&amp;sel_crse_end=202&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">11:00 am - 11:50 am</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Jeffrey J  Kinne (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Jeffrey.Kinne@indstate.edu"    target="Jeffrey J. Kinne" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>, Gage Lee  Golish <A HREF="mailto:ggolish@sycamores.indstate.edu"    target="Gage L. Golish" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">11:00 am - 11:50 am</TD>
+<TD CLASS="dddefault">WF</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Jeffrey J  Kinne (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Jeffrey.Kinne@indstate.edu"    target="Jeffrey J. Kinne" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>, Gage Lee  Golish <A HREF="mailto:ggolish@sycamores.indstate.edu"    target="Gage L. Golish" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50194">Prin Struct Design - 50194 - CS 256 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Summer, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=256&amp;sel_crse_end=256&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">12:30 pm - 1:45 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Steve Paul  Baker (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Steve.Baker@indstate.edu"    target="Steve P. Baker" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=52300">Prin Struct Design - 52300 - CS 256 - 002</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Summer, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=256&amp;sel_crse_end=256&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">2:00 pm - 3:15 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Steve Paul  Baker (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Steve.Baker@indstate.edu"    target="Steve P. Baker" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50195">Object Oriented Programming - 50195 - CS 260 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring, Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=260&amp;sel_crse_end=260&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">11:00 am - 12:15 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Devon Skyllingstad  Kinne (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Devon.Kinne@indstate.edu"    target="Devon S. Kinne" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=52506">Software Engineering - 52506 - CS 452 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=452&amp;sel_crse_end=452&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">8:00 am - 9:15 am</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Ramachandra B  Abhyankar (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:R.b.Abhyankar@indstate.edu"    target="Ramachandra B. Abhyankar" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50856">Data Base Process - 50856 - CS 457 - 002</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=457&amp;sel_crse_end=457&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">1:00 pm - 1:50 pm</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Steve Paul  Baker (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Steve.Baker@indstate.edu"    target="Steve P. Baker" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50679">Algorithms - 50679 - CS 458 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Fall, Experiential Learning 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=458&amp;sel_crse_end=458&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">2:00 pm - 3:15 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Arash   Rafiey (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Arash.Rafiey@indstate.edu"    target="Arash Rafiey" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=53344">Topic CS:Prog for Data Sci - 53344 - CS 459 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=459&amp;sel_crse_end=459&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">1:00 pm - 1:50 pm</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Geoffrey A  Exoo (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Geoffrey.Exoo@indstate.edu"    target="Geoffrey A. Exoo" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=53346">Top CS:Intro to Networking - 53346 - CS 459 - 301</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<BR>
+Online/Distance Campus
+<BR>
+Online Asynchronous Schedule Type
+<BR>
+Online Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=459&amp;sel_crse_end=459&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">&nbsp;</TD>
+<TD CLASS="dddefault">Web Site WEB</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">Online Asynchronous</TD>
+<TD CLASS="dddefault">Ramachandra B  Abhyankar (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:R.b.Abhyankar@indstate.edu"    target="Ramachandra B. Abhyankar" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=53345">Topic CS:Files & Databases - 53345 - CS 459 - 302</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<BR>
+Online/Distance Campus
+<BR>
+Online Asynchronous Schedule Type
+<BR>
+Online Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=459&amp;sel_crse_end=459&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">&nbsp;</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">Online Asynchronous</TD>
+<TD CLASS="dddefault">Luke Benjamin  May (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Luke.May@indstate.edu"    target="Luke B. May" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50677">Program Languages - 50677 - CS 470 - 002</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Fall 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=470&amp;sel_crse_end=470&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">8:00 am - 8:50 am</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Ramachandra B  Abhyankar (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:R.b.Abhyankar@indstate.edu"    target="Ramachandra B. Abhyankar" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=52118">Operating Systems - 52118 - CS 471 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Spring 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=471&amp;sel_crse_end=471&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">3:00 pm - 3:50 pm</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Geoffrey A  Exoo (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Geoffrey.Exoo@indstate.edu"    target="Geoffrey A. Exoo" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50469">Web Programming II - 50469 - CS 479 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Offered Every Fall, Experiential Learning 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=479&amp;sel_crse_end=479&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">2:00 pm - 2:50 pm</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Steve Paul  Baker (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Steve.Baker@indstate.edu"    target="Steve P. Baker" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=51845">Senior Seminar - 51845 - CS 499 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Undergraduate, 2nd Undergraduate, 3rd Undergraduate, 4th Undergraduate, 5th Undergraduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       1.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=499&amp;sel_crse_end=499&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">10:00 am - 10:50 am</TD>
+<TD CLASS="dddefault">MW</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Jeffrey J  Kinne (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Jeffrey.Kinne@indstate.edu"    target="Jeffrey J. Kinne" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=52004">Programming Fundamentals - 52004 - CS 500 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=500&amp;sel_crse_end=500&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">8:00 am - 9:15 am</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Robert William  Sternfeld (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Robert.Sternfeld@indstate.edu"    target="Robert W. Sternfeld" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=52507">Software Engineering - 52507 - CS 552 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=552&amp;sel_crse_end=552&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">8:00 am - 9:15 am</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Ramachandra B  Abhyankar (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:R.b.Abhyankar@indstate.edu"    target="Ramachandra B. Abhyankar" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50857">Data Base Process - 50857 - CS 557 - 002</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=557&amp;sel_crse_end=557&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">1:00 pm - 1:50 pm</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Steve Paul  Baker (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Steve.Baker@indstate.edu"    target="Steve P. Baker" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50680">Algorithms - 50680 - CS 558 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Experiential Learning 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=558&amp;sel_crse_end=558&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">2:00 pm - 3:15 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Arash   Rafiey (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Arash.Rafiey@indstate.edu"    target="Arash Rafiey" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=53708">Topic CS:Prog for Data Sci - 53708 - CS 559 - 002</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=559&amp;sel_crse_end=559&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">1:00 pm - 1:50 pm</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Geoffrey A  Exoo (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Geoffrey.Exoo@indstate.edu"    target="Geoffrey A. Exoo" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50681">Programming Languages - 50681 - CS 570 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=570&amp;sel_crse_end=570&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">8:00 am - 8:50 am</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Ramachandra B  Abhyankar (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:R.b.Abhyankar@indstate.edu"    target="Ramachandra B. Abhyankar" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=53340">Operating Systems - 53340 - CS 571 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=571&amp;sel_crse_end=571&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">3:00 pm - 3:50 pm</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Geoffrey A  Exoo (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Geoffrey.Exoo@indstate.edu"    target="Geoffrey A. Exoo" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=50464">Web Programming II - 50464 - CS 579 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Experiential Learning 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=579&amp;sel_crse_end=579&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">2:00 pm - 2:50 pm</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Steve Paul  Baker (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Steve.Baker@indstate.edu"    target="Steve P. Baker" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=51884">Concrete Mathematics - 51884 - CS 600 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=600&amp;sel_crse_end=600&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">12:30 pm - 1:45 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Arash   Rafiey (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Arash.Rafiey@indstate.edu"    target="Arash Rafiey" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=52508">Networking and Security - 52508 - CS 603 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=603&amp;sel_crse_end=603&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">9:30 am - 10:45 am</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Root Hall A019</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Ramachandra B  Abhyankar (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:R.b.Abhyankar@indstate.edu"    target="Ramachandra B. Abhyankar" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=51885">DB, Data Mining, and Big Data - 51885 - CS 617 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=617&amp;sel_crse_end=617&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">2:00 pm - 2:50 pm</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Geoffrey A  Exoo (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Geoffrey.Exoo@indstate.edu"    target="Geoffrey A. Exoo" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=51559">Software Project - 51559 - CS 685 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+On Campus Course Schedule Type
+<BR>
+Face to Face Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=685&amp;sel_crse_end=685&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">10:00 am - 10:50 am</TD>
+<TD CLASS="dddefault">MWF</TD>
+<TD CLASS="dddefault">Root Hall A017</TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">On Campus Course</TD>
+<TD CLASS="dddefault">Arash   Rafiey (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Arash.Rafiey@indstate.edu"    target="Arash Rafiey" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+<TR>
+<TH CLASS="ddtitle" scope="colgroup" ><A HREF="/pls/prod/bwckschd.p_disp_detail_sched?term_in=201905&amp;crn_in=53339">Computer Science Research - 53339 - CS 695 - 001</A></TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2019 
+<BR>
+<SPAN class="fieldlabeltext">Registration Dates: </SPAN>Apr 15, 2019 to Aug 26, 2019 
+<BR>
+<SPAN class="fieldlabeltext">Levels: </SPAN>Graduate 
+<BR>
+<SPAN class="fieldlabeltext">Attributes: </SPAN>Experiential Learning 
+<BR>
+<BR>
+ISU Main Campus Campus
+<BR>
+Independent Study Schedule Type
+<BR>
+Arranged by Instructor Instructional Method
+<BR>
+       3.000 Credits
+<BR>
+<A HREF="/pls/prod/bwckctlg.p_display_courses?term_in=201905&amp;one_subj=CS&amp;sel_crse_strt=695&amp;sel_crse_end=695&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</A>
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">&nbsp;</TD>
+<TD CLASS="dddefault"><ABBR title = "To Be Announced">TBA</ABBR></TD>
+<TD CLASS="dddefault">Aug 20, 2019 - Dec 13, 2019</TD>
+<TD CLASS="dddefault">Independent Study</TD>
+<TD CLASS="dddefault">Arash   Rafiey (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:Arash.Rafiey@indstate.edu"    target="Arash Rafiey" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" ALT="E-mail" CLASS="headerImg" TITLE="E-mail"  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE  CLASS="datadisplaytable" summary="This is for formatting of the bottom links." WIDTH="50%">
+<TR>
+<TD CLASS="ntdefault">
+<A HREF="javascript:history.go(-1)" onMouseOver="window.status='Return to Previous';  return true" onFocus="window.status='Return to Previous';  return true" onMouseOut="window.status='';  return true"onBlur="window.status='';  return true">Return to Previous</A>
+</TD>
+</TR>
+</TABLE>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<TABLE  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page."
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><TR><TD class="bgtabon" width="100%" colSpan=2><IMG SRC="/wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD></TR></TABLE>
+<A HREF="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</A>
+</DIV>
+<DIV class="footerbeforediv">
+
+</DIV>
+<DIV class="footerafterdiv">
+
+</DIV>
+<DIV class="globalafterdiv">
+
+</DIV>
+<DIV class="globalfooterdiv">
+
+</DIV>
+<DIV class="pagefooterdiv">
+<SPAN class="releasetext">Release: 8.7.2.6</SPAN>
+</DIV>
+<DIV class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+<div class="banner_copyright"> <br><h5>Â© 2019 Ellucian Company L.P. and its affiliates.<br></h5></div>
+</BODY>
+</HTML>
+ï…mµ      \´×Œ\´×Œ@Eëj       Q    ~1555355035,:https://prodinteract.indstate.edu/pls/prod/bwckschd.p_get_crse_unsec necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAcBMIIG/TCCBeWgAwIBAgIQDe/WyZAQxPEWGQYEAfWF/TANBgkqhkiG9w0BAQsFADBwMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNzdXJhbmNlIFNlcnZlciBDQTAeFw0xODA3MDIwMDAwMDBaFw0yMDA3MTUxMjAwMDBaMHExCzAJBgNVBAYTAlVTMRAwDgYDVQQIEwdJbmRpYW5hMRQwEgYDVQQHEwtUZXJyZSBIYXV0ZTEhMB8GA1UEChMYSW5kaWFuYSBTdGF0ZSBVbml2ZXJzaXR5MRcwFQYDVQQDDA4qLmluZHN0YXRlLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK9du+BDJaksSslct1wxydXgndn2IJoykU1acDL2zNBLsDm5ctZpW8mB6b0+yWUd+/i/5M0K/W58VZ84XFmwFYAEAye2ULED7gOQECehCbefJKRo1VZwZViH5C3PvTRnJLd+Y+ha8Vl9UTA4darihCZNwn5ZsRttNawyQq4F9whEU7//bt2blzqLOvCflTqnPoYY61vLhfzxfVboEHFu9rh/izh15N8tSkyVwfJyPwL4nhDyniNyFSfRRi2YpBtaSsk4bbn+jzYo5/foFYb2gU3iP0uYqlayCERIJ4KXzEPk6ywMrPRQHIKhuox5PgbUaZ1iYLWJ+FkJrDCPLwjl9OcCAwEAAaOCA5AwggOMMB8GA1UdIwQYMBaAFFFo/5CvAgd1PMzZZWRiohK4WXI7MB0GA1UdDgQWBBQosm/nmmaIzIlglXWtnWR1DWav7zBCBgNVHREEOzA5gg4qLmluZHN0YXRlLmVkdYIMaW5kc3RhdGUuZWR1ghlwcm9kaW50ZXJhY3QuaW5kc3RhdGUuZWR1MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwdQYDVR0fBG4wbDA0oDKgMIYuaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL3NoYTItaGEtc2VydmVyLWc2LmNybDA0oDKgMIYuaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL3NoYTItaGEtc2VydmVyLWc2LmNybDBMBgNVHSAERTBDMDcGCWCGSAGG/WwBATAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3dy5kaWdpY2VydC5jb20vQ1BTMAgGBmeBDAECAjCBgwYIKwYBBQUHAQEEdzB1MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wTQYIKwYBBQUHMAKGQWh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFNIQTJIaWdoQXNzdXJhbmNlU2VydmVyQ0EuY3J0MAwGA1UdEwEB/wQCMAAwggF8BgorBgEEAdZ5AgQCBIIBbASCAWgBZgB1AO5Lvbd1zmC64UJpH6vhnmajD35fsHLYgwDEe4l6qP3LAAABZFwGFTMAAAQDAEYwRAIgEVzhiMXIJpyfw9abf5VFH+eJ3hwOKXBvtZgTJ1TmfdwCIEL4mt1MeVVse7L3ZguHuZ8MIJ+js7Z4wzsl74fKh05DAHYAh3W/51l8+IxDmV+9827/Vo1HVjb/SrVgwbTq/16ggw8AAAFkXAYVvQAABAMARzBFAiEA2jubznZxNQyOMND7kK7HMsWQmBuO1yTK3aMG26XAt30CIA4rUNteEKuIQ3CHxnADnbuVRNnxg6blxp+zBXQH99DRAHUAu9nfvB+KcbWTlCOXqpJ7RzhXlQqrUugakJZkNo4e0YUAAAFkXAYVDQAABAMARjBEAiArStYc+mQktv9KonyjQ4NPiW5fhRBuT2mBXcljpxO1AwIgGMYqpc4gnkYBOxNDey6rxeqwnc2i5HEQz5SIfFk7zvIwDQYJKoZIhvcNAQELBQADggEBAAXAQ8FYEfYMT9KTPHu/hGaNQl0tAEmGMntniSk/Xgoz2E1SJUTmPlqLvMhTGPtwGLI0c/K/lzxneONgpHU5x6lsi65umlsH/sxMhNQf8MUgjf1p0Ug1fxVU+U0MRmwC9fJXfKO3DHsUQIvagOXlNGeIOCrzu7LLnqAodgawYId4J+w8gBFlXCkC1DFWI8vqhsatgRyTIKVzPHd+r71h08cZyvVYAbQLhuAz98JAF4rL09YrSOxdMM/Ju94ypBXYOpv9I8x/kQ/8KzxyFSRb4ib1Kiv7A3tvDTeq5ajd3/Qr78PyCmLNgdWKjyw7MLxxeR4no8ohEUExPB/hJ3Pkvr4ALwMDAAAAAAEBAAAAAAAABG5vbmUAAAAEbm9uZQAAAA== request-method POST response-head HTTP/1.1 200 OK
+Date: Mon, 15 Apr 2019 19:04:23 GMT
+Server: Oracle-HTTP-Server-11g
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1
+Content-Security-Policy: upgrade-insecure-requests;
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Length: 80612
+Content-Type: text/html; charset=UTF-8
+Content-Language: en
+ original-response-headers Date: Mon, 15 Apr 2019 19:04:23 GMT
+Server: Oracle-HTTP-Server-11g
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1
+Content-Security-Policy: upgrade-insecure-requests;
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Length: 80612
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+Content-Language: en
+ uncompressed-len 0 net-response-time-onstart 428 net-response-time-onstop 442  :ä

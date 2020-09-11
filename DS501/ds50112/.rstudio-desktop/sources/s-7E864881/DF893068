@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1550515818276.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DF893068",
+    "lastKnownWriteTime" : 5784630025653476462,
+    "last_content_update" : 1550515818276,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "9C03A965",
+        "caption" : "hockeyset2",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=hockeyset2&cache_key=9C03A965",
+        "displayedObservations" : 758,
+        "environment" : "",
+        "object" : "hockeyset2",
+        "preview" : 0,
+        "totalObservations" : 758,
+        "variables" : 44
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

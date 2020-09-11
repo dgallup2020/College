@@ -1,0 +1,43 @@
+1.  Write a program that reads character input until EOF. It keeps track of
+    26 frequencies: A's (upper and lower case combined in one frequency), 
+    B's (upper and lower case combined in one frequency), and so on through
+    Z's. The final results should be printed out. ex6.1.c
+
+2.  Write a program that reads character input until EOF. It keeps track of
+    10 frequencies: '0', '1', '2', ..., '9'. The final results should be
+    printed out.  Program p6.2.c
+
+3. Given:
+
+struct student {
+  int ssn;
+  char lname[20];
+  char fname[20];
+  int standing;
+};
+
+struct student stus[100];  //up to 100 students.
+
+   Write a program that reads in the data for each student and stores it in the next available
+   place in the array stus. It should then sort the array from smallest to largest standing.
+   Finally it should print out the ssn, lname, and standing for each student. One line per 
+   student.
+
+4. Sorted! Which letters are most frequent? Write a program 
+   that starts like 1) above. It uses:
+
+struct letFreq {
+  char letter;
+  int f;
+};
+
+struct letFreq  lf[26];
+ 
+   First all the f's are initialized to 0  and the letters are intialized to
+   'A'  through 'Z'. Then the characters are read in and the frequencies incremented.
+   Then the array is sorted from smallest to largest frequency. Finally the array
+   content is printed out. Program p6.4.c
+
+
+
+

@@ -1,0 +1,186 @@
+Exam 1 computer portion, CS 471/571/ fall 2018, taught by Jeff Kinne
+
+Start by running the following -
+cd ~jkinne/public_html/cs471-f2018
+./start_exam1_computer.sh
+
+
+Note - don't modify any files in your EXAM1_COMPUTER directory after you leave.
+
+
+
+Scoring
+- one completely correct problems is a C, two is a B, three is an A
+- zero completely correct problems is < a C
+
+
+
+0) A regular C program using linux system calls
+
+** NOTE - do not run this program on CS.  Login to one of the c machines to run this.
+
+Write a program forks that takes 1 command-line argument that should be an integer.
+The program should behave as follows.
+
+Save the command-line argument into a variable named n.
+If n is > 20, set it equal to 20.
+
+Declare integer variable count and set to 0.
+
+While n > 0, do the following
+  print the values of n and count
+  n--, count++
+  fork
+  parent process does waitpid to wait for the child to complete, and after the waitpid call breaks out of the loop
+
+After the loop, print the values of n and count
+
+** NOTE - do not run this program on CS.  Login to one of the c machines to run this.
+
+An example transcript follows.
+jkinne@c10:~/courses/471$ gcc forks.c -o fork
+jkinne@c10:~/courses/471$ ./forks 5
+Begin loop - 0th process, 5 more to come
+Begin loop - 1th process, 4 more to come
+Begin loop - 2th process, 3 more to come
+Begin loop - 3th process, 2 more to come
+Begin loop - 4th process, 1 more to come
+After loop - 5th process, 0 more to come
+After loop - 5th process, 0 more to come
+After loop - 4th process, 1 more to come
+After loop - 3th process, 2 more to come
+After loop - 2th process, 3 more to come
+After loop - 1th process, 4 more to come
+jkinne@c10:~/courses/471$ ./forks 2
+Begin loop - 0th process, 2 more to come
+Begin loop - 1th process, 1 more to come
+After loop - 2th process, 0 more to come
+After loop - 2th process, 0 more to come
+After loop - 1th process, 1 more to come
+jkinne@c10:~/courses/471$ ./forks 1
+Begin loop - 0th process, 1 more to come
+After loop - 1th process, 0 more to come
+After loop - 1th process, 0 more to come
+jkinne@c10:~/courses/471$ ./forks 0
+After loop - 0th process, 0 more to come
+jkinne@c10:~/courses/471$ ./forks 100
+max # forks is 20, setting n=20
+Begin loop - 0th process, 20 more to come
+Begin loop - 1th process, 19 more to come
+Begin loop - 2th process, 18 more to come
+Begin loop - 3th process, 17 more to come
+Begin loop - 4th process, 16 more to come
+Begin loop - 5th process, 15 more to come
+Begin loop - 6th process, 14 more to come
+Begin loop - 7th process, 13 more to come
+Begin loop - 8th process, 12 more to come
+Begin loop - 9th process, 11 more to come
+Begin loop - 10th process, 10 more to come
+Begin loop - 11th process, 9 more to come
+Begin loop - 12th process, 8 more to come
+Begin loop - 13th process, 7 more to come
+Begin loop - 14th process, 6 more to come
+Begin loop - 15th process, 5 more to come
+Begin loop - 16th process, 4 more to come
+Begin loop - 17th process, 3 more to come
+Begin loop - 18th process, 2 more to come
+Begin loop - 19th process, 1 more to come
+After loop - 20th process, 0 more to come
+After loop - 20th process, 0 more to come
+After loop - 19th process, 1 more to come
+After loop - 18th process, 2 more to come
+After loop - 17th process, 3 more to come
+After loop - 16th process, 4 more to come
+After loop - 15th process, 5 more to come
+After loop - 14th process, 6 more to come
+After loop - 13th process, 7 more to come
+After loop - 12th process, 8 more to come
+After loop - 11th process, 9 more to come
+After loop - 10th process, 10 more to come
+After loop - 9th process, 11 more to come
+After loop - 8th process, 12 more to come
+After loop - 7th process, 13 more to come
+After loop - 6th process, 14 more to come
+After loop - 5th process, 15 more to come
+After loop - 4th process, 16 more to come
+After loop - 3th process, 17 more to come
+After loop - 2th process, 18 more to come
+After loop - 1th process, 19 more to come
+
+
+
+1) An xv6 user program that is mildly interesting.
+
+Do this in your ~/EXAM1_COMPUTER/xv6-isu-2018f/ directory.
+
+Create a new user program search.c  You can copy the primes.c program as a
+starting point.  You can also search for primes in the Makefile to see where
+you need to add search in the Makefile.
+
+The program should take one command-line argument, which is a string.
+
+The program reads from standard input using gets until gets returns an empty string.
+
+The program should check how many times the command-line argument string appeared
+in the input, and prints the count.  Note that gets reads an entire line and includes
+the newline character in the string.  So you should check if the last character is \n and
+if so set it to \0.  And your test inputs should be a separate word per line.
+
+Note that you give end-of-input by typing ctrl-d.
+
+A sample transcript is as follows.  
+$ search
+Usage: string
+$ search the
+search the
+this
+is
+a
+the
+test
+run
+the
+THE
+The
+
+2
+$ 
+
+
+
+2) A new xv6 system call to call from my_usage.c
+
+Add a new system call freeMem which prints using cprintf the total amount of
+used and free memory, in MB.  Call the system call from the end of main
+in my_usage.c.
+
+Note - sysproc.c has a start to the sys_freeMem function.  You still need
+to modify other files to make this system call get linked in with the rest
+of the project.  You also need to complete the sys_freeMem function, and add
+the call to freeMem in my_usage.c.
+
+Note - for which files need to be edited, you can grep for uptime in *.c *.h *.S
+
+A sample transcript of running the program is -
+$ my_usage
+Running my system call ...
+ -- struct proc dump
+ sz	12288
+ pgdir	8df23000
+ kstack	8dfbe000
+ state	4
+ pid	3
+ parent	80112dd0, sh
+ tf	8dfbefb4
+ context	8dfbedf0
+ chan	0
+ killed	0
+ ofile	80112e74
+ cwd	80110a14 - dev 1, inum 1
+ name	my_usage
+ struct proc dump --
+ -- mem dump
+ mem dump --
+ memory_size = 12288
+Hello from freeMem
+Used = 40KB, free = 232607KB

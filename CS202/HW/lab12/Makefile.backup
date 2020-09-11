@@ -1,0 +1,17 @@
+COMPILER=gcc
+CFLAGS=-ggdb -pedantic -Wall
+
+
+all: simple_hash2 simple_hash3 simple_hash4 simple_hash5
+
+simple_hash2:
+	$(COMPILER) $(CFLAGS) simple_hash2.c -o simple_hash2
+
+simple_hash3:    
+	$(COMPILER) $(CFLAGS) simple_hash3.c -o simple_hash3
+
+simple_hash4:
+	$(COMPILER) $(CFLAGS) simple_hash4.c -o simple_hash4
+
+simple_hash5:
+	$(COMPILER) $(CFLAGS) simple_hash5.c -o simple_hash5

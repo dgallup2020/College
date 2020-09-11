@@ -1,0 +1,25 @@
+#!/usr/local/bin/node
+
+/**
+ * Get a real number from the first command line argument, call it 'n', and an
+ * integer from the second, call it 'm'.  Make a loop that multiplies the first
+ * number (n) by itself (m) number of times.  Print the result.
+ *
+ * Example input/output:
+ * ./l2.js 5 4
+ * 5^4 = 625
+ */
+ var i = 0 
+var ans = 1
+var m = parseInt(process.argv[2]);
+var n = parseInt(process.argv[3]);
+//for (i = 0; i < n; i++){
+//  ans = m * ans
+
+
+//}
+//console.log(m+"^"+n+" = "+ans);
+while (i<n){
+ans = m * ans
+i++}
+console.log(m+"^"+n+" = "+ans);

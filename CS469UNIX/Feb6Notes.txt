@@ -1,0 +1,66 @@
+Continuing from Feb 4th (Regexcont.txt)
+"more scripting"
+Pipeline
+ cmd1 | cmd2 | cmd3 ...
+
+(command) lists:
+-one or more pipelines seperated by a semi-colon or ampresand or double
+ampresands or double vertical bars. 
+Precedence:
+|| or &&
+; or &
+
+<cmd1> ; <cmd2> <--- run cmd2 after running cmd1 one
+<cmd1> & <cmd2> <--- run both <cmd1> and <cmd2> at the same time. w/ cmd1
+being ran in the background. 
+<cmd1> && <cmd2> <--- run <cmd2> iff <cmd1> succeeds (returns a 0 exit status)
+  same as; if <cmd1>; then <cmd2>;fi
+<cmd1> || <cmd2 <--- run <cmd2> iff <cmd1> is unsuccessful (returns a non-zero
+exit status) same as: if !<cmd1>; then <cmd2>; fi
+
+Compounds commands: 
+( <list> ) <--- exectues list is a sub-shell. Variables assigned in sub-shell
+one not visible in the calling (parent) shell. 
+ ex. (....) </dev/null >& log
+
+{<list>} <--- exectued in the current shell, useful for redirecting the
+input/output of all programs inside the {}'s at once. 
+
+(( <c-like expression>)) <--- an arithmetic expression (c-like), if the value
+is non-zero, the return status is 0 (success), otherwise 1 (failure) 
+-variables also don't require $'s in (( )).
+ex. ((a>=0 && a<=10)); then echo "a is in the ragne 0-10"; fi
+[<test expression>] <--- test expresion (in bash: help test)
+[[<expression>]] <--- conditional expression, returns status of 0 or 1. (help
+[[)
+ex. of returning true 
+[[ -f "$file" ]]; File exists and is regular
+    [[ -z $str]]; When string is empty
+    [[$str == <wc>]]; $str matches the wildcard pattern <wc>
+    [[$str =~ regex]]; $str matches the regular epxression regex. 
+
+I/O Redirection:
+cmd '[&]>[>]' <file> <--- output stdout (and stderr is '&' is added) to file,
+appending to file if an extra > is used: 
+
+>foo outputs to foo, overwriting it. 
+>>foo appends to foo
+&> outputs stdout stderr
+&>> appends stdout stderr
+cmd < <file> <--- connects <file> to the input of <cmd> 
+cmd <<[-] <label>
+...
+...
+...
+<label>
+<--- connects the text after the command up to <label> to the stdin of the
+<cmd> (called a HEREDOC). Lines are variable expanded unless <label> (at the
+start) is quoted (i.e. "<label>")
+-the dash (-) allows for a leading tab to be removed from the input. 
+
+Quoting: 
+'...' <--- as is, no expansion
+$'...' <--- adds backslash escape sequences
+"..." <--- allows variable expanion
+$"..." <--- translate to the current locale, returns the "" string. 
+

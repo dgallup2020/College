@@ -1,0 +1,10 @@
+Design an algorithm that finds a hamiltonian path in a tournament.
+
+Ham + Tournament
+Two requirements, can't traverse the same node twice, and must not have two edges between same two nodes. 
+1. We choose a starting node and add it to a stack. 
+2. We choose an adjecent edge and add it to the stack. 
+3. Before we tranverse through another edge we check our adjecent nodes to make sure the previous node does not have a transerveable edge otherwise we fail the tournament requirement. 
+4. As we traverse to next node we make sure they are not any of the previous ones we traversed otherwise we fail the Hamiltonian requirement. 
+5. If we run out of adjecent edges before we hit our starting node again we pop off the stack and go to the previous node and check for another unchecked node. 
+6. This continues until the last and first element on the stack are the same. If we do not forfill this condition then we don't have a tournament. 

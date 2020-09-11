@@ -1,0 +1,57 @@
+CS469/569 Assignment #9 - 10 of 11 points
+
+Time to make sure your web server is setup and install some web services on your
+virtual machine (ssh to cs469@u## from CS/Effie):
+
+Tasks to be performed:
+
+0) (0pts) Setup the Apache HTTP server. This task should have been completed in
+   H7, please see me if you need help with this task. Make your web server
+   start on boot (i.e. make /etc/rc.d/rc.httpd executable) and configure
+   /etc/httpd/httpd.conf to use /net/web as its document root directory
+   (Note: Do NOT change the "server root" directory) and enable PHP, making sure
+   that index.php is accepted as a default web page in addition to index.html.
+   Make a test index.php file in /net/web and verify that your web server is
+   working by browsing to:
+
+   http://effie.indstate.edu:469##/
+
+-- index.php --
+<?php
+  echo phpinfo();
+?>
+-- index.php --
+
+  Or you may use the text based "lynx" browser:
+   > lynx http://localhost/info.php
+
+1) (1pt) Add an entry in /etc/hosts (man 5 hosts) for your machine in the
+  following format:
+
+  <ip-address>	<host-name>.indstate.edu <host-name>
+
+  Substitute <ip-address> and <host-name> for your machines IP address (use
+  /sbin/ifconfig eth0 to find it) and host-name respectively (should be u## by
+  now)
+
+2) (2pts) Get the drupal tar-ball (in effie:/net/soft/) and extract/install it
+  into your web area as /net/web/drupal. (read 'man tar' for information on how
+  to extract a tar archive.) It should not have the version number on the
+  directory name, so you will have to rename it after extracting it.
+
+3) (2pts) Create a MySQL database for your Drupal installation and an associated
+  account w/ password for it.
+
+4) (2pts) Finish the Drupal installation. (browse to
+   http://effie.indstate.edu:469##/drupal/ and follow the online instructions)
+
+
+5) (1pt) Get the mediawiki tar-ball (in effie:/net/soft/) and extract/install it
+  into your web area as /net/web/wiki.  It should not have the version number on
+  the directory name, so you will have to rename it after extracting it.
+
+6) (1pt) Create a MySQL database for your wiki installation and an associated
+  account w/ password for it.
+
+7) (2pts) Finish the wiki installation
+  (browse to http://effie.indstate.edu:469##/wiki/)

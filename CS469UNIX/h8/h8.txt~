@@ -1,0 +1,60 @@
+CS469/569 Assignment #8 - 10 points
+
+  More system administration tasks to be performed on your virtual machines.
+(The ones you login to from cs/effie via ssh cs469@u## where ## are the last
+two digits of your cs469 account name.)
+
+  After you have completed the following handin your 'h8' directory with your
+machines completed /etc/fstab file, the output of the 'fdisk -l' command (as
+partitions.txt) minus the entries for the ram drives and your arc.sh script.
+
+1) Time to add some file-systems to your virtual machines.  I have added four
+   additional "sata" drives, each 4GB in size as devices /dev/sd[b-e] to your
+   virtual machines.  Use these drives to perform the following tasks. (7pts)
+
+  +============================================================================+
+  | Under no circumstances should you do anything whatsoever to your /dev/sda* |
+  | drive.  Wiping out your system partition shall be a deduction of 3 points. |
+  +============================================================================+
+
+  Tasks to be performed:
+
+  A) (2pts) Using fdisk and/or parted, partition the virtual drives:
+     i) On the sdb device: partition the drive with a GPT disk-label into 4
+        separate 1GB partitions. Consider using parted to do this.
+    ii) Partition the sdc, sdd and sde drives with a DOS (for this fdisk will
+        do) partition type and make two 2GB partitions on each device, both with
+        the: "Linux raid auto detect" (fd) partition type.
+
+  B) (2pts) Using mke2fs or mkfs.* format the partitions on /dev/sdb:
+     i) Format the first partition as a ext2 file-system.
+    ii) Format the second partition as a ext3 file-system.
+   iii) Format the third partition as a ext4 file-system.
+    iv) Format the fourth partition as a xfs file-system.
+
+  C) (1pt) Use the mdadm command to create:
+     i) A RAID 0 virtual device (/dev/md0) using the first partition on each of
+        sdc, sdd and sde.
+    ii) A RAID 5 virtual device (/dev/md1) using the second partition on each of
+        sdc, sdd and sde.
+
+  D) (1pt) Format the RAID virtual drives (/dev/md*).  Make them both ext4.
+
+  E) (1pt) Edit the system fstab file and make the above newly created
+     partitions permanently mounted at the following mount points:
+     - Mount the ext2 partition on sdb at /net
+     - Mount the ext3 partition on sdb at /net/log
+     - Mount the ext4 partition on sdb at /net/ftp
+     - Mount the xfs partition on sdb at /net/tmp
+     - Mount the RAID 5 file-system at /net/web
+     - Mount the RAID 0 file-system at /bkup
+
+2a) (2pts) Create a script called 'arc.sh' (in /usr/local/bin/) that creates a
+   "tar" archive file of your /etc directory that is compressed using 'xz'
+   compression that includes the date in the file name of the archive, but do
+   not use spaces in your file name.  The script should store the archive in
+   the directory '/var/archive' (creating the directory it if it doesn't
+   exist) and keep only the last 10 such archives.
+
+2b) (1pt) Create a cron entry (for root) that runs the arc.sh script nightly at
+   2am.

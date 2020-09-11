@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset='utf-8'>
+ <title> Dylan Gallup  </title>
+</head>
+<body>
+ <h1> Dylan Gallup </h1>
+ <ul>
+  <li> Favorite Sport: Tennis </li>
+  <li> Favorite Music Genre: Alternative/Modern Rock </li>
+  <li> Favorite Movie: Star Trek Into Darkness </li>
+  <li> Favorite Car: Subaru Impreza sti </li> 
+  <li> Favorite Colors: Black and Blue </li> 
+ </ul>
+</body>
+</html>

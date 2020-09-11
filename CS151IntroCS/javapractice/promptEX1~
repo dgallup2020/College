@@ -1,0 +1,25 @@
+#!/usr/local/bin/node
+
+var wp;
+var weapon = prompt("What is your weapon of choice in a Zombie Apocalypse?" , "Hmmmm....");
+switch(weapon) {
+  case "Katana":
+      wp = "So you must be a Michonne fan?"
+      break;
+  case "Revolver":
+      wp = "So you must be a Rick fan?"
+      break;
+  case "Crossbow" || "Bow and Arrow":
+      wp = "So you must be a Daryl fan?"
+      break;
+  case "Baseball Bat" || "Lucille":
+      wp = "Screw you Negan lover!! /n But he still a great villain"
+      break;
+  case 	"Fists" || "Berserker with guns":
+      wp = "We all miss Abraham too..."
+      break
+  default:
+      wp = "You might want to check if you are a walker."
+      break;
+}
+console.log(wp);

@@ -1,0 +1,86 @@
+HW #1	(8 Points, 1/2pt each) Name:
+
+Using a text editor of your choice, edit this file and write in the answers to
+the following questions. Use the "man" command to reference any of the named
+commands. When asked how to do something, write out the command you would use
+to do it:
+
+ 1. Command to change your password?
+    >passwd
+
+ 2. What is the full absolute path to your home directory?
+    >/u1/class/cs46905
+
+ 3. Using the "cp" command, how would you make a copy of a file called "file1"
+    as "file2"?
+
+    >cp file1 file2
+
+
+ 4. Using "cp", how would you make a copy of a directory called 'dir1' and all
+    its contents as 'dir2'?
+
+    >cp -r dir1 dir2
+
+
+ 5. Copy command to copy all the files in the current directory to the directory
+    ~/.trash/, that makes numbered backups of any files that may already be in
+    the destination.
+
+    >cp -r -b ~ ~/.trash/
+
+ 6. How would you use "scp" to copy "dir1" to the home directory of "user1" on
+    the machine "host.indstate.edu"?
+
+    >scp -r dir1 user1@host.indstate.edu
+
+
+ 7. Using "cp" to copy a directory "src1" to "dest1" preserving all the meta-
+    information about the files?
+
+    >cp -r -a src1 dest1
+
+ 8. How would you rename the file "in" to "out"?
+    
+    >mv in out
+
+ 9. "ls" command to list ALL the contents of a directory in long format, sorted
+    in reverse by last modification time?
+
+    >ls -l -t
+
+
+10. How would you use "mkdir", in a single invocation, to make the sub-directory
+    path "x/y/z" in your home directory?
+    >mkdir -p a/b/c
+
+11. What would be the "chmod" command to set the permissions on a file such that
+    the owner had full access, the group could read only and other users could
+    not access the file at all?
+    >chmod 740 filename
+
+12. "chmod" command to make sure that a file is executable for everyone, but
+    w/o modifying the other permissions, whatever they may be?
+    >chmod ugo+x file
+
+
+13. Give the wild-card pattern that would match all text (.txt) files (case
+    insensitive, i.e. ".Txt", ".txt", ".TXT" should all match) that begin with
+    either an "R" or an "r".  Therefore the wild-card should match "README.TXT",
+    "r.txt", etc:
+    >[rR]?*.txt
+
+
+14. How would you use the "stat" command to just print the file type for the
+    file "file1"?
+    >stat --format "%F" file1
+
+15. How would you use the "tail" command to watch the end of the log file
+    /var/log/http/access_log as lines are appended to it in real time?
+    >tail -f /var/log/http/access_log
+
+16. How would you use the "du" command to produce only the total usage for the
+    amount of disk space your home directory is using in human readable format.
+    >du -h
+
+

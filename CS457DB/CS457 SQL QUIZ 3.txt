@@ -1,0 +1,72 @@
+Dylan Gallup SQL Quiz #3
+1.  Create a table called “author” with the following properties;
+A primary key integer called “author_id”
+Text field called “first name”
+Text field called “last name” that can’t be empty
+
+Answer: 
+CREATE TABLE author(
+  author_id integer PRIMARY KEY,
+  first_name text,
+  last_name text
+  );
+2. Create an insert statement that will insert one piece of data 
+to the author table. Have all fields filled.
+
+Answer: 
+INSERT INTO AUTHOR(
+	author_id,
+	first_name,
+	last_name)
+VALUES(
+	1233,
+	'H.P.',
+	'Lovecraft')
+3.  Create a table called “book” with the following properties;
+A primary key integer called “book_id”
+An integer called “author_id” that can’t be empty.
+A text field called “title” that can’t be empty.
+A foreign key constraint linking the “author_id” field in this table to the “author_id” field in the author table.
+Have the constraint cascade deletion requests.
+
+Answer: 
+create table book(
+  book_id integer PRIMARY KEY,
+  author_id integer not null,
+  title text not null,
+  foreign key(author_id)
+  references author(author_id)
+  on delete cascade
+  );
+4. Create one or two insert statements that will insert 
+two pieces of data to the book table. 
+Have all fields filled and comply with constraints.
+
+Answer:
+insert into book(
+  book_id,
+  author_id,
+  title)
+  values(
+    1999,
+    1233,
+    'Tales of Chtuhulu')
+insert into book(
+  book_id,
+  author_id,
+  title)
+  values(
+    2015,
+    1000,
+    'The Players Guide to Final Fantasy XV')
+5. Create a select statement that would show (for all books); 
+The title of the book, 
+first and last name of the author in a combined field called “Author name”. 
+
+Answer:
+SELECT bk.title as 'Book Title', (au.first_name || " " || au.last_name) as 'Author name'
+from book as bk
+join author as au
+on bk.author_id = au.author_id
+
+

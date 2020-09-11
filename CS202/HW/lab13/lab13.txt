@@ -1,0 +1,34 @@
+Due: Wednesday or Thursday
+
+See the files in HW/lab13/
+
+You should run each one to see how it works.  Each prints out which
+file from class you should use as a starting point.  As always,
+create a ~/HW/lab13/ directory, and name your .cpp files the same
+as the programs in HW/lab13/
+
+More details and hints may be posted sometime.
+
+lab13_io
+  * for reading one line at a time, use getline (the C++ version)
+  * use string find function to look for bad and well in first response,
+    and look for Harry Potter, Hitchhiker's Guide, Lord of the Rings in second respons
+
+lab13_files
+  * either read one line at a time (and write it out to f_out), or read
+    one character at a time (and write it out to f_out) using get
+
+lab13_overloading
+  * add operators to rational class for - / *
+  * read in q1.top, q1.bottom, q2.top, q2.bottom with cin
+  * compute each of the operations and print them
+  * note - you do need to use the file as it was.
+
+lab13_stack
+  * just adding cout statements for push/pop, and doing an operation
+
+lab13_vector
+  * vector should be of double
+  * loop should read double
+  * after cin while loop, have a for loop to compute total
+  * after total is calculated, loop through the numbers and print percentages

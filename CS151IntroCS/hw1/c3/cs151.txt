@@ -1,0 +1,93 @@
+cs151000:x:1000:101:Annalisa Hinkel,,,:/u1/class/cs151000:/bin/tcsh
+cs151001:x:1001:101:Jordan Johnston,,,:/u1/class/cs151001:/bin/tcsh
+cs151002:x:1002:101:KyJuan Taylor,,,:/u1/class/cs151002:/bin/tcsh
+cs151003:x:1003:101:Noah S Davis,,,:/u1/class/cs151003:/bin/tcsh
+,8122299994,:/u1/class/cs151005:/bin/tcsh/class/cs151004:/bin/tcsh
+cs151006:x:1006:101:Eli Cooksey,,,:/u1/class/cs151006:/bin/tcsh
+cs151007:x:1007:101::/u1/class/cs151007:/bin/tcsh
+cs151008:x:1008:101:Paige Ripperger,,,:/u1/class/cs151008:/bin/tcsh
+cs151009:x:1009:101:Caleb Poole,,,:/u1/class/cs151009:/bin/tcsh
+cs151010:x:1010:101:Elizabeth Jones,,,:/u1/class/cs151010:/bin/tcsh
+cs151011:x:1011:101:Jeffrey E Brickey,,,:/u1/class/cs151011:/bin/tcsh
+cs151012:x:1012:101:Dalton Evans,,,:/u1/class/cs151012:/bin/tcsh
+cs151013:x:1013:101:Jasanbir Khera,,,:/u1/class/cs151013:/bin/tcsh
+cs151014:x:1014:101:Jing Lin,,,:/u1/class/cs151014:/bin/tcsh
+cs151015:x:1015:101:Joseph Harris,,,:/u1/class/cs151015:/bin/tcsh
+cs151016:x:1016:101:Brandon Giddens,,,:/u1/class/cs151016:/bin/tcsh
+cs151017:x:1017:101:Cody Hutcherson,,,:/u1/class/cs151017:/bin/tcsh
+cs151018:x:1018:101:David Rawley,,,:/u1/class/cs151018:/bin/tcsh
+cs151019:x:1019:101:jagraj singh grewal,,,:/u1/class/cs151019:/bin/tcsh
+cs151020:x:1020:101:Taylor
+Nash,505,8125301582,8125301582:/u1/class/cs151020:/bin/tcsh
+cs151021:x:1021:101:Durrell Johnson,,,:/u1/class/cs151021:/bin/tcsh
+cs151022:x:1022:101:Christopher Shelton,A017,,:/u1/class/cs151022:/bin/tcsh
+cs151023:x:1023:101:Alec Jacobs,,,:/u1/class/cs151023:/bin/tcsh
+cs151024:x:1024:101:Dalton Jackson,17,,:/u1/class/cs151024:/bin/tcsh
+cs151025:x:1025:101:Zachary Williams,,,:/u1/class/cs151025:/bin/tcsh
+cs151026:x:1026:101:Nelton Shorter,,,:/u1/class/cs151026:/bin/tcsh
+cs151027:x:1027:101:Adam Trees,,,:/u1/class/cs151027:/bin/tcsh
+cs151028:x:1028:101::/u1/class/cs151028:/bin/tcsh
+,,:/u1/class/cs151072:/bin/tcshr,017,812-841-1133,812-299-0682:/u1/class/cs151029:/bin/tcsh
+cs151073:x:1073:101:Sunmisola Adejayan,,,:/u1/class/cs151073:/bin/tcsh
+cs151074:x:1074:101:Ayrelle Finley,,,:/u1/class/cs151074:/bin/tcsh
+cs151075:x:1075:101:JonathonWilson,,,:/u1/class/cs151075:/bin/tcsh
+cs151076:x:1076:101:Stephen Austin Falls,HH0102,,:/u1/class/cs151076:/bin/tcsh
+cs151077:x:1077:101::/u1/class/cs151077:/bin/tcsh
+cs151078:x:1078:101::/u1/class/cs151078:/bin/tcsh
+cs151079:x:1079:101::/u1/class/cs151079:/bin/tcsh
+cs151080:x:1080:101::/u1/class/cs151080:/bin/tcsh
+cs151081:x:1081:101:Dylan
+Gallup,505,574-261-9933,-:/u1/class/cs151081:/bin/tcsh
+cs151082:x:1082:101:Luke Whitford,,,:/u1/class/cs151082:/bin/tcsh
+cs151083:x:1083:101:Lucas M.
+Ennen,,,:/u1/class/cs151083:/bin/tcsh/class/cs151040:/bin/tcsh
+cs151084:x:1084:101:Sydney A. Ray,,,:/u1/class/cs151084:/bin/tcsh
+cs151085:x:1085:101:Paris Sark,919,219-263-3249,:/u1/class/cs151085:/bin/tcsh
+cs151086:x:1086:101:Austin Utter,,,:/u1/class/cs151086:/bin/tcshsh
+cs151087:x:1087:101:Ethan Rene Olivo,,,:/u1/class/cs151087:/bin/tcshh
+cs151088:x:1088:101:Joshua David Long,,,:/u1/class/cs151088:/bin/tcsh
+cs151089:x:1089:101:Cody Robbins,,,:/u1/class/cs151089:/bin/tcshh
+cs151090:x:1090:101:Nicholas
+Freeman,,,:/u1/class/cs151090:/bin/tcsh/cs151047:/bin/tcsh
+cs151091:x:1091:101:claire
+weimer,017,,:/u1/class/cs151091:/bin/tcsh1048:/bin/tcsh
+cs151092:x:1092:101:Austin Barr,,,:/u1/class/cs151092:/bin/tcsh/tcsh
+cs151093:x:1093:101:Tyler Bicknell,,,:/u1/class/cs151093:/bin/tcsh
+cs151094:x:1094:101:Christian Scott,,,:/u1/class/cs151094:/bin/tcsh
+cs151095:x:1095:101:Rayden Wilkey,,,:/u1/class/cs151095:/bin/tcsh
+cs151096:x:1096:101:Alex Eickhoff,,,:/u1/class/cs151096:/bin/tcsh
+cs151097:x:1097:101:John Bontjes,,,:/u1/class/cs151097:/bin/tcshh
+cs151098:x:1098:101:Prabhsimran Dhillon,,,:/u1/class/cs151098:/bin/tcsh
+cs151099:x:1099:101:Charles A Roach,,,:/u1/class/cs151099:/bin/tcsh
+cs151100:x:1100:101:Michael Jay Bennett,017,,:/u1/class/cs151100:/bin/tcsh
+cs151101:x:1101:101:Mohamad Almahasnah,,,:/u1/class/cs151101:/bin/tcsh
+cs151102:x:1102:101:Mike Milner,,,:/u1/class/cs151102:/bin/tcshsh
+cs151103:x:1103:101:Melvin Brown III,,,:/u1/class/cs151103:/bin/tcsh
+cs151104:x:1104:101:Nicholas Hines,,,:/u1/class/cs151104:/bin/tcshtcsh
+cs151105:x:1105:101:Brooklyn Baxter,na,na,na:/u1/class/cs151105:/bin/tcsh
+cs151106:x:1106:101:Kent Guild,,,:/u1/class/cs151106:/bin/tcshsh
+cs151107:x:1107:101:Tyler
+Stone,017,7655855535,7655855535:/u1/class/cs151107:/bin/tcsh
+cs151108:x:1108:101:kyra mitchell,,,:/u1/class/cs151108:/bin/tcshh
+cs151109:x:1109:101:Neal Greene,,,:/u1/class/cs151109:/bin/tcsh
+cs151110:x:1110:101:Kyle Franks,,,:/u1/class/cs151110:/bin/tcshbin/tcsh
+cs151111:x:1111:101:Dean Danner,,,:/u1/class/cs151111:/bin/tcsh
+cs151112:x:1112:101:Nathaniel Devine,,,:/u1/class/cs151112:/bin/tcsh
+cs151113:x:1113:101:Clint Brown,,,:/u1/class/cs151113:/bin/tcshh
+cs151114:x:1114:101:Connor MacFeely,,,:/u1/class/cs151114:/bin/tcsh/bin/tcsh
+cs151115:x:1115:101:Hussain Alturki,017,,:/u1/class/cs151115:/bin/tcsh
+cs151116:x:1116:101::/u1/class/cs151116:/bin/tcsh
+cs151117:x:1117:101:FAHAD
+ALBUAINAIN,017,8122399781,None:/u1/class/cs151117:/bin/tcsh
+cs151118:x:1118:101:Josh Stepney,,,:/u1/class/cs151118:/bin/tcsh
+cs151119:x:1119:101:Abdullah Altamimi,,,:/u1/class/cs151119:/bin/tcsh
+cs151120:x:1120:101::/u1/class/cs151120:/bin/tcsh
+cs151121:x:1121:101::/u1/class/cs151121:/bin/tcsh
+cs151122:x:1122:101::/u1/class/cs151122:/bin/tcsh
+cs151123:x:1123:101::/u1/class/cs151123:/bin/tcsh
+cs151124:x:1124:101::/u1/class/cs151124:/bin/tcsh
+cs151125:x:1125:101::/u1/class/cs151125:/bin/tcsh
+cs151126:x:1126:101::/u1/class/cs151126:/bin/tcsh
+cs151127:x:1127:101::/u1/class/cs151127:/bin/tcsh
+cs151128:x:1128:101::/u1/class/cs151128:/bin/tcsh
+cs151129:x:1129:101::/u1/class/cs151129:/bin/tcsh

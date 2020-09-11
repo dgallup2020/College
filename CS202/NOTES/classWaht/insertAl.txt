@@ -1,0 +1,15 @@
+we need what is the basic algorthim for insert and the cases for them
+
+
+insert: 
+
+take the side specific pointer from the prev node and point it to the 
+new node. 
+
+
+we need to know whether the word is either greater or less than the 
+previous node. 
+if the pp->data->word  is less then nodes->data->word insert the word 
+to the left 
+
+vice versa if the word is great than the node 

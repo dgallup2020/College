@@ -1,0 +1,71 @@
+February 11th: Contiuing from February 6th "Scripting" 
+HW assignment is due Friday. You need to go to the lab to install the Virtual
+machine. Watch the video and do it in the lab. Do not do it unless you are
+running effie. 
+next two assignments are: text oriented and based on regex and scripting
+http://effie.indstate.edu:469xx/
+			 :443xx/
+
+Parameters/variables:
+-By default variables are strings, but can be declared with "declare" builtin
+to be 64 bit integers (-i), single dimensional arrays (-a), or associative
+arrays (-A) (associateive array: is kinda like a map in python, aka a key that
+maps to some value :var[key]->value) 
+-Variables are declared with <name>=[<value>]. if no vlaue is specified the
+default is the empty string. 
+-"let" <expression> [<expression>...] 
+  -defines integer variables & performs (-like arithmetic expressions. 
+-"readonly" /"declare -r" builtins make the variables read-only. 
+-"local" makes variables local to a function, otherwise variables are global
+by default. 
+
+ex. 
+	arrays:
+	<name>[<index>]=[<value>] : var[5]="five";
+        -no spaces before or after "="
+        
+	<name>=(<values...>) : var=("one","two",three,4); 
+ex.
+	x="string";
+	declar -i n=12345 m=1024;
+	let n=5;
+	let n++;
+	let "n=n*1024"
+	a[0]="a";
+	declare -A aa=([a]="u1" [b]="u2")
+	aa["b"]->"u2"
+	aa[c]="u3"
+
+Environment Variables:
+-Each process maintains a set of variables called the environment, these are
+name/value pairs (strings only) 
+-In Bash, that variables you the environment are "exported" using the "export"
+builtin: 
+	export PATH=$PATH:.
+in c: getenv and setenv
+
+>printenv [<name>]
+>env
+    -display the current environment
+>unset [-vf][name...]
+    -unset (delete) the variable (default or -v) or function (-f) 
+    -readonly vars cannot be unset.
+
+Special Variables:
+$? -status of the last command run. 
+$# -the # of the positional parameters (like c's argc)
+$0, $1, etc - positional paramters (like C's argv) 
+IFS - Internal Field Seperator, defines characters used for word-splitting and
+other things (such as the read builtin)
+$* - expands to the positional params starting at $1, seperated by the first
+character of IFs.
+$@ - expands to the positional params starting at $1, into seperate words if
+quoted. User "$@" over "$*" when in doubt.
+$$ - process ID of the current shell
+$! = process ID of the last job pt the background.
+$RANDOM - a random $ between 0 & 32767, setting sets the seed
+$path -Directory paths, sperated by colons (:), representing the direction is
+to search for an executable. 
+
+Bracket and variabl expandsions:
+{n...m} -expands from n to m. {01 ... 10} -> 01 02 03 04 05... 10

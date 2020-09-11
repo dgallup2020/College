@@ -1,0 +1,69 @@
+Dylan Gallup
+cs457 Troy Schotter
+SQL QUIZ 2: 
+
+1. For each playlist, 
+show the playlist name and the number of tracks in the playlist.
+Answer:
+SELECT pl.Name as 'Playlist', SUM(plt.PlaylistId) as 'Number of Tracks'
+from playlists as pl
+join playlist_track as plt
+on pl.PlaylistId = plt.PlaylistId
+group by pl.Name
+
+2. For each artist, 
+show the artist name and the total unitprice of all their tracks. 
+Sort the results by the total unitprice decending.
+
+Answer:
+SELECT ar.Name as 'Artist', SUM(UnitPrice) as 'Total Track Sales'
+from artists as ar
+join albums as al
+on ar.ArtistId = al.ArtistId
+join tracks as tr
+on al.AlbumId = tr.AlbumId
+group by ar.Name
+order by SUM(UnitPrice) desc
+
+3. For each album, show the album title and the number of tracks in the album.
+ Do not show any albums that have spaces in their title
+ and only show albums that have at least 10 tracks. 
+Order the results by the number of tracks ascending.
+Answer:
+select title as 'Album Title', Count(TrackId) as 'Tracks'
+from albums as al
+join tracks as tr
+on al.AlbumId = tr.AlbumId
+where title not like "% %"
+group by title
+having count(TrackId) > 9
+order by Count(TrackId)
+
+4. For each album, show the album title and the total unitprice for the album. 
+Only calculate the unit price of tracks that 
+either have the genre of “Rock” or “Pop”. 
+Order the results by the total unit price DESC
+Answer:
+select al.Title as 'Album', SUM(UnitPrice) as 'Total Album Price'
+from albums as al
+join tracks as tr
+on al.AlbumId = tr.AlbumId
+join genres as ge
+on tr.GenreId = ge.GenreId
+where ge.Name like "Rock"
+or ge.Name like "Pop"
+group by al.Title
+order by SUM(UnitPrice) desc
+
+5. Show the name of the country and the number of customers in the country.
+ Only show customers that have a 5 digit postal code, 
+or a 5 digit postal code followed by a ‘-’.
+Answer: 
+select cu.Country, Count() as 'Customers'
+from customers as cu
+group by cu.Country
+HAVING cu.PostalCode like '_____'
+or cu.PostalCode like '_____-'
+
+
+

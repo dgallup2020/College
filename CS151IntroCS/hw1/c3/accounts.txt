@@ -1,0 +1,3 @@
+ftp:x:14:50::/net/ftp:/bin/bash
+vm:x:29:29:VirtualMachine:/net/vm:/bin/bash
+mailman:x:60:60:Mailman list account:/net/mailman:/bin/false

@@ -1,0 +1,193 @@
+n: 7
+   unweighted
+   undirected
+V: a[<-a,0] b[<-e,2] c[<-e,2] d[<-e,2] e[<-a,1] f[<-a,1] g[<-a,1] 
+E: 
+   (a, e)
+   (a, f)
+   (a, g)
+   (b, e)
+   (b, f)
+   (b, g)
+   (c, e)
+   (c, f)
+   (c, g)
+   (d, e)
+   (d, f)
+   (d, g)
+degrees -
+1
+a , e
+2
+a , f
+3
+a , g
+3
+b , e
+3
+b , f
+3
+b , g
+3
+c , e
+3
+c , f
+3
+c , g
+3
+d , e
+3
+d , f
+3
+d , g
+deg(a) = 3
+1
+a , e
+1
+a , f
+1
+a , g
+2
+b , e
+2
+b , f
+2
+b , g
+3
+c , e
+3
+c , f
+3
+c , g
+4
+d , e
+4
+d , f
+4
+d , g
+deg(b) = 4
+1
+a , e
+1
+a , f
+1
+a , g
+2
+b , e
+2
+b , f
+2
+b , g
+3
+c , e
+3
+c , f
+3
+c , g
+4
+d , e
+4
+d , f
+4
+d , g
+deg(c) = 4
+1
+a , e
+1
+a , f
+1
+a , g
+2
+b , e
+2
+b , f
+2
+b , g
+3
+c , e
+3
+c , f
+3
+c , g
+4
+d , e
+4
+d , f
+4
+d , g
+deg(d) = 4
+1
+a , e
+2
+a , f
+3
+a , g
+3
+b , e
+3
+b , f
+3
+b , g
+3
+c , e
+3
+c , f
+3
+c , g
+3
+d , e
+3
+d , f
+3
+d , g
+deg(e) = 3
+1
+a , e
+2
+a , f
+3
+a , g
+3
+b , e
+3
+b , f
+3
+b , g
+3
+c , e
+3
+c , f
+3
+c , g
+3
+d , e
+3
+d , f
+3
+d , g
+deg(f) = 3
+1
+a , e
+2
+a , f
+3
+a , g
+3
+b , e
+3
+b , f
+3
+b , g
+3
+c , e
+3
+c , f
+3
+c , g
+3
+d , e
+3
+d , f
+3
+d , g
+deg(g) = 3

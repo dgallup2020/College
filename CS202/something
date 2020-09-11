@@ -1,0 +1,6 @@
+clean:  objclean
+  for b in $(PROGS); do if [ -f "$$b" ]; then rm "$$b"; fi done
+  
+  objclean:
+    for obj in $(PROGS); do if [ -f "$$obj.o" ]; then rm "$$obj.o"; fi done
+    

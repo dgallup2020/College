@@ -1,0 +1,27 @@
+n: 7
+   unweighted
+   undirected
+V: a[<-a,0] b[<-e,2] c[<-e,2] d[<-e,2] e[<-a,1] f[<-a,1] g[<-a,1] 
+E: 
+   (a, e)
+   (a, f)
+   (a, g)
+   (b, e)
+   (b, f)
+   (b, g)
+   (c, e)
+   (c, f)
+   (c, g)
+   (d, e)
+   (d, f)
+   (d, g)
+degrees - 
+deg(a) = 3
+deg(b) = 3
+deg(c) = 3
+deg(d) = 3
+deg(e) = 4
+deg(f) = 4
+deg(g) = 4
+graph is connected
+maxDistance is 2

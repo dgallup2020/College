@@ -1,0 +1,5 @@
+Shortest Cycle Program:
+1. We can make a modified depth first search approach to make a shortest cycle program. 
+2. We can start with one vertex and the degree of the vertex, and call a recursive function where we can track the path via an array and also have a variable that counts the length of a given path. 
+3. As for each path each vertex we traverse to we add the previous vertex to our array to make sure we do not traverse the same vertex twice. And also we know we completed a cycle when we check our vertex array after every traversed vertex to see if we found the first vertex again. 
+4. After we complete our first cycle, we return back to the next untraversed edge of a vertex and complete the same traversal function. We store the current shortest length of a cycle in another variable. After the return, if the next traversed path/cycle is shorter than the current shortest cycle it is replaced.

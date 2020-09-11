@@ -1,0 +1,54 @@
+March 17th Notes:
+Coverage on hw7
+The homework is going to take roughly an hour or two. If you need help you
+need to reachout early.
+
+Notes on HW7
+Rec to logging into effie. and make sure to run your sudo commands to make
+sure you get root. 
+using sudo -i you get the full -i environment. 
+editting a text file for the hostname one
+
+ssh key-pair ... 
+running teh ssh-keygen pair.
+
+ssh-copy-id -i id_rsa.pub <remote host> ex. sbaker@effie
+//going to try to copy this key into your account. 
+
+we are backing up our server to this thing. 
+log in while root. 
+
+cron will back up your system up. we need this ssh-key to make this an
+unattended back up command root. 
+
+a proper cron job:
+have to read the cron man page to understand how much you wnat to command to
+back up. 
+NOte: a script is just a piped sequence of commands. if the your command lines
+work so do your scripts. 
+
+6. another txt edit
+
+7. this one is troublesome
+reccomends to look at the config file on cs server. 
+set the document and the <directory> 
+we enable php by uncommenting the .php line
+
+Notes on Week 10 Lesson
+- creating a swap file
+>dd if=/dev/zero of=swap bs-in count-5 (5 megabytes)
+makes sure to chmod 600 the file
+format via mkswap, the labels are used for fstab, you can specify your devices
+via labels in the cases where devices change. seeing a swap now in the free
+command. 
+
+devices are basically store devices of linear array of data. aka big text file 
+its formatted a partitions. 
+usb drives probably only have 1 artitions if anything like a fat file system
+(default like windows uses). 
+
+
+
+mounting overlays itself over a directories files, mount point,. unmounting a
+device allows you to see those file inside that mount point once again. before
+mounting a devices. 

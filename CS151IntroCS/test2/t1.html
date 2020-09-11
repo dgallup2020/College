@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Test 2 canvas </title>
+ <meta charset='utf-8'>
+ <style>
+  #c { border: 1px solid black; }
+ </style>
+ <script>
+ /**
+  * (5 points)
+  * Draw a green triangle with points at (400,100), (700,500) and (100,500)
+  * with lines 5 pixels thick.
+  */
+ function draw() {
+   var ctx = document.getElementById("c").getContext("2d");
+
+ctx.beginPath();
+ctx.lineWidth = 5;
+ctx.strokeStyle = "green";
+ctx.moveTo(400,100);
+ctx.lineTo(700,500);
+ctx.lineTo(100,500);
+ctx.closePath();
+ctx.stroke();
+
+
+ }
+ </script>
+</head>
+<body onload='draw();'>
+<canvas id='c' width=800 height=600></canvas>
+</body>
+</html>

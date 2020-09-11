@@ -1,0 +1,78 @@
+March 5th Notes:
+took BASH scripting quiz today. Homework due March 8th more scripting.
+Think of an extra credit thing to do for extra credit. 
+
+THE BOOT PROCESS:
+-After power-on, control is given over to the BIOS (Basic Input/Output System)
+now the UEFI (Unified Extensible Firmware Interface) which reads the system
+configuration from the battery backs CMOS and configures the hardware and
+performs a set of basic tests called the POST (Power on Self Test.) 
+-After the boot device has been determined, the boot loader is loaded into
+memory by the BIOS and control is handed over to it. 
+-The Boot Loader is usually located on the first sector of the disk known as
+the Master Boot Record (MBR). Too small (512 bytes) to load the entire boot
+loader, the MBR is used to load a secondary boot loader, located elsewhere on
+the disk which then completes loading of the OS (kernel.) Linux uses either
+lilo (LInux LOader) or grub (GRand Unified Bootloader.) 
+-The Lilo or Grub bootloaders then load the kernel, which for example may be
+located at /boot/vmlinux inot memory and turns execution over to it. 
+-The kernel configures the CPUs and memory and initializes other hardware in
+the system (via their drivers) and starts the swapper (kswapd), mounts the
+root (/) file-system and loads /sbin/init as process 1 and starts it. In some
+systems init has been replaced by SystemD, which been designed to facilitate
+more modern boot - processes, logging, user authentication and security
+features such as containers. 
+-Init is configured by the file /etc/inittab which tells init what to do at
+each "runlevel" , which are meant to control what processes & services are
+supposed to be actively running. 
+
+Run Level : Description___
+*0 : Shutdown the system and halt. (optionally power off) 
+*1/S : Used to bring the system into single-user mode
+2,3,5 : Multi-user modes w/o x11
+4 : Multi-user mode w/ x11
+*6 : Shutdown & Reboot
+7 : Undefined
+*=Reserved. 
+
+Init also manages "gettys" that connect users to the console or other lines
+into the system. Finally init acts as the parent to all orphaned processes and
+reaps them when they exit. 
+
+Scripts for services and startup are usually stored in /etc/init.d. or
+/etc/rc.d/ in the case of Slackware. Scripts can usually be passed arguments
+"start", "stop", and "restart" to stop/start/restart the service. There may be
+other options depending on the service script. 
+
+# init <runlevel> / telinit <runlevel>
+-change runlevel
+9 = reread init-tab. 
+>runlevel
+ -Display the current runlevel
+#shutdown [-rh] <time> [warning message>]
+halt (-h) or reboot (-r) the system
+ex. 
+#shutdown -r now -reboot immediately
+#shutdown -h _10 "using buffers" -Halt the machine in 10 minutes. 
+
+#halt
+#reboot
+#poweroff
+ -Immediately halt/reboot/poweroff the system, use shutdown instead. 
+ -dont use these programs!
+
+Reading:
+ man 7 boot bootparam
+ man 8 init
+
+PARTITION TABLES:
+DOS/MBR Partitions - 32 bit, limited to 2TB (512 byte sectors)/16TB (4k
+sectors) 
+GPT-GUID (Globally Unique Identifiers) Partition Tables (8ZB @ 512 byte
+sectors) 
+
+#fdisk [-l] [devices]
+ -l list the device or all devices enumerated in /proc/partions if no device
+is given
+
+

@@ -1,0 +1,52 @@
+continue from notes on February 17th file, supposed to be Feb 18 notes
+Baker says that the machine must be running headless in the background. so
+therefore he can remote into their machine.
+
+More BASH scripting:
+
+read [-p prompt] [-s] [-n nchars] <names> 
+ -read a line of text and splits it accrodring to IFS and assigns words to the
+varible (<names) lsited. 
+ -p prompt <--- print prompt before reading input. 
+ -s  <--- do not echo input characters.
+ -n nchars <--- sto pafter reading nchars.
+ ...
+
+notes using this in passwd.sh
+
+test
+ -same as [...] and mostly [[...]], use "help that" in bash to list file
+operator, such as:
+if[[-f <file>]]; then echo "is a regular file", fi
+-f x <--- x exists & is regular
+-d x <--- ... as a directory
+-L x <--- ... as a symbolic link
+-e x <--- file exists
+
+source <file> [params]
+. <file> [<params>]
+  -reads and executes <file> in the current shell.
+  -a lot like #include in C
+
+Common Scripting utilites & programs:
+>true 
+ -always succeeds (true) while true; do 
+>false
+ -always fail (false) 
+>sort [-k n[,m]] [-n][-r][-u] <file>
+ -sorts lines in a file
+ -n numeric sort
+ -r reverse order
+ -u output only unique entries
+ -k n[,m] selects field or fields to use. 
+>uniq [-c]
+ -filters out adjacent matching lines
+ -c print a count
+>basename <path> [<suffix>]
+ -strip the directory path [& suffix] from a filename. 
+>dirname <path>
+ -strip the last component from a path. 
+>tr[-d] <set1> [<set2>]
+-translates or deletes character
+-d delete any character from set1 from the input. 
+-otherwise translates set1 onto set2 (character by characters) 

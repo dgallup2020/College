@@ -1,0 +1,57 @@
+                                 PROBLEMS FOR WEEK 4
+
+assigned: 4, 6, 9, 10  Due 9AM on Wed Feb 15
+--------------------------------------------
+Run Program (two ways possible 
+
+   ./a.out               comment: run a.out, get input from key board
+
+or 
+
+   ./a.out < nums       comment: run a.out, get input from the file nums
+
+where nums contains the input numbers
+---------------------------
+
+1.  Get each number and print it out   (p4.1.c)
+
+  while( 1==scanf("%d", &n) )
+    printf("%d\n", n);
+
+2. Get each number and add it into the total. (p4.2.c)
+   Print the final total.
+
+3. Get each number and count it.  (p4.3.c)
+   Print the final count.
+
+4. Get each number, find the total and the count. (p4.4.c)
+   Calculate and Print average value  as a floating point number.
+
+5. Get each number. Find the largest number (p4.5.c)
+   Print the largest value. 
+
+6. Get each number. Count the number of non--decreasing  runs. (p4.6.c)
+   Print the final count.
+
+7. Get each number.  Find the second largest number.   (p4.7.c)
+   Print the final second largest number. Important: the
+   second largest is NEVER equal to the largest.
+
+8. Find and print the standard  deviation for the input numbers (p4.8.c)
+
+9. Find and print the number of even numbers.   (p4.9.c)
+
+10. Find and print the number of odd numbers over 10000. (p4.10.c)
+
+-----------------------------------------------------------------
+MORE FILE STUFF
+
+FILE *fopen(const char *filename, const char *mode);
+
+char *fgets(char *buf, int size, FILE *ptr);
+
+int fscanf(FILE *ptr, char *format, addresses of vars ...);
+
+int fprintf(FILE *ptr, const char *format, vars ...);
+
+int fclose(FILE *ptr);

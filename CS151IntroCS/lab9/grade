@@ -1,0 +1,14 @@
+lab exercise #6:
+p1.js:
+p2.js:
+-1/2 output of program (p2.js) is not correct for input 'abc def':
+------ Yours: ------
+---- Reference: ----
+abc is less than def
+--------------------
+  - Shouldn't use parseInt() on the command line parameters for this program.
+
+p3.js:
+p4.js:
+p5.js:
+9.50 out of 10 points.

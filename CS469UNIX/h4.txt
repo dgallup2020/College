@@ -1,0 +1,18 @@
+1. 
+ln r[0-9a-fA-F][0-9a-fA-F].mod foo/bar
+2.
+grep -r -i -n -C 1 search .
+3. 
+grep ^sba /etc/passwd
+4.
+a. find /net/web -iname "my*.php" -ls
+b. find /tmp -mtime +30 
+c. find /tmp -mtime +1
+d. find /bin -perm /04000
+e. find /tmp -size +5M ! -user root
+5. 
+dd of=test bs=1m count=1 if=/dev/zero
+6.
+a. gzip test
+b. gzip -l test.gz
+

@@ -1,0 +1,54 @@
+input files:   num3 contains 200000 long ints 
+               to be put into the list structure
+
+               num5 contains the search values
+
+program name:   hash.c
+----------------------------------------
+build the lists
+
+                It puts each long, n,  in num3 into one of the lists.
+                
+                The hash function h says which list.
+                      n will be put into the list 
+                           head[h(n)]  header
+-------------------------------------
+using list structure
+                Get each long integer, sv,  out of num5,
+                Check is it in the 200000 numbers from num3?
+
+                It will compute the hash of each search value, sv
+                     h(sv) 
+                Then we will search list 
+                     head[h(sv)] 
+                to see if sv is in the list
+--------------------------------
+REQUIREMENTS:
+  Use the hash function defined in hash.c
+  When needed use the data structure:
+      box struct *head[R];
+  See hash.c
+
+0. file pL0.c   Use file num3 as input. Write a program to check that the hash function returns values between 0 and 65535.
+
+1. file: pL1.c  Use file num3 as input. Write a program to find the maximum number of numbers in the 65536 lists.
+
+2. file: pL2.c  Use file num3 as input. Write a program to find the number of lists with
+lists with   number of lists
+
+  0  items   num0
+  1  items   num1
+  2  items   num2
+  3  items   num3
+     .        .
+     .        .
+     .        .
+ max items    num
+
+3. file: pL3.c  Use file num3 as input. Write a program to build the lists without duplicates.
+
+4. file pL4.c Use file num3 as input. Write a program to find and print all duplicates in file num3.
+
+5. file pL5.c Use file num3 to build the list structure.  Process file num5.  Check (print) how many numbers in
+   num5 are in the list stucture. Count (print)  the number of comparisons made when you process file num5.
+   Requirement:  print only the final counts!

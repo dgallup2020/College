@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> </title>
+ <meta charset='utf-8'>
+ <style>
+  /* Place a 1 pixel border around the canvas: */
+  #c { border: 1px solid black; }
+ </style>
+ <script>
+ function draw() {
+   // ctx holds the canvas 2D rendering context:
+   var ctx = document.getElementById("c").getContext("2d");
+   // Fill out the rest of the drawing function here:
+   
+   ctx.beginPath();
+   ctx.fillStyle = "red";
+   ctx.moveTo(100,100)
+   ctx.lineTo(500,100)
+   ctx.lineTo(500,500)
+   ctx.lineTo(100,100)
+   ctx.closePath();
+   ctx.fill();
+   ctx.beginPath();
+   ctx.fillStyle = "black";
+   ctx.moveTo(100,100)
+   ctx.lineTo(100,500)
+   ctx.lineTo(500,500)
+   ctx.lineTo(100,100)
+   ctx.closePath();
+   ctx.fill();
+ }
+ </script>
+</head>
+<!-- The draw() function defined above is called when the body finishes loading: -->
+<body onload='draw();'>
+<!-- A 800x600 canvas with the ID 'c' -->
+<canvas id='c' width=800 height=600></canvas>
+</body>
+</html>

@@ -1,0 +1,107 @@
+CS469/569 Assignment #7 (10 of 11 points)
+
+Time to work on your own CS469 virtual machine that I have setup for you. To
+access your machine you can ssh to cs469@u## where ## are the last two digits of
+your CS469 account.  This can be done from CS, effie or any of the A-015 Unix
+lab machines. The password for the CS469 account is 'cs469'.  Change this
+password immediately upon logging in for the first time.
+
+Note that you will need to perform many of these tasks as the super user on the
+machine.  You can become root, using the sudo command, 'sudo -s' or 'sudo -i'
+from the cs469 account.
+
+There is nothing to "handin", your VM will be graded after the due-date.
+
+Tasks to be performed:
+
+0) Change your VM's cs469 account password to one only you know. (changed
+password) 
+
+1) (1pt) Change the host-name:  Your virtual machines host name should be:
+   u##.indstate.edu where ## is the last two digits of your CS469 user-name. Use
+   the "hostname" command to set the host-name immediately (w/o having to
+   reboot), and edit the file /etc/HOSTNAME to make it permanent. Be sure to
+   keep the domain .indstate.edu appended to your machines host name when
+   editing /etc/HOSTNAME. (checked, did both and made sure)
+
+2) (1pt) Make a swap "file":  Use the "dd" command to make a 512MB file in /
+   called "swap" (i.e. /swap) then chmod it so only root can read it, use mkswap
+   to setup the swap file. Add an entry in /etc/fstab (man 5 fstab) for your
+   swap file, and finally use swapon to turn it on. If you're successful you
+   should see the addition of swap with the "free" command.
+
+   NOTE: It is incorrect to put your swap file in the wrong place, to have the
+   wrong permissions, to be the wrong size and to not be listed correctly in
+   /etc/fstab (swap file in at /) (believed this is right) 
+
+3) Backup your system to effie:
+ a) (1pt) First create a public ssh key for the root account:  Become root, then
+    in /root/.ssh/ create a ssh key-pair using "ssh-keygen".  Create an rsa or
+    an ecdsa key type.  This should create two files, one with a .pub ending.
+    Use ssh-copy-id to install the public key part into your class cs469##
+    account. You should have a copy of the .pub file in your
+      ~/.ssh/authorized_keys
+    file if you've done it correctly. The root account on your virtual machine
+    should be able to login to your cs/effie account from w/o requiring a
+    password now.
+
+    (created the rsa key, copied it over to the class account from root) (Made
+sure both have the same key) (won't let me login from root vm to class account
+tho) 
+
+    NOTE: It is fairly important that you protect access to your CS account by
+    making sure you are using a secure password only you know for your virtual
+    machine's CS469 account.
+
+ b) (2pts) Create a script called 'backup' that backs up the entire system to a
+    directory (/net/bkups/cs469##/) on effie using "rsync".  It should not
+    backup the "/swap" file you setup in step 1 above. The directory
+    /net/bkups/cs469##/ on _effie_ should only be accessible by you. The script
+    should be made executable and installed into /usr/local/bin/. The last line
+    of the script should use an ssh command to run the "touch" command on the
+    backup directory on effie to indicate the time when your backup completed.
+    
+    NOTE: A single command can be run on a remote machine by adding the command
+    at the end of the ssh command, for example: ssh user@host "command".  Your
+    backup must be stored in cs469##@effie:/net/bkups/cs469##/
+
+ c) (1pt) Create a cron entry for your backup script to be run every night at a
+    specific time.  As root, run 'crontab -e' and add the entry.  The time yours
+    should run is 1am + (10minutes * ##) where ## is the last two digits of your
+    CS469 user name.  Thus if your username was cs46911 you would schedule your
+    backup at 2:50am.
+
+4) (1pt) Give the sbaker account sudo (root) access to your machine.  Edit the
+   /etc/group database (man 5 group) and append my user-name to the "wheel"
+   group.
+
+5) (1pt) Setup the MariaDB database server:  Read the file /etc/rc.d/rc.mysqld
+   and setup the server. Make sure that the server will start at boot (make the
+   /etc/rc.d/rc.mysqld script executable.) If you mess up the installation just
+   remove all the files in /var/lib/mysql/ and start over.
+
+6) (1pt) Create a .my.cnf file in the root account that will automatically login
+   to the MariaDB server as the root user.  Use the Internet to figure this one
+   out.
+    
+   NOTE: this file should only be accessible by root.
+
+7) (1pt) Setup the Apache HTTP server (/etc/rc.d/rc.httpd) Make it start on boot
+   and configure /etc/httpd/* to use /net/web as its document root directory
+   (Note: Do NOT change the "server root" directory) and enable PHP, making sure
+   that index.php is accepted as a default web page in addition to index.html.
+   Make a test index.php file in /net/web and verify that your web server is
+   working by browsing to http://effie.indstate.edu:469##/
+
+-- index.php --
+<?php
+  echo phpinfo();
+?>
+-- index.php --
+
+8) (1pt) Transfer to your machine the the Slackware package:
+   effie:/net/misc/sbopkg-0.38.0-noarch-1_wsr.tgz
+   and install it using the 'installpkg' command.  After installing it, sync the
+   remote repository with the local mirror, use sbopkg -h for help.  Use sbopkg
+   to then install "rclone".
+

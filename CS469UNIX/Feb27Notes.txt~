@@ -1,0 +1,106 @@
+February 27th Notes:
+
+Continuing ATTRIBUTES OF PROCESS/THREADS:
+*File-system information (root fs, cwd, umask)
+*I/O Descriptors (files, IPC (interprocess communication), network
+objects(sockets) /proc/*/fd , 
+*Namespaces (hierarchy of monted file-systems) (containers)
+*Signal Handlers
+*Credentials (man 7 credentials), consisting of:
+	-Process (PID) / Thread Group ID
+	-Parent Process ID (PPID) 
+	-Process Group ID (PGID) 
+	-Pipe Leader's PID / Session ID (SID) (for shell job control - to
+allow a signal to be sent to all processes in the group/session. 
+	-User ID (real UID, effective UID, saved-set UID; FS uid) 
+	-Readl UID - UID you had before a setuid, (may be modified by
+setreuid)
+	-effective UID - UID you get from a successful setuid.
+	-File-system UID - UID used for FS accesses.
+	-Group ID (read GID, effective GID, saved-set GID, FS GID,
+supplimental GIDS - addiitonal groups that the process can switch to using
+sg/chgrp.) 
+*Scheduling priority:(niceness: -20 (highest/least nice), 19 (lowest priority,
+most nice) 
+	A nice process doesn't take up all the CPU for itself. 
+*Resource limits (limit/ulimit tcsh/bash builtins)
+*Processor Affinity - how attached a process is to certain processors
+*Additional Meta Information:
+	-start time
+	-CPU time used
+	-Processor currently running on. 
+	-Current State: R/S/D/T/X/Z
+-/proc entries for processes (man 5 proc)
+	/proc/[0-90+ - the /proc entry for a process
+	/proc/self - the symlink ot the currenl processes
+	/proc/*/fd - links to the files for the process (where fuser,lsof get
+their info)
+/proc/*/cwd - links to the processes current working directory.
+
+Signals (man 7 signal) 
+-Signals are like 1/2 bit messages to a process that can have one of the
+following effects. 
+	-Terminate the process
+	-Be ignored by the process ("blocked" / "ignored")
+	-Terminate & dump core (image of the process memory)
+	-Stop the process 
+	-Continue Process Execution
+	-Turn Execution over to a custom handler. (caught signal)
+-Normal signals number from 1 to 31, and many have default, SIGKILL (terminate
+w/ extreme prejudice) and SIGSTOP (stop execution) cannot be caught blocked or
+ignored. 
+
+>kill -<signal #/signal name> <pid> [<pid>...]
+	-send a signal to a process or processes
+>pidof <name> 
+	-lists the pids by that <name>
+>killall [-<signal>] <name>
+	-send a signal to all process by <name> 
+>pgrep [pattern] -give you the PID's of processes matching pattern
+>pkill [pattern] -sends signal to processes matching pgrep pattern
+
+PROCESS RESOURCE LIMITS: 
+>nice [niceness] <program> [<args>]
+	-launch program "nicely." Default I/O niceness. 
+>renice [-n] priority [-g | -p | -u] identifier
+	-set the niceness on a running process
+	-g = group name
+	-p = PID's (default)
+	-u = users
+>ionice - get/set the I/O scheduling class & priority
+	-c <class> 
+		3) idle ---- lowest priority
+		2) Best-effort ---- normal (8 levels, 0 -highest, 7 -lowest)
+		1) real-time ---- highest (8 levels
+	-n <level> (0-7)
+>prlimit |limit |ulimit
+	-set resource limits
+	prlimit - only affects programs launched by it. 
+	limit - csh shells
+	ulimit - sh shells
+
+CORE DUMPS: 
+>man 5 core - info on coredumps. Make note of limitations. 
+>limit coredumpsize unlimited
+>ulimit -c unlimited 
+	-lets process generate core-dumps for debugging. 
+- A core dump demo: 
+
+-----crash.c------
+#include <stdio.h>
+int main (void){
+char * s = NULL;
+printf("%s\n",s);
+return 0;
+}
+----------
+>gcc -ggdb -o crash crash.c
+>limit coredumpsize unlimited
+>./crash
+segmentation fault (core dumped)
+>gdb ./crash core
+(gdb) where ,etc.
+-setuid processes cannot dump core (create 0 byte corefiles) unless
+/proc/sys/fs/suid_dumpable is set. Read core(5) for other limitations.
+echo 1 > /proc/sys/fs/suid_dumpable
+

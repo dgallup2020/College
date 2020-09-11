@@ -1,0 +1,17 @@
+1. grep "^ds501[0-9][0-9]" /etc/passwd | wc -l
+2. grep "^ds501[0-9][0-9]" /etc/passwd | awk -F: '{print $5}' | sed -n 's/,.*//p'
+3. mean(df$wgt1)
+4. mean(df$wgt1[df$type == 'Q'])
+5. df$type[df$type == 'C' & df$count1 == 4] <- 'B'
+6. df$total <- df$count1 + df$count2
+7. ag <- aggregate(df$id,list(df$id),length)
+ag[ag$count == max(ag$count),]
+or you can use order ag[order(ag$count,descending=TRUE),] gxq
+8. 
+9. ag <- aggregate(df$type,list(df$type),length)
+names(ag) <- c("type","count")
+pdf("problem9.pdf")
+barplot(ag$count,names.arg=ag$type)
+dev.off()
+10. m <- max(df$wgt2)/2
+length(df$id[df$wgt2 >= m])

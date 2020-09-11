@@ -1,0 +1,14 @@
+lab test #1:
+-5 HTML output does not match reference image:
+  - Width of list is not correct.
+  - 24pt font row is not correct.
+  - No underlined text
+  - No bolded text.
+  - Equation is not formatted properly.
+
+-2 HTML errors or warnings in file 'b/t.html':
+   line 10 column 1 - Warning: <tbody> isn't allowed in <body> elements
+   line 10 column 1 - Warning: inserting implicit <table>
+   line 10 column 1 - Warning: missing </table>
+-6 HTML output does not match reference image:
+17.00 out of 30 pts.

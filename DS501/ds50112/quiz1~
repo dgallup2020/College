@@ -1,0 +1,35 @@
+Answers to Quiz 1 of CS459
+Dylan Gallup
+ds50112
+
+1. All Students who recieved an A.
+	grep 'A$' student.txt
+
+2. All Students whose first name begins with A.
+	grep ',A.*,' student.txt
+
+3. All Students whose last name begins with A.
+	grep '^A' student.txt
+
+4. Print a list of 'A' students with the format: firstname lastname (space between first and last name), sorted by last name.
+	grep 'A$' student.txt | awk 'BEGIN {FS = ","}; {print $2 " " $1}' | sort -k 2
+
+5. Print data on students (original format) whose first and last name begin with the same letter
+
+	grep '^\(.\).*,\1.*,' student.txt
+
+
+Bonus Questions
+6. Find the Longest Name (first + last).
+	awk 'BEGIN{FS = ",", max = 0}; {if(length($0) > max){max = length($0);fname = $2; lname = $1}} END{print fname " " lname}' student.txt
+
+Should be Lindsey Higginbotham
+
+7. Find longest first name.
+
+	awk "BEGIN{FS = ",", max = 0}; {if(length($2) > max){max = length($2);fname = $2; lname = $1}} END{print fname " " lname}' student.txt
+
+Should be Christopher Guillen
+
+
+

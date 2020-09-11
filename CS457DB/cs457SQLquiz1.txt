@@ -1,0 +1,80 @@
+Dylan Gallup
+cs457 SQL QUIZ 1:
+1. For all albums, list the album name and artist for that album
+answer: 
+SELECT Title AS 'Album Title', Name as 'Artist'
+FROM albums AS al
+join artists as ar
+on al.AlbumId = ar.ArtistId
+;
+
+2. For all tracks, list the album name, track name, and genre name
+Answer: 
+SELECT  al.Title as 'Album Name', tr.Name as 'Track Title', ge.Name as 'Genre'
+from tracks as tr
+join albums as al
+on tr.AlbumId = al.AlbumId
+join genres as ge
+on tr.GenreId = ge.GenreId
+;
+
+3. For all tracks, list the album name, track name, genre name, and media type.
+Show only the rows that have “Rock” in the album name.
+Answer:
+SELECT al.Title as 'Album Name', tr.Name as 'Track Title', ge.Name as 'Genre', mt.Name as 'Media Type'
+from tracks as tr
+join albums as al
+on tr.AlbumId = al.AlbumId
+join genres as ge
+on tr.GenreId = ge.GenreId
+join media_types as mt
+on mt.MediaTypeId = tr.MediaTypeId
+Where ge.Name like 'Rock'
+;
+
+4. List all customers first and last name in a combined field called 
+“Full Name”, city, state, and county. Order the results by their last name ascending.
+Answer: 
+SELECT (cu.Firstname || ' ' || cu.LastName) as 'Full Name', cu.City, cu.State, cu.Country 
+from customers as cu
+ORDER BY cu.LastName ASC
+;
+
+5. List all employees first and last name in a combined field called “Full Name”, 
+their birthdate, the last name of the person they report to, and when they were hired. 
+Order the results by their hire date descending.
+Answer:
+SELECT (em.Firstname || ' ' || em.LastName) as 'Full Name', em.BirthDate as 'Birth Date', em.HireDate as 'Hire Date', em.ReportsTo as 'Reports To'
+from employees as em
+ORDER BY em.HireDate DESC
+;
+
+6. For all playlists, show the playlist name 
+and each track name that it has in the playlist.
+Answer: 
+SELECT pl.Name as 'Playlist Name', tr.Name as 'Track'
+from playlists as pl
+join playlist_track as plt
+on pl.PlaylistId = plt.PlaylistId
+join tracks as tr
+on tr.TrackId = plt.TrackId
+order by pl.Name asc
+;
+
+Bonus:
+For all invoices, show the customer first and last name in a combined field called “Full Name”,
+the invoice date, all track names included in the purchase, 
+the cost for each of the invoice items, and the quantity of the invoice items.
+Answer: 
+SELECT (cu.FirstName || " " || cu.LastName) as 'Full Name', inv.InvoiceDate as 'Invoice Date',
+tr.Name as 'Track Purchased', invit.UnitPrice as 'Cost of Track', invit.Quantity,
+from invoices as inv
+join customers as cu
+on inv.invoiceId = cu.CustomerId
+join invoice_items as invit
+on inv.InvoiceId = invit.InvoiceItemId
+join tracks as tr
+on invit.TrackId = tr.TrackId
+;
+
+

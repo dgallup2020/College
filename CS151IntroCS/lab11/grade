@@ -1,0 +1,48 @@
+lab exercise #11:
+l4.js:
+-1/2 output of program (l4.js) is not correct:
+------ Yours: ------
+    1<!DOCTYPE html>
+    2<html>
+    3<head>
+    4 <title> JavaScript 1 </title>
+    5 <meta charset='utf-8'>
+    6</head>
+    7<body>
+    8<script>
+    9 // This is a single line comment.
+    10 /**    
+   11  * Prints "Hello, world!" inside the body and to the console.
+   12  * Use Ctrl-Shift-i or Ctrl-Shift-j or Ctrl-Shift-c to access the browesers
+   13  *  JavaScript console.
+   14  */
+   15 document.write("Hello, world!");
+   16 console.log("console Hello, world!");
+   17</script>
+   18</body>
+   19</html>
+   20
+---- Reference: ----
+    1 <!DOCTYPE html>
+    2 <html>
+    3 <head>
+    4  <title> JavaScript 1 </title>
+    5  <meta charset='utf-8'>
+    6 </head>
+    7 <body>
+    8 <script>
+    9  // This is a single line comment.
+   10  /**
+   11   * Prints "Hello, world!" inside the body and to the console.
+   12   * Use Ctrl-Shift-i or Ctrl-Shift-j or Ctrl-Shift-c to access the browesers
+   13   *  JavaScript console.
+   14   */
+   15  document.write("Hello, world!");
+   16  console.log("console Hello, world!");
+   17 </script>
+   18 </body>
+   19 </html>
+   20 
+--------------------
+
+9.50 out of 10 points.

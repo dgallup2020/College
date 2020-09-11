@@ -1,0 +1,17 @@
+1a: df -a -h
+1b: df -i -a -h
+2: setfacl -m u::rwx,u:bob:rwx,g:smiths:rx,g::-,o::- file.txt
+note default acls are only for directories only
+3:
+umask calculation:
+def for a file is 0666 
+we want to subtract something to end with 0640.
+0026
+4a:touch out.sh 
+4b:chown alice.users out.sh
+4c: chmod ug=rx,o= out.sh
+5: cat -n *.sh
+6a: head -n 20 /etc/password
+6b: tail -n +21 /etc/password
+
+

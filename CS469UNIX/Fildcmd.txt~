@@ -1,0 +1,105 @@
+Jan 28th Notes Continuing from ACL.txt file
+
+FILES - READING & WRITING:
+>cat [n] [<file...>]
+ -concatenates files
+ -n <--- number lines of output
+ -s <--- "squeeze-blank" is really useful
+ -v <--- show non-printable characters
+
+>more [<file...>] ---> pagenate output
+>less
+>most 
+
+environment : PAGER -set to the pagenator to use
+ tcsh: 
+ setenv PAGER 'value' 
+ bash: export PAGER='value'
+
+>head [-n <lines>] [<files...>]
+ -prints the first 10 lines of a file
+ -n <lines> <---  set # of lines to print.
+
+>tail [-n <lines>] [-f] [<file...>]
+ -printes the last 10 lines of a file
+ -n lines <--- sets # lilnes to print, t<lines> = from begin of file
+ -f follow <--- watch & print updates to the file. 
+
+"useful for webdevel because you see what is getting pulled out of the server
+and watch your errors"
+
+>grep [-r] [-i] <pattern> [<files/path>]
+ -searches for pattern (a regex) in file
+ -r <--- recursive
+ -i <--- ignore case
+ -usually used to find fixed string
+
+>gzip <-- compress files using Lempel-Ziv coding
+> xz <--- another compression format
+>compress / uncompress - an old compressor
+
+>zcat, zmore, zless, zgrep
+ -perform op on gzip compressed files. 
+
+>file [-i] [<file>]
+ -print the file type (-i = mime type) of a file
+ -s look at device files.
+
+>dd [if=<input>] [of=<output>][bs=<blksize>][count=<#blocks>]
+ -duplicate a file
+example: 
+ to make a swap file
+ dd if=/dev/zero of=/swap bs=1k count=4096k
+ chmod 0g-rwx /swap
+ mkswap /swap
+ swapon /swap
+ 4096k = 4M 
+
+File System Hierarchy Standard (FHS / original name FSSTND):
+ -A standard that defines the file-system hierarchyp of the unix f.s. 
+ -current version 2.3 (http://www.pathname.com/fhs/)
+ -maintained by the Linux Foundation
+ -FILES section of man pages will usually note file locations of things
+  relavent to the program
+ -man 7 hier
+
+/ <--- the root of the file system
+/bin <--- executables/"binaries" needed before a /usr is mounted.
+          (single-user mode)
+/boot <--- kernels /boot loader files go
+/dev <--- where device files are 
+/etc <--- system wide config files
+/etc/rc.d/ <--- slackware init scripts
+/etc/X11 <--- X windows system config files.
+/etc/init.d <--- system V init scripts
+/home <--- typically user home dirs
+/lib,/lib64 <--- system libraries (essential for executables in /bin,/sbin
+/media <--- spare, usally temporary mount points, usually for removalable
+media (/media)
+/mnt ^
+/opt <--- opitonal local packages
+/proc <--- system & process information virtual pseudo-file-system (man 5
+proc)
+/root <--- root's home dir
+/run <--- system run-time files
+/sbin <--- system (admin) executables needed before /usr is mounted
+/srv <--- files server by the system (e.g. web-server) 
+/sys <--- system information pseudo-file-system. 
+/tmp <--- system wide temporary files, not guaranteed to be preserved
+          between reboots (may be a ram-disk) 
+/usr <--- read-only data, historically a secondary hierachy
+          to be mounted after / , so executables /data that might not be
+available during boot. 
+/usr/bin <--- user executables
+/usr/include <--- standard include headers for C/C++
+/usr/lib* <--- libraries
+/usr/local <--- a territory hierarchy for locals system additions
+/usr/sbin <--- non-essential system executables (daemon) 
+/usr/share <--- share data
+/usr/src <--- source code (e.g. kernel source)
+/usr/x11 <--- X window executables (deprecuted)
+
+
+
+
+

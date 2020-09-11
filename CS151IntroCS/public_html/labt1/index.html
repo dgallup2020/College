@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Lab exercise #4 image comparator </title>
+ <meta charset='utf-8'>
+ <style>
+  #img { width: 800px; height: 600px; border: 1px solid black; }
+  .box {
+    float: left;
+    width: 60px; height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+  }
+ </style>
+ <script>
+ function flip(path, label) {
+   document.getElementById("img").src = path;
+   document.getElementById("label").innerHTML = label;
+ }
+ </script>
+</head>
+<body>
+  <table>
+  <tbody>
+   <tr><td id='label'>Reference Image
+   <tr><td><img id='img' src='http://cs.indstate.edu/~sbaker/cs151/test1/l.png' alt='image'>
+   <tr><td> Mouse over the boxes to switch images:
+   <tr>
+    <td>
+     <div class='box' onmouseover='flip("http://cs.indstate.edu/~sbaker/cs151/test1/l.png","Reference Image");'> Ref<br>List</div>
+     <div class='box' onmouseover='flip("l.png","Your page");'> Your<br>List </div>
+     &nbsp;
+     <div class='box' onmouseover='flip("http://cs.indstate.edu/~sbaker/cs151/test1/t.png","Reference Image");'> Ref<br>Table </div>
+     <div class='box' onmouseover='flip("t.png","Your page");'> Your<br>Table </div>
+  </tbody>
+  </table>
+</body>
+</html>

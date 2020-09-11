@@ -1,0 +1,7 @@
+hw2.html: 
+-1/2 Extra table column.
+-1/2 HTML errors:
+  - ul on line 28 not closed.
+  - table cell not in table row on line 47
+
+9 Points

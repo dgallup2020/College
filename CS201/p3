@@ -1,0 +1,96 @@
+                      Problem Set p3
+
+Directions: For each program below you must write an addtional file that
+contains a main function that tests the function below. Example: for
+problem p3.1 below you must also write the file:
+
+m3.1.c:
+-------------------------
+#include<stdio.h>
+
+char *myStrchr(const char *s,  int c);
+
+int main() {
+  const char *s = "This is a test";
+  char c; 
+  printf("Please enter a character: ");
+  scanf("%c", &c);
+  char *p = myStrchr(s, c);
+  if (p)
+    printf("index of %d\n", p-s);
+}
+-----------------------------
+
+compile command:  gcc m3.1.c  p3.1.c
+-----------------------------
+
+1. Write the program file  p3.1.c . It should define the function
+
+       char *myStrchr(const char *s, int c)
+
+The value returned by the function is the first address in
+string s whose code is equal to c or 0 if code c does not appear.
+
+
+2. Write the program file  p3.2.c . It should define the function
+
+char *myStrrchr(const char *s, int c)
+
+The value returned by the function is the last address in
+string s whose code is equal to c or 0 if code c does not appear.
+
+3. Write the program file  p3.3.c . It should define the function
+
+       int myStrcmp(const char *s1, const char *s2)
+
+The value returned is negative, zero, or positive depending on
+whether s1 is smaller, equal, or larger than s2.
+
+4. Write the program file  p3.4.c . It should define the function
+
+        int myStrcasecmp(const char *s1, const char *s2)
+
+This function ignores case (characters 'M' and 'm' are considered
+equivalent.  The value returned is negative, zero, or positive 
+depending on whether s1 is smaller, equal, or larger than s2.
+
+5. Write the program file  p3.5.c . It should define the function
+
+        char *mulstrcpy(const char *src,  int m)
+
+This function returns a string that consists of m copies of string src.
+
+
+6. Write the program file  p3.6.c . It should define the function
+
+            int myToupper(int c)
+
+This function returns its plug-in value, c,  unless c is the code for a 
+lower case letter ('a', 'b', 'c', ..., 'z'). It that case the function
+returns the code for the corresponding upper case letter.
+
+7. Write the program file  p3.7.c . It should define the function
+
+          int myIsalpha(int c)
+
+This function returns 1 if the plug-in value in c is the code for a letter,
+upper or lower case. It returns 0 otherwise.
+
+8. Write the program file  p3.8.c . It should define the function
+
+          int myIsdigit(int c)
+
+This function returns a 1 if the plug-in value in c is the code for a 
+digit ('0', '1', '2', ..., '9'). It returns 0 otherwise.
+
+9. Write the program file  p3.9.c . It should define the function
+
+         char *myStrstr(const char *haystack, const char *needle)
+
+The function searches for the string needle inside the string haystack.
+It returns the address of where needle begins inside of haystack. Example:
+the call 
+              myStrstr("something meta", "me") 
+
+will return the  address "something meta"+2. If needle is not found, the
+function returns 0.

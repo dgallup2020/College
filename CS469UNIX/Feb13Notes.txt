@@ -1,0 +1,29 @@
+Feb 13th Notes:
+Homework Due Friday. Still add sbaker as a user. 
+Baker wants it done by next week. 
+
+Last classes notes was a continuation on scripting. 
+
+cont. Bracket and Variable Expansion: 
+A word is expanded for all the possible meaning it would have. variables and
+wildcards are common ones. 
+{n..m} expands from n to m 
+ex. {a..z} {01..20} cs469{00..20}
+only two periods
+
+{n..m..5} expands from n to m incrementing by 5.
+
+$var Expands the variable <var>.  
+${var} Expands the variable <var>
+${var[index]} expands the <index> element of the array <var> 
+${var[*]} expands <var> in the same way as $*. 
+${var[@]} expands <var> in the same way as $@
+${#var[*]} expands to # elements in the array <var> 
+${!var[*]} expands to the associative array ekys of var
+${var:-word} use <words> as a default if var is unset or null. 
+${var:?word} display the error 'word' if var is unset or null. 
+
+ex. Script
+#!/bin/bash
+src=${1:?usage: get source [dest]";
+dst="${2:-.}"

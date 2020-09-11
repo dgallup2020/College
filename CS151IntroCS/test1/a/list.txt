@@ -1,0 +1,11 @@
+    This background is lightgreen
+    The background is lightblue on the even items
+    There are horizontal rules above and below the list
+    The list itself has a width of 600 pixels
+    The main font size is 14 points
+    This font is 24 points
+    Italic text
+    Underlined text
+    Bolded text
+    An equation: E=mc2
+    This background is lightgray 

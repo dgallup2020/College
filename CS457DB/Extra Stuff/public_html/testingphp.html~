@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<h1> this form is managed by Dylan Gallup</h1> 
+		<p> this is the address: cs.indstate.edu/~cs45702/testingphp.html</p>
+		<?php include './helloworld.php';
+			       echo "test 1 test 2"
+			       echo $name;
+			       echo $email;
+		?>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+</html>

@@ -1,0 +1,6 @@
+ufo.html: 
+-2 UFO movement off-screen not quite right (you should draw the UFO about the
+  origin, like the ship.)
+-1/2 UFO movement not quite correct (no level flying)
+
+7.5 Points

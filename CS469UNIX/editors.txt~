@@ -1,0 +1,97 @@
+Editors::
+-Terminal based editors
+  vi/vim/elvis -vi based editors
+  emacs/jove -emacs based editors
+  nano/pico -simple to use
+  ne - "nice editor" (<esc><esc>/f1 to drop down a menu)
+
+Vim::
+-2 edit modes, command mode & insert mode.use <esc> to switch back to command
+mode when in insert mode
+-command mode:
+ commnad mode the letters you type are edit or movement commands
+ you can prefix them w/ a number to do command that number of times: <#><cmd>
+ ex. 3dd -delete 3 lines. 
+
+-movement:
+ use the arrow keys or h,j,k,l
+ w/b <--- forward/backward a word at a time
+ 0/$ <--- moves to beginning/end of a line
+ H/M/L <--- TOP/MIDDLE/BOTTOM of the screen
+ G/1G <--- last/first line in the file
+ <ctrl> -f / <ctrl> -b <---- forward/backward one screen.
+ /<search> <----  search for <search> in file ; does regex searching
+ /<enter> <---- repeat the last search
+ n/N - Repeat last search in same/opposite direction
+
+-Deleting:
+ x <--- delete character under the cursor
+ X <--- delete character before the cursor
+ w <--- delete word under the cursor
+ dd <--- delete line the cursor was on
+ D <--- delete from cursor to EOL. 
+
+-Editting:
+ c <--- overwrite text from cursor to EOL (switces to insert mode)
+ i <--- inserts test before the cursor.
+ a <--- append text 
+ A <--- Move to EOL, then append. 
+ o <--- open a new line below the cursor
+ O <--- opens a new line above the cursor
+ J <--- Join lines together
+ u <--- undo most recent edit
+ U <--- undo all edits on a single line
+
+:Commands:
+ :w <--- write changes
+ :wq <--- save and quit
+ :q <--- quit w/o saving
+ :!q <--- really quite w/o saving
+
+vimtutor walks thoughout all that was covered above
+teachjove is the same thing
+
+Other sources of information:
+ /usr/doc/*
+ /usr/src/linux/documentation/*
+ google.com
+ wiki
+ 
+Basic Wildcards:
+ wildcards are not regular expressions, they are expansions performed by the
+shell to filenames in the file system and can be "escaped" by either quoting
+them as a string or back-slash (\)
+ ~ <--- home dir (must be first character of the path)
+ ex. cd ~
+     cp file ~
+ ~/<username> <--- is <username>'s home dir
+ * <--- match 0 or more characters in a filename
+ ex. R* <--- anything file beginning with w/ R
+ ? <--- match any single character in a file name.
+ ex. b??? <--- anything starting w/ b and exactly 4 chacters in length
+ [...] <--- like ?, but only matches any of the specified characters in the
+brackets
+ [a-z] <--- match any letter in the range a through z. Dash (-) must appear at
+the beginning or end to be not be a special character, or must use an escape
+character in front .
+ [^a-z] <--- any character NOT listed. 
+
+Bash(but not tcsh) includes:
+ {<pattern>,<pattern>,<pattern>,...} <--- matches any of the given patterns
+ ex. {a,[q-t],z}* 
+      match anyfile starting w/ a, q though t or z
+
+Files:
+ one of the Unix philosophies is everything should present as a 'file',
+including devices, whenver possible
+ File/dir names likely limited to 255 characters (depends on the file-system
+being used) File-names may not contain '/' (the path component seperator
+character) or the null byte ('\0') (likely a limitation of the kernal being
+written in C.) 
+ path lengths are likely limited to 4096 bytes (depends on the file system) 
+  / <--- root of the file system. 
+  . <--- current directory
+  .. <--- parent directory
+  .* <--- "hidden" file (not listed by default by ls, not otherwise special) .
+ path components are seperated by forward slashes
+  ex. /etc/rc.d/rc/oca/

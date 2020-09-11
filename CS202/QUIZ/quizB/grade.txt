@@ -1,0 +1,4 @@
+2) 6/6
+3) 2/3 - need to do floating point division
+
+total: 8/9

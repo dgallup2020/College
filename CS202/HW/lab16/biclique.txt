@@ -1,0 +1,23 @@
+7
+undirected
+unweighted
+a
+b
+c
+d
+e
+f
+g
+a e
+a f
+a g
+b e
+b f
+b g
+c e
+c f
+c g
+d e
+d f
+d g
+# https://en.wikipedia.org/wiki/Gallery_of_named_graphs#/media/File:Biclique_K_3_4.svg

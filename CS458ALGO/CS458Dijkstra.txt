@@ -1,0 +1,25 @@
+Shortest Path from s to all nodes. 
+
+We know that a is only 3 since its a neighbor to s. A = 3
+Then B is 4 because it is also a neighbor to s.  B = 4
+
+Then we move back to a since it was shorter.
+So d = 7 and g = 10. 
+We are done with a.
+
+Then we move back to b since it was second shortest from s.
+So c = 7 and e = 9. We are done with B. 
+
+Then we go to D.
+The only one we can update is e, however its value is 9, which we can't update. 
+so we cross D off.
+
+Then we go to C.
+C to A is too long, 
+
+a=3
+b=4
+c=7
+d=7
+e=9
+g=10

@@ -1,0 +1,67 @@
+Regex cont. from Jan 30th
+
+IP addresses: 
+
+Programs that use REGEX: 
+> Grep / egrep / fgrep
+>sed - stream editor for filtering and transforming text
+-n 
+-e <expression> 
+
+Perl Regular expressions syntax:
+>man pcresyntax
+>man pcrepattern
+>pcregrep
+
+HOW TO MAKE SHELL SCRIPTS:
+-Invocation:
+	-text files that have been made executable (chmod a+x file) can be
+made into scripts provided the first line begins with #! folowed by the path
+of the program that will be fed the text file as its stdin. 
+	-one additional command line parameter can be provided to the
+interpreter
+
+ex. #!/bin/bash
+
+-Various types of shells one can use on Unix:
+Bourne sh-compatible: sh, bash, ash, dash, ksh, zsh, 
+C shells :csh, tcsh
+-Other purely scripting; perl, python, php, node.js, etc. 
+-we will focus on bash scripting (a IEEE Standard 1003.1 conformant shell) 
+
+#!/bin/bash
+-l = login shell (interactive)
+-c 'command' -runs the "script" command.
+-x trace / prints everything it doesn't "set -x"
+
+Interactive login startup scripts:
+/etc/profile
+~/.bash_profile
+~/.bash_login
+~/.profile
+
+Interactive non-login startup scripts:
+~/.bashrc
+
+login shell exit scripts:
+~/.bash_logout
+
+Grammar:
+-Comments are denoted by an unquoted, unescpated '#' and contiue ot the end of
+the line
+(command) Pipeline:
+[time [-p]][!] <cmd1> [<| or |&> <cmd2>...]
+-connects the output of <cmd1> to the input of <cmd2>
+time -display th eamount of user/system/wall clock time used. 
+! -inverth the return of the pipeline (i.e. success become failure, failure
+becomes success.) 
+
+if <cmd>; then <cmd>  
+
+| - pipes stdout of <cmd1> to stdin of <cmd2>
+|& == 2>&1 | -pipes both stdout/stderr of <cmd1> to stdin of <cmd2>
+
+ex. ls -la|less
+> ps aux | grep "^sbaker"
+>man gcc 2> /dev/null | wc -l | awk '{print $1/66}'
+>time sleep 1

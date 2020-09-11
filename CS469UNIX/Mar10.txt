@@ -1,0 +1,119 @@
+March 10th Notes:
+The quiz was pretty poor. people did really bad
+The assignment was also really bad. He is having us redo it. 
+We have big issues with syntax of bash. 
+the assignment got pushed back the week after the next. because the syntax is
+that bad. 
+
+Mid-term next class:
+1 page of hand written 8.5 by 11 sheet of notes, can be double sided. 
+Vast majority is short answer, writing bash commands are safe. 
+everything is on the test, except for the stuff we talked about last week. 
+Baker says it should take no more than 30 min. 
+
+Assignment 6 Notes: 
+STAT IS A BIG PART OF THIS ASSIGNMENT
+Start on the assignment tonight!
+
+1. Using printf is your friend with stat. 
+2. Note the printf isn't the same as the printf in c
+#printf "|%-10s|\n" "text" Playing with the format to just make it right
+3. People have been tripped here.
+	he wants there to be generated passwords. 
+4. == to cat -n. Reading loops are the hint. (while read ...) 
+	If you figure out how to use that, you do this.
+5. We are dealing with file params and we deal with stuff. let = allows you to
+do integer math. $[] won't fly. The internet is not needed. He wants people to
+ask for help. Keep counts using let and we can interate through the files. 
+
+Lets Go Over the Bash Grammar: 
+if <list> 
+then <list>
+elif <list> # anew if
+else <list> 
+
+while <list>
+do
+  ...
+done
+
+for var #goes over positional params
+do
+ ...
+done
+
+for var in <words>
+do
+ ...
+done
+
+for((init; test; inc))
+do
+ ...
+done
+
+#case isn't going to be on test nor the assignments
+case
+ <we> ) <list> ;;
+ <we> ) <list> ;;
+ *) <list> ;; #this is the default
+esac
+
+ex. 
+case "${file##*. }" #gets just the file extension
+  php) echo "a PHP page";
+       ....
+       ;;
+  txt) ...
+       ;;
+
+function foo { #uses the positional params of the argument
+#functions can only return value between 0-255
+echo $value;
+}
+#to use this elsewhere we have to use command substituion
+myvalue=$(foo a b c);
+#remember that for assignment there is no spaces. v='a' not v = 'b'
+#single quoted string don't expand variables
+((.... )) this is an arithmetic expression this only has the true false return
+$(( ... )) this is the same but prints the actual value of the expression. 
+[ ... ] test expressions
+[[ ... ]] ^ #use these more, can do checks about strings and regex.  
+( ... ) subshell
+{ ... } not a subshell - like subshell, bt vars are still present in calling
+shell. 
+
+Assignment 7: you have to log into a virtual machine
+
+Last time we were doing notes: we were talking about partitioning tables;
+lets say we have disk and the front of it. and we can divide the space. we are
+dividing a disk. 
+{partion table data is usually lcoated at the top} {swap | / | /home | /net}
+
+a virtual disk is just a linear squence of bytes...
+
+#fdisk [-l] [devices...] 
+ -l lst partitions on devices
+
+commands:
+	p <--- to print the current partition table
+	n <--- create a new partition
+	d <--- delete a partition
+	a <--- toggle the boot flag
+	t <--- change the partition type
+	l <--- list known partition types
+	u <--- switch units (cylinders (sectors)
+	q <--- quit w/o saving
+	w <--- write changes to disk & quit
+
+There needs to be a partion for a boot device/boot leanseer
+
+Useful Partion Types: 
+6 FAT16
+7 NTFS
+82 LINUx SWAP
+83 LINUx SWAP
+8e LINUX LVM
+fd Linus Raid auto-configured
+
+

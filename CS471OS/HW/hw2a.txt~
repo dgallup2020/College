@@ -1,0 +1,18 @@
+Dylan Gallup (cs47103)
+hw2 proposal with xv6 utility
+
+-Making a stack calculator (RPN Calculator)
+./rpmcalc 5 6 7 + - 4 * ......... (max size is 100 arguments)
+
+answer return should be 32;
+since we did 7+6 = 13
+13 - 5 = 8
+8 * 4 = 32
+
+the calculator has two stacks: a numeration stack and a operation stack
+the numeration stack is added to until we have a new operation to come. then
+if we did we take the top two number off of the numeration stack. this repeats
+until we either only have one number left on the stack or we ran out of
+operations;
+
+

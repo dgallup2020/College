@@ -1,0 +1,25 @@
+lab exercise #12:
+l4.js:
+-1/2 output of program (l4.js) is not correct for input '/u1/h7/sbaker/bin/check/data/12/nums.1':
+------ Yours: ------
+-27809
+0
+---- Reference: ----
+317318
+-345127
+--------------------
+  - if(data[i] == " -")
+    (data[i] < 0)  for negative numbers.
+
+l7.js:
+-1 output of program (l7.js) is not correct for input '1':
+------ Yours: ------
+---- Reference: ----
+*
+--------------------
+  - Seems mostly there.
+
+l8.js:
+-1.5 Incomplete.
+
+7.00 out of 10 points.

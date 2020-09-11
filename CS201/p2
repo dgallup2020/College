@@ -1,0 +1,49 @@
+1. TRIANGLE. Write a program file p2.1.c that gets a positive integer from the user. It
+then prints that many rows, each new row has one more asterisk that the previous row.
+For instance if the user enters the number 5, then the program prints:
+
+*
+**
+***
+****
+*****
+
+2. TRIANGLE. Write a program file p2.2.c that gets a positive integer from the user. It
+then prints that many rows, each new row has one more asterisk that the previous row.
+For instance if the user enters the number 5, then the program prints:
+
+    *
+   **
+  ***
+ ****
+*****
+
+3. TRIANGLE. Write a program file p2.3.c that gets a positive integer from the user. It
+then prints that many rows, each new row has one less asterisk that the previous row.
+For instance if the user enters the number 5, then the program prints:
+
+*****
+****
+***
+**
+*
+
+4. TRIANGLES. Write a program file p2.4.c that gets a positive integer from the user. It
+then prints that many triangles starting with a triangle with 2 rows. Each new
+triangle has one more row that the previous triangle. For instance if the user enters
+the number 4, then the program prints:
+
+*
+**
+*
+**
+***
+*
+**
+***
+****
+*
+**
+***
+****
+*****

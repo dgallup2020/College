@@ -1,0 +1,19 @@
+
+
+
+2.
+  int num = 123456;
+  int i;
+  for(i=0;i<3;i++)
+    num1 = num1 + (1 << i); 
+  printf("%d",num1);
+  
+  what is the value of num1?
+  answer = 123463
+ 
+
+
+
+
+//3. (True/False) A variable of an enumerated (enum) type only takes one 
+//value? Answer: True

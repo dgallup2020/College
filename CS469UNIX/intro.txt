@@ -1,0 +1,95 @@
+website: cs.indstate.edu/~sbaker/cs469/syllabus.php
+
+the only real programming is bash scripting.
+extra credit: any kind of bash / anything related to the class
+START HOMEWORK THE DAY OF GIVEN, DO NOT PROCRASTINATE
+	QUESTION ON THE NEXT DAY
+	SPLIT UP THE WORK
+	THE UNIX LAB IS A RESOURCE, USE IT
+
+Conventions: 
+>    <----- represents a normal user prompt
+#    <----- " a super user prompt
+		The super-user is the user with uid 0. is the system
+administrator
+
+[word] <----- the word is "optional". everything inside the brackets is
+optional
+
+ls [-a] the -a is optional
+
+<word>  <----- replace <word> with what word represents. 
+
+the man command:
+> man [<section #>] <command|config file/topic> 
+> man -k <search term> 
+> man man
+sections:
+1 <---- user commands
+2,3 <---- system calls/Clibrary functions
+4 <---- Device and Special files
+5 <---- File formats & conventions
+6 <---- Games, etc.
+7 <---- misc
+8 <---- system admin tools & daemons
+
+the info command: 
+> info <command> <---- similar to man, but for GNU utilities
+		info make is a good command for compilers
+
+File and Dir Command, ysak
+> ls [-a][-l][<path>] <---- lists files in a dir
+  -a lists all files including "hidden files" (files that startwith w/ a dot
+(.))
+  -l long listting (print meta-data for each file)
+
+> cd [<dir>] <---- changes the working dir
+your current working dir is not your home dir
+
+> cp [-r][-a] <source(s)...> <destination>
+   -r copy a dir recursively and all of its contents
+   -a copy the meta-data as well
+
+>mv [-r] <source(s)> <destination> <---- move/rename files/directories
+   -r recursively
+
+>rm [-r] <file/directory> <---- removes or deletes files/directories
+   -r recursive (DANGEROUS) 
+
+>mkdir [-p] <dir> <---- makes a new dir 
+   -p makes any missing parents directories 
+	- using -p you can make a tree of directories, also fails silently
+>rmdir <dir> -removes only empty directories
+
+Basic Networking & File Copying:
+>ssh [<username>@]<hostname>[<commands>] <---- secure shell to another
+>computer.
+
+to make a public/private key pair:
+>ssh-keygen -t {ecdsa/rsa}
+	-generates id_<algo>.pub  -public key
+	           id_<algo>      -private key
+	cat id_ecdsa.pub > ~/.ssh/authorized_keys
+
+
+   
+
+>scp [-r] <source> <destination> <---- copies files using ssh (and its
+>encrypted) 
+	<source> or <destinaiton> can be a remote host specificaiton:
+ex. [<username>@]<hostname>:[<remote-path>]
+
+> rsync [-a][-x][-r] <source> <destination> <---- like scp, compares the two
+> and only transfered what changed/missing files
+  -a archive mode copies meta-data
+  -x stay on one filesystem
+  -r recursive 
+good way of keeping a updating a local host from a remote destination
+
+>handin <---- lists assignments, any submissions you made
+>handin -C / handin --checkout <assignment> 
+  -fetch the assignment to your directory
+>handin <assignment>  <---- submits your work
+>handin -g <assignment> 
+  -see grading notes for assignments
+

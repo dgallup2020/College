@@ -1,0 +1,103 @@
+Don't panic.
+
+Note - the Makefile in this directory is set so that you can run make qemu-nox with the included
+.o files.  free.c is a starting point for the free.c that you should use for hw3b.
+
+(1) To get started on hw3b, do this...
+
+cd ~
+mkdir xv6-hw3-test
+cd xv6-hw3-test
+cp ~jkinne/public_html/cs471-f2018/HW/xv6-hw3/* .
+make qemu-nox
+# inside the running qemu-nox, run - 
+free -usage
+free -t
+free -p
+
+Look at the output from free, and make sure you understand what is being printed
+and that it makes sense to you.  Consult back to chapter 2 in the xv6 textbook.
+
+(2) After you understand what is being printed, it's time to start working on the
+code in your ~/xv6-mine/.  First, make the new system call page_dir_dump, and
+modify your free.c (or copy mine over) so it calls page_dir_dump.  Make the
+page_dir_dump so it just prints "hello from page_dir_dump" (use cprintf).
+
+(3) Once you have the new system call, modify it so it reads it parameters
+and prints them - print the address in the pointer, and print the flags as hex.
+Make sure the values printed are the same ones passed in from free.c
+Similar to getting the parameters from hw3a system call.
+
+(4) Pick either the -t or -p option to work on first.  Run free from the
+~/xv6-hw3-test version of qemu-nox, and work on printing any part of it.
+
+For both -t and -p, you need to start by getting the address for the PDE.
+You will do something like -
+  struct proc *p = myproc();
+  pde_t * pd = p->pgdir;
+
+To look at the row 12 in the PDE, you would do
+  pde_t pde_entry = pd[12];
+
+To get the physical page address of that entry, you would do
+  pde_t *pg_table_addr = PTE_ADDR(pde_entry);
+
+To convert that to a virtual memory address, you would do
+  pg_table_addr = P2V(pg_table_addr);
+Because your code needs to use virtual addresses when accessing memory.
+Some of your code will print the physical addresses, but when you actually
+try to access the memory you need to be using virtual addresses.
+
+To see if the present bit is set you'd do
+  if (pde_entry & PTE_P) ...
+
+To look at row 25 in the page table pg_table_addr, you would do
+  pde_t pg_table_entry = pg_table_addr[25];
+
+To get the physical address or flags out of pg_table_entry, you would
+do just like you did for pde_entry.
+
+Header files to browse through: mmu.h, memlayout.h, proc.h
+
+(4a) For the -t part, here are some steps along the way that you can shoot for -
+
+4a.1 Use the hints above to loop through the page directory and count how many of the
+entries are present.  Print out the value.  For mine, it is 65.  Yours should be
+close to that as well.
+
+4a.2 Check how many of the PDE's are present and < KERNBASE.  Print it out.
+For mine, it is 1.
+
+4a.3 For each PDE that is < KERNBASE, get the address for the page table it is
+referring to.  Iterate through the page table, and count how many of the PTE's
+are present.  Print out how many.  For mine it is 12.
+
+4a.4 For each of the PTE's that are present, print out the information like in
+my program from xv6-hw3-test.
+
+4a.5 Work on the virtual memory summary.  This is just counting how many of the
+PDEs are between different ranges.  For a given PDE, you should look at the row you
+are at to determine which range it is in.  For rows 0-511, the virtual memory
+address is between 0 and KERNBASE.  The next range is 0x8000 0000 to 0x8010 0000,
+so you'll be testing if the row is exactly 512.  Note that the values for
+KERNBASE, etc. are in memlayout.h
+
+(4b) for the -p part, here are some steps along the way that you can shoot for -
+
+4b.1 Parse the virtual address in your page_dump_dir to print the PD index,
+PT index, and offset in page.  Use PDX, PTX, and &'ing with 0xfff to get these.
+
+4b.2 With the PD index you computed in 4b.1, and the address of the page directory,
+get the PDE at the given index.  Print it.  Print the flags (use PTE_FLAGS).  For
+the flags, you can check each of the bits (PTE_P, etc. listed in mmu.h) like
+if (pde_entry & PTE_P) cprintf(...);
+Compute the address of the page table in this PDE, using PTE_ADDR.
+
+4b.3 With the page table address from 4b.2, use P2V to get a virtual address
+that you can use.  Use that virtual address and the page table index from 4b.1
+to get the entry in the page table.  Parse and print things for the page table
+entry just like from 4b.2.
+
+4b.4 Compute the physical address of the byte, using the physical address part
+of the page table entry.  Use P2V to conver that to a virtual address, and get
+the byte at that location.  Print it out.

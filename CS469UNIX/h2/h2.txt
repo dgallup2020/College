@@ -1,0 +1,57 @@
+CS469 Sp20 HW #2	10 of 11 points
+
+Using a UNIX text editor of your choice, edit this file and answer the following
+questions. Use the "man" command to reference any of the named commands. When
+asked how to do something, write out the command you would use to do it.
+
+1. (1pt/ 1/2pt each) Commands to get a human readable status of all mounted
+   file-systems on the system for:
+   a) The amount of disk available and used:
+      >df -ah 
+
+   b) The number of inodes available and used:
+      >df -aih
+
+
+2. (3pts) List the command(s) to set ACL's on "file.txt" such that file owner
+   and the user 'bob' have read, write and execute permissions on the file and
+   the group 'smiths' has read and search and all other groups and other have
+   no access:
+   >setfacl -m u:bob:rwx,d:u::rwx,g:smiths:rx,d:g:: file.txt
+
+
+
+3. (1pt) Command to set your default file creation mask so that the maximum
+   group privileges are read only and others have no access:
+   >umask 040
+
+
+4. (3pts) List the commands to
+   a) create a empty file called 'out.sh':
+      >touch out.sh
+
+
+   b) set the owner to 'alice' and group to 'users':
+      >chown alice:users out.sh
+
+
+   c) make the file readable and executable for user and group only:
+      >chmod 550 out.sh 
+
+
+5. (1pt) "cat" command to output all files ending with ".sh" while numbering
+   the lines:
+   >cat -n *.sh
+
+
+6. (2pt/ 1pt each)
+  a) "head" command to output the first 20 lines of the file /etc/passwd'
+     >head -n 20 /etc/passwd
+
+
+  b) "tail" command to output output the entire file '/etc/passwd' except for
+     the first 20 lines:
+     >tail --lines=+21 /etc/passwd
+
+
+

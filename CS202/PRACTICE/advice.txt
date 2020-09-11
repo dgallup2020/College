@@ -1,0 +1,67 @@
+Notes on the types of problems...
+
+1. Loop - no user input, normally a loop possibly with an if inside of it.
+
+2. Read from standard input one character at a time and do something with it.
+   Notes - do not open a file, do not printf to ask the user for input.
+
+   // template -
+   int ch; int count = 0;
+   while ((ch = fgetc(stdin)) != EOF) {
+     // do something with ch;
+     // printf("%c", ch);
+     // if (ch == 'x') count++;
+   }
+
+3. Linked list - loop through a linked list and do something.
+
+   // template - 
+   // initialize some variables
+   for(ptr = head; ptr != NULL; ptr = ptr->next) {
+     // do something with ptr->data
+   }
+
+4. Binary search tree - normally either have to traverse the entire tree,
+   or walk a particular path.  Almost always needs a recursive function.
+
+   // template -
+   returnType traverse(bst_node_t *root) {
+     if (root == NULL) return BLANK;
+
+     // do something with root->data
+
+     saveValue = traverse(root->left);
+     
+     saveValue2 = travese(root->right);
+
+     // do somethign with saveValue, saveValue2, and
+     // root->data
+     return SOMETHING;
+   }
+
+5. Bit operations - normally you just need << >> & | ^ ~, possibly need
+   to look at the binary or hex of a number.  And you should know the
+   size of numbers in C on cs, currently 8 bits for char, etc.
+
+   Note - normally asks for a function, make sure of parameters and return type,
+   make sure to return something.
+
+Notes on passing - you need 3 exactly correct, and 2 halves.  You get 0
+credit if you have something that shows you don't understand the question,
+or don't really understand how to get started.  You don't get a full point
+if there is ANYTHING wrong, at all.
+
+Notes on practicing - you have to practice this on paper.  You find a problem
+you're going to practice, you read it, you immediately spend 10-15 minutes solving
+it on paper, debugging on paper, looking for errors on paper.  When done, you type
+in exactly what is on the paper and see if it worked.  If there is ANYTHING you had
+to fix, it would have been only 1/2 a point.  You HAVE to practice to get a feeling
+for what you tend to do wrong.  And then ask one of the CS faculty to check your
+answer.  And/or ask one of the lab assistants (but note that they are not perfect).
+
+Notes on things people are doing wrong - unitialized variables, dereferencing pointers
+that are possibly NULL.
+
+Notes on learning - find a C tutorial, or book, or quick start, etc. at your level.
+You can also look at HW assignments from CS courses that were basic C programming -
+CS 256, 201, 202, 151 (HW assignments from Kinne, Baker, Rafiey, Exoo).

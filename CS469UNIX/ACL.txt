@@ -1,0 +1,71 @@
+Notes (1/23/19)
+Picking up where we left off with ACL's
+Access Control Lists: man 5 acl
+  ACL are composed of a list of tags of the following types:
+  ACL_USER_OBJ <--- Access rights for the file owner.
+  ACL_ROOT_OBJ <--- Access rights for the file group owner. 
+  ACL_USER <--- Access rights for users identified by the entries qualifer
+  ACL_GROUP <--- ^ Access rights for the group
+  ACL_MASK <--- The maximum rights that can be granted by entries of type
+                ACL_USER, ACL_GROUP_OBJ & ACL_GROUP
+  -ACL_OTHER <--- Access rights for processes that do not match any other entry
+in the ACL. 
+ 
+  -An ACL contains at least one of ACL_USER_OBJ, ACL_GROUP_OBJ, ACL_OTHER and
+  0 or more ACL_USER or ACL_GROUP, if either are present, then exactly one
+  ACL_MASK tag. 
+  
+  -A default ACL on a directory is inherited by any children created within
+   it!!!
+
+>getfacl <file...>
+  -Display the ACL's (if any) on a file. 
+
+>setfacl [-m|-x|-b] <acl-list> <file(s)...>
+   -m <--- modify
+   -x <--- remove
+   -b <--- removal all ACL's
+   -R <--- Recursive
+
+
+   <acl-list> 
+   [d[efault]:][u[ser]:]uid[:perms]
+   -Permissions for a named user, or the file owner is if uid is empty/omitted
+   ex.: user::rwx or u::rwx -grants file owner full access.
+        d:u:sbaker:r-x,u=sbaker:r-x   -grants sbaker read/execute
+   [d[efault]:]g[roup]:gid[:perms] -permissions for a named group. 
+   [d[efault]:]m[ask][:][:perms] -effective rights mask "perhaps you want to revoke some
+        permssions from some users you can change the mask"
+   [d[efault]:]o[ther][:][:perms] -permissions for others
+
+   ex. >mkdir work
+       >setfacl -m d:u::rwx,::rwx,d:u:bob:rwx,u:bob:rwx work
+
+Path Resolution: (man 7 path_resolution)
+   -A file is accessable if:
+      -All parent dir (all the way to the root (/)(directory)
+       allow search permission for that user.
+      -If the user owns the file, the owner permissions bits are used
+       to determine access, other if the user is a member of the group
+       of the file, then the group permissions are used, otherwise the "other"
+       permissions are used
+
+Links: (man 7 symlink)
+  -2 types of 'links', hard and symbolic 
+   -Hard links files are essentially the same file (share the same inode &
+   data) just have different direcotry entries that point to the same
+   inode. Hard links cannot cross a mount-point (limited to the same
+   device/file-system). 
+   -Symbolic links are text values that may or maynot point to an existings
+    object. 
+
+>ln [-s] <target> [<name>|<directory>]
+    -s <--- make symbolic links
+
+>readlink <symbolic_link>
+    -print the value of a symbolic link
+>realpath <path> 
+    -print the real resolved path from the path given. 
+
+
+

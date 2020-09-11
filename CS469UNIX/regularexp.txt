@@ -1,0 +1,110 @@
+Notes (1/21/20)
+-Drives / partitions are mapped onto the root file-system or sub-mounted
+  file-system at the "mout point" with the mount(8) command: 
+  ex. mount /dev/sda2 /mnt
+-mounted file-system are removed using the umount(8) command
+  ex. umount /mnt
+
+>df [-h][-i]
+ -Display mounted file-systems and amount of space on them: 
+  -h <---- human readable
+  -i <---- inode information
+
+Meta/Inode file information (man 2 stat)
+-An inode is the actual file. Files in directories merely point
+  to an inode. A file pointer to an inode is a "hard link", and they
+  increase the inodes hard link count. When the hard link count is drops
+  to zero, the inode is freed. The file information might note actually be
+  deleted, just un-referenced, so it is sometimes possible to recover the
+  deleted data if the file-system is immediately unmounted(or set to
+read-only) and special recovery programs are used to recover the data. 
+
+-Inodes contain the following meta-data: 
+  -owner <--- uid and gid (user and group owner id) (unsigned 32 bit ints) 
+  -mode <--- (file permission bits (& file type) shown in octal:) 
+     4000 -setuid allows the setuid(2) (change effective user id) 
+           system call to work. Setuid() is restricted to the uid of the 
+           owner of the file (unrestricted if the owner is uid 0 (i.e. the
+           user user)). 
+     2000 -setgid allows setgid()/setegid(0, same as w/ set setuid above
+     1000 -'sticky bit' on directories it sets a restricted deleted mode which
+           prevent users from removing/renmaing files/dir not owned by them.
+           Used on /tmp for example. 
+     0x00 -owner bits
+     00x0 -group bits
+     000x -other bits
+     x=4 read(w) /list files in a directory
+     x=2 write(w) /add/remove entries to a directory
+     x=1 execute(x) /search or cd into a directory
+  -size(bytes & blocks) 32 or 64 bits in size. 
+  -times:(time_t)
+     atime - last access time (last time file was read) 
+     mtime - last modification time (last time the file was written to or
+             updated) 
+     ctime - last status change time (meta data was updated) 
+  -inode & device number -Internally in the kernal (operating system that
+     runs all the other programs) all file-system objects are uniquely 
+     identified by the combinaation of these two numbers
+
+>ls -l output decoded:
+  ex. -rw-r--r-- 1 root users 283 Jan 13 18:52 file.txt
+goes in accending order:
+file type
+owner permissions
+group permissions
+other permissions
+hard-link count
+owner 
+group owner
+file size
+last time modified
+file name
+
+File-types:
+- <---- regular file
+d <---- directory
+l <---- symbolic link (point to anywhere on the file system, even to other
+drives
+p <--- pipe(FIFO) (note: mkfifo makes a pipe) 
+c <--- character special (typically serial data) 
+b <--- Block special (typically disks) 
+s <--- socket files (unix domain socket) 
+? <--- unknown (bad) 
+
+>chmod [-R] <mode> <file(s)...> 
+  -R = recursive
+  -sets /modifies permissions on files. <mode> has two forms.
+     Octal(numeric) or ASCII forms: 
+       rwxrwxrwx each 3 grouping is a octal. the octal form only replaces
+                 perms 
+       user group other all(default)
+       + - = 
+       r w x s="setuid/setgid" t=sticky
+       comma seperated list, no spaces (mode must be one "word") 
+       ex. chmod g+r //adding reading access to the group (we are adding this
+           bit) 
+       ex. chmod g-r // we are only removing reading access. it doesn't
+           entirely modify the permissions. 
+# chown [-R] <owner>[:<group>] <file(s)...> 
+  -set ownership on files. 
+>chgrp [-R] <group><file(s)...>
+  -set group ownership on files. 
+>touch <file...>
+  -updates last access & modification times of files, creating new files if
+     necessary
+>umask[<octal #>]
+   -set/show the default file/directory permissions creation mask. Default
+    permissions are:
+      <default mode>  0777 for directories
+    & ~umask          0666 for files. 
+  -----------------
+      <actual permissions> 
+      umask typically = 022
+      when we create a new file/directory we subtract/bitwise-and the umask from the
+default permissions. and that create our default file permissions. 
+
+Access Control Lists:
+-some files-systems maybe support access ACL permissions which if present on
+ a file, completely supercede the regular permission. 
+ACL's are viewed with getfacl and set w/ setfacl, and a file has ACL's if ls
+listing shows a '+' after the permissions. 

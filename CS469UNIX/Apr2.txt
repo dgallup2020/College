@@ -1,0 +1,15 @@
+April 2nd Notes:
+Notes on how to install mySQL and MariaDB
+
+Please ask questions, if you get stuck
+
+Notes that you want to have a large space to put a local database
+
+grant are similar to privelages, so you can give people who try
+to access your database. 
+
+dump is really handy where you dump the entire tables and its commands
+where you can rebuild the tables.
+
+to get the answers on blackboard quizzes, you have to view the test via the
+gradebook.  

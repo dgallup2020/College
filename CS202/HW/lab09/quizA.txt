@@ -1,0 +1,28 @@
+Quiz A, CS 202 fall 2017
+
+Make a directory in your account ~/QUIZ/quizA/ and put your files in that directory.
+
+Make each of the following programs, and make sure they exactly match the reference
+programs in ~jkinne/public_html/cs202-f2017/QUIZ/quizA/
+
+Points - 4 points for the first one you solve, 2 points for the second.
+
+Time - 30 minutes.
+
+End - 8:46am 9/21/2017.  If your file is modified after 8:46, it doesn't count.
+
+1) quizA1.c reads an integer k using scanf and then prints all the powers of 2 up to 2 to the kth power.
+
+2) quizA2.c reads an integer i and prints the integer that has a 1 in the i-th bit and all the rest 0s.
+   The number is printed in binary, hex, and decimal.
+
+3) 1 point
+Bonus - quizA3.c reads an unsigned long x and prints powers of 2, 3, 5, 7, 11 up to x,
+   in order.
+   
+   Bonus+ - print the powers of them in columns, something like
+   2	  3 	  5   7	     11
+   4	  9	  25
+   8	  27	  16
+
+4) Bonus++ - all perfect powers <= x

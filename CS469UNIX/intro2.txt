@@ -1,0 +1,51 @@
+website: cs.indstate.edu/~sbaker/cs469/syllabus.php
+
+the only real programming is bash scripting.
+extra credit: any kind of bash / anything related to the class
+START HOMEWORK THE DAY OF GIVEN, DO NOT PROCRASTINATE
+	QUESTION ON THE NEXT DAY
+	SPLIT UP THE WORK
+	THE UNIX LAB IS A RESOURCE, USE IT
+
+Conventions: 
+>    <----- represents a normal user prompt
+#    <----- " a super user prompt
+		The super-user is the user with uid 0. is the system
+administrator
+
+[word] <----- the word is "optional". everything inside the brackets is
+optional
+
+ls [-a] the -a is optional
+
+<word>  <----- replace <word> with what word represents. 
+
+the man command:
+> man [<section #>] <command|config file/topic> 
+> man -k <search term> 
+> man man
+sections:
+1 <---- user commands
+2,3 <---- system calls/Clibrary functions
+4 <---- Device and Special files
+5 <---- File formats & conventions
+6 <---- Games, etc.
+7 <---- misc
+8 <---- system admin tools & daemons
+
+the info command: 
+> info <command> <---- similar to man, but for GNU utilities
+		info make is a good command for compilers
+
+File and Dir Command, ysak
+> ls [-a][-l][<path>] <---- lists files in a dir
+  -a lists all files including "hidden files" (files that startwith w/ a dot
+(.))
+  -l long listting (print meta-data for each file)
+
+> cd [<dir>] <---- changes the working dir
+your current working dir is not your home dir
+
+> cp [-r][-a] <source(s)...> <destination>
+   -r copy a dir recursively and all of its contents
+   -a copy the meta-data as well

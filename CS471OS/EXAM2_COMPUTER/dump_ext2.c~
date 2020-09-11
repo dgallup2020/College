@@ -1,0 +1,109 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+#include "ext2.h"
+
+void print_super(SUPERBLOCK *super) {
+  printf("sizeof(super) %d\n", sizeof(SUPERBLOCK));
+  printf("#inodes       %d (%d free)\n", super->s_inodes_count,
+	 super->s_free_blocks_count);
+  printf("#blocks       %d (%d free)\n", super->s_blocks_count,
+	 super->s_free_inodes_count);
+  printf("first block   %d\n", super->s_first_data_block);
+  printf("group         %d blocks, %d frags, %d inodes\n", super->s_blocks_per_group,
+	 super->s_frags_per_group, super->s_inodes_per_group);
+  printf("magic (should be EF53) %x\n", super->s_magic);
+  printf("inode size    %d\n", super->s_inode_size);
+  printf("first ino     %d\n", super->s_first_ino);
+  printf("block grp #   %d\n", super->s_block_group_nr);
+  printf("volumne name  %sd\n", super->s_volume_name);
+}
+
+// read the superblock
+void get_super(int fs, SUPERBLOCK *super) {
+  // superblock always at byte 1024.
+  int ret = lseek(fs, 1024, SEEK_SET);
+  if (ret != 1024) {
+    fprintf(stderr, "Unable to seek to 1024.  Return value %d\n", ret);
+    exit(0);
+  }
+
+  // read into superblock structure
+  int count = read(fs, super, sizeof(SUPERBLOCK));
+  if (count != sizeof(SUPERBLOCK)) {
+    fprintf(stderr, "Unable to read super block, read only %d bytes\n", count);
+    exit(0);
+  }
+}
+
+void get_block_group_desc(int fs, BLOCKGROUP *block_grp, int which) {
+  // superblock always at byte 1024, and superblock is 1024 bytes
+  int seekto = 1024+1024+which*sizeof(BLOCKGROUP);
+  int ret = lseek(fs, seekto, SEEK_SET);
+  if (ret != seekto) {
+    fprintf(stderr, "Unable to seek to 1024.  Return value %d\n", ret);
+    exit(0);
+  }
+
+  // read into blockgroup
+  int count = read(fs, block_grp, sizeof(BLOCKGROUP));
+  if (count != sizeof(BLOCKGROUP)) {
+    fprintf(stderr, "Unable to read block group desc, read only %d bytes\n", count);
+    exit(0);
+  }
+}
+
+void print_block_group_desc(BLOCKGROUP *block_grp, int which) {
+  printf("\n");
+  printf("Block group %d\n", which);
+  printf("block bitmap at %d, inode bitmap at %d, inode table at %d\n",
+	 block_grp->bg_block_bitmap, block_grp->bg_inode_bitmap,
+	 block_grp->bg_inode_table);
+  printf("free blocks     %d, free inodes %d\n", block_grp->bg_free_blocks_count,
+	 block_grp->bg_free_inodes_count);
+  printf("used dirs       %d\n", block_grp->bg_used_dirs_count);
+}
+
+SUPERBLOCK super;
+BLOCKGROUP block_group1;
+
+int main(int argc, char *argv[]) {
+  // parameter should be file to use as an image.
+  if (argc < 2) {
+    fprintf(stderr, "Usage: ./dump_ext2 fileImage.img\n");
+    exit(0);
+  }
+
+  // try to open the image file
+  int fs = open(argv[1], O_RDONLY);
+  if (fs == -1) {
+    fprintf(stderr, "Unable to open disk image %s\n", argv[1]);
+    exit(0);
+  }
+
+  // get the super block and print information about it
+  get_super(fs, &super);
+  print_super(&super);
+
+  // get the first block group descriptor and print information about it
+  get_block_group_desc(fs, &block_group1, 0);
+  print_block_group_desc(&block_group1, 0);
+
+  // for you to complete - get the root directory and list
+  //                       its contents (names of files/directories)
+
+  // for you to complete - print the first 50 bytes of the
+  //                       first .txt file in the top-most directory
+
+  // for you to complete - traverse the file system to check how many inodes
+  //                       are used and how many data blocks are used, print the totals
+  //                       check that these agree with what is in the super block
+  
+
+  // close the file system image
+  close(fs);
+  
+  return 0;
+}

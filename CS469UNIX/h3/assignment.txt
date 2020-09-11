@@ -1,0 +1,54 @@
+Your assignment is to login to effie.indstate.edu (ssh -Y effie.indstate.edu
+the -Y option is important to run the X-windows VirtualBox application)
+and create your own virtual machine and install Linux on it (preferably
+Slackware -- iso's available in /net/iso/ and /net/iso/slack on effie), but
+you have the option of installing some other flavor of Linux, such as Debian,
+CentOS, Fedora, etc.)  **Your virtual hard drive images should be stored in
+`/net/class/`*username* on effie and not in your CS home directories.**
+
+Once you have made your machine and installed it, create an account for
+yourself and an "sbaker" account for me with some password that you will
+provide me in the file called passwd.txt in the h3 directory. The "adduser"
+or "useradd" commands will usually do the trick when making accounts.
+
+You may configure your virtual machines networking in *Bridged Adaptor*
+mode (and no other) for Ethernet device eth2, and then configure your OS with
+the following network information:
+
+         IP Address: 10.0.14.1XX (where XX is the last two digits of your CS469
+		     account)
+            Netmask: 255.255.255.0
+  Broadcast Address: 10.0.14.255
+            Gateway: 10.0.14.1
+       Name-servers: 139.102.7.102 and 139.102.1.10
+
+On Slackware the networking is usually setup at installation or you can
+edit the file /etc/rc.d/rc.inet1.conf and /etc/resolv.conf
+(man 5 resolv.conf). You should make sure that you are running an ssh server
+on your machine that allows you to remotely login to it via ssh.  It ought
+to be accessible from the cs server and Effie if you use the above IP
+address.
+
+After you have setup your virtual machine, you will need to run it in
+"headless mode", that is run it in the background so you don't need to be
+logged into Effie to run it. This can be done with the following command:
+
+  nohup VBoxHeadless --startvm _vmname_ < /dev/null >& /tmp/_vmname_.log &
+
+where _vmname_ is the name you gave your Virtual Machine (it should be the same
+as your cs469 username.) The command "VBoxManage list vms" will give you the
+name of your VM if you're not sure. If you wish to have a second (or more) VMs,
+please let me know and I will allocate an IP address for your machine(s).
+
+The video of me creating and installing the virtual machine in class is
+available at:
+
+  http://cs.indstate.edu/~sbaker/video/play.php?vid=VirtualBox
+
+Note: that in the video I suggest that you don't need the X packages, however
+you probably do (some of the networking programs are linked to some of the X
+libraries.) Just install everything (full install) and you shouldn't have any
+problems.  Also when configuring the networking, the last two digits of the
+IP address does not add 50 (so just the last two digits of your cs469 account
+are used, do not add 50 to them.)
+

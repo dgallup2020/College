@@ -1,0 +1,78 @@
+Files
+
+Files are the most common form of a stream. 
+The first thing we must do is open a file. The function fopen() does 
+this: 
+   FILE *fopen(char *name, char *mode) 
+   fopen returns a pointer to a FILE. The name string is the name of 
+   the file on disc that we wish to access. The mode string controls 
+   our type of access. If a file cannot be accessed for any reason a 
+   NULL pointer is returned. 
+   
+   Modes include: "r" -- read,
+       "w" -- write and
+           "a" -- append.
+           To open a file we must have a stream (file pointer) that 
+           points to a FILE structure. 
+           So to open a file, called myfile.dat for reading we would 
+           do: 
+           
+           
+             FILE *stream, *fopen();
+                 /* declare a stream and prototype fopen */ 
+                  
+                       stream = fopen("myfile.dat","r");
+                        
+                        
+                        it is good practice to to check file is 
+                        opened 
+                        correctly:
+                         
+                             if ( (stream = fopen( "myfile.dat",
+                                        "r")) == NULL)
+                                                 {  printf("Can't 
+                                                 open %s\n"",
+                                                             "myfile.dat");
+                                                                      exit(1);
+                                                                               }
+                                                                                   ......
+                                                                                   
+                                                                                   
+                                                                                   Reading and writing files
+                                                                                   
+                                                                                   The functions fprintf and fscanf a commonly used to access files. 
+                                                                                   
+                                                                                   
+                                                                                   int fprintf(FILE *stream, char *format, args..)
+                                                                                       int fscanf(FILE *stream, char *format, args..)
+                                                                                       
+                                                                                       These are similar to printf and scanf except that data is read from the stream that must have been opened with fopen(). 
+                                                                                       
+                                                                                       The stream pointer is automatically incremented with ALL file read/write functions. We do not have to worry about doing this. 
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                         char *string[80]
+                                                                                             FILE *stream, *fopen();
+                                                                                              
+                                                                                                   if ( (stream = fopen(...)) != NULL)
+                                                                                                           fscanf(stream,"%s", string);
+                                                                                                           
+                                                                                                           Other functions for files: 
+                                                                                                           int getc(FILE *stream), int fgetc(FILE *stream)
+                                                                                                           
+                                                                                                           int putc(char ch, FILE *s), int fputc(char ch, FILE *s) 
+                                                                                                           
+                                                                                                           These are like getchar, putchar. 
+                                                                                                           
+                                                                                                           getc is defined as preprocessor MACRO in stdio.h. fgetc is a C library function. Both achieve the same result!! 
+                                                                                                           
+                                                                                                              fflush(FILE *stream) -- flushes a stream.
+                                                                                                              
+                                                                                                                 fclose(FILE *stream) -- closes a stream. 
+                                                                                                                 
+                                                                                                                 We can access predefined streams with fprintf etc. 
+                                                                                                                 
+                                                                                                                    fprintf(stderr,"Cannot Compute!!\n");
+                                                                                                                    
+                                                                                                                        fscanf(stdin,"%s",string); 

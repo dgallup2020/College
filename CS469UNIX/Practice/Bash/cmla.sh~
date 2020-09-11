@@ -1,0 +1,15 @@
+#!/bin/bash
+for argc in "$#";
+do
+	echo "number of args" $argc;
+done;
+
+for argv in "$@";
+do
+	echo "argv: "  $argv;
+done
+
+for arg in "$!";
+do
+	echo "arg: " $arg;
+done

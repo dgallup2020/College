@@ -1,0 +1,8 @@
+cs151015:x:1015:101:Joseph Harris,,,:/u1/class/cs151015:/bin/tcsh
+cs151025:x:1025:101:Zachary Williams,,,:/u1/class/cs151025:/bin/tcsh
+cs151075:x:1075:101:JonathonWilson,,,:/u1/class/cs151075:/bin/tcsh
+cs151085:x:1085:101:Paris Sark,919,219-263-3249,:/u1/class/cs151085:/bin/tcsh
+cs151095:x:1095:101:Rayden Wilkey,,,:/u1/class/cs151095:/bin/tcsh
+cs151105:x:1105:101:Brooklyn Baxter,na,na,na:/u1/class/cs151105:/bin/tcsh
+cs151115:x:1115:101:Hussain Alturki,017,,:/u1/class/cs151115:/bin/tcsh
+cs151125:x:1125:101::/u1/class/cs151125:/bin/tcsh

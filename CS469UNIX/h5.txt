@@ -1,0 +1,74 @@
+a. 
+let index=1
+for file in *
+do
+ printf "%2d: %s\n" "$index" "$file";
+ let index++;
+done
+b. 
+ read -p "Start? " start
+ read -p " End? " end
+if ((start > end)); then
+ let tmp=start;
+ let start=end;
+ let end=tmp;
+fi
+
+if (( start % 2 == 0)); then let start++; fi
+for (( ; start <= end; start+=2 )) {
+ printf "%d " "$start";
+}
+
+3. 
+path=${1=-.}";
+path=$(realpath "$path");
+if [[ ! -d "$path" ]]; then\
+ path=$(dirname "$path");
+fi
+
+while [[ $path != / ]]; do
+ stat --printf="%A %8U %8G %n\n" "$path";
+ path=$(dirname "$path");
+done
+
+ stat ... "/"
+
+d. 
+total=$(du -bs "$path | cut -f 1)"
+echo -n "Total: ";
+siunits=("bytes" "KB" "MB "GB" "TB" "PB" ) 
+let index=0;
+while (( total > 0 )); do
+ if (( index > )); then echo "/"; fi
+ echo "$total ${siunits[index]}";
+ let total/=1024;
+ let index++;
+done
+echo
+
+e. 
+function rpwd(){
+ local chars="abcdefghijklmnopqrstuwxyz" pwd=""  i;
+ for((i=0; i < 8; i++)){
+   
+  pwd="$pwd${chars[RANDOM%26]}";
+ }
+ echo "$pwd";
+}
+rpwd;
+
+f. 
+let nwords=(RANDOM%2)+3
+let dictsize=$(wc -l /usr/dict/words | cut -f 1 -d ' ');
+let minlen=${1:-1};
+pwd="";
+for(( i=0; i < nwords || ${#pwd} < minlen; i++)){
+ let w=(RANDOM<<16|RANDOM)%dictsize;
+ word=$(sed -n ${w}p /usr/dict/words);
+ pwd="$pwd${{word^}";
+}
+echo "$pwd";
+
+
+
+

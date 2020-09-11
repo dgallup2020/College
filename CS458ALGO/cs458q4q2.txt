@@ -1,0 +1,14 @@
+Run the Flow Algorithm on the following network where s is the source node and t is the sink node. 
+Each arc has capacity 1.  Show the steps.
+
+Our goal is to make a path from our source (s) to sink (t). We try a path from s to t using any of the arc between.
+After we use that one path the flow is equal to the capacity. Therefore we can not use any of those arcs again.
+We try another path from another arc branching from the source (s), however if we can not use any of the same arcs as 
+the previous path. If we progress and hit a arc we can't use we have to go back a node much like running BFS.
+We continue this process til we reach the sink node. The algorithm is done when we can't make any more paths. 
+
+Let H be the bipartite graph by removing the vertices s,t and ignoring the direction of the arcs. Is there a perfect matching in H?  
+
+There is NOT a perfect matching in H. This is due to node G only can go to node D or node B, however in order to do
+so G would have to share node D or B. 
+

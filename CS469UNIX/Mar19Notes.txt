@@ -1,0 +1,22 @@
+March 19th Notes:
+
+Making FS Notes: 
+mkfs.ext4 -0 64Bit -i 32768 Inodes <location> 
+-m argument, setting aside some of the file system for root. so only the drive
+can use the latter. 
+then you mount the location of the new fs, and mount it to yours. 
+
+-file systems have different check programs and doing so we can 
+-tune2fs kinda neat because it tells you all about a certain filesystem. shows
+a whole lot of metadata. 
+
+Different Blcok Devices:
+
+uuid: looks like a random sequence of bits, and it is completely unique. 
+file system labels. 
+dev/disk: we have a array of hardware id's 
+
+We don't usually make dev anymore, but udev now makes then for us. 
+
+fstab
+file system tables that are mounted. 

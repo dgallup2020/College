@@ -1,0 +1,2 @@
+Place the password for the sbaker account in this file:
+gosycamores

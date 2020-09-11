@@ -1,0 +1,67 @@
+<!--  Lab exercise #4 / 10 points -->
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Lab Exercise #4 </title>
+ <style type='text/css'>
+ 
+/* A 13pt Arial font on the body */
+body {font-size: 13pt; font-family: "Arial";}
+/* Margin and padding of 3px around each table cell: */
+td,th {margin: 3px; padding: 3px}
+/* A 120% bold monospace font for the first and last table cells in each row */
+
+
+/* A 140% bold green font with a 2px thick black bottom border on all table
+   cells in the first row */
+ 
+th{font-size: 140%; color: green}
+th{border-bottom:2px; border-style: hidden hidden solid hidden; border-color: black}
+
+
+th:first-child {font-family: monospace}
+th:last-child {font-family: monospace}
+/* A light blue background on every even table row */
+tr:nth-child(even) {background-color: lightblue}
+tbody td:first-child {font-family: monospace; font-size: 120%; font-weight: bold }
+tbody td:last-child {font-family: monospace; font-size: 120%; font-weight: bold }
+
+ </style>
+</head>
+<body>
+<!--
+  Convert the following into a table as shown in the reference image:  Do not
+  use any style tags in the body section, confine your styling to the style
+  section above.  Use 'labcheck 4' to check your work.
+-->
+<table summary="lab4 exercise table">
+ <tbody>
+<tr>
+<th> Filesystem <th> Size <th> Used <th> Avail <th> Use% <th> Mounted on
+</tr>
+<tr>
+<td> /dev/sda1 <td> 888G <td> 307G <td> 581G <td> 35%  <td> /
+</tr>
+<tr>
+<td> tmpfs <td> 5.9G <td> 0 <td> 5.9G <td> 0%  <td> /dev/shm
+</tr>
+<tr>
+<td> /dev/sda2 <td> 30G <td> 26G <td> 4G <td> 87%  <td> /usr
+</tr>
+<tr>
+<td> /dev/sda3 <td> 30G <td> 6.3G <td> 24G <td> 22%  <td> /var
+</tr>
+<tr>
+<td> /dev/sda4 <td> 7.3G <td> 355M <td> 7.0G <td> 5%  <td> /tmp
+</tr>
+<!--Filesystem 	Size 	Used 	Avail 	Use% 	Mounted on
+/dev/sda1 	888G 	307G 	581G 	35% 	/
+tmpfs 		5.9G 	0 	5.9G 	0% 	/dev/shm
+/dev/sda2 	30G 	26G 	4G 	87% 	/usr
+/dev/sda3 	30G 	6.3G 	24G 	22% 	/var
+/dev/sda4 	7.3G 	355M 	7.0G 	5% 	/tmp -->
+</tbody>
+</table>
+
+</body>
+</html>

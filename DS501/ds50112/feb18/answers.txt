@@ -1,0 +1,18 @@
+DS501/CS459 DATA SCIENCE
+DYLAN GALLUP
+
+FEB 18 QUIZDS501/CS459 DATA SCIENCE
+DYLAN GALLUP
+
+FEB 18 QUIZDS501/CS459 DATA SCIENCE
+DYLAN GALLUP
+
+FEB 18 QUIZ
+1. grep "ds501[0-9][0-9]" /etc/passwd | wc -l
+2. grep "ds501[0-9][0-9]" /etc/passwd | sed "s/:/ /g" | awk "{print $5}"
+3. 1.162679
+4. 1.168179
+5. quizdatadf$type[quizdatadf$type == 'C' & quizdatadf$count1 == 4] <- "B"
+6. quizdatadf$total <- quizdatadf$wgt1 + quizdatadf$wgt2
+8. plot(quizdatadf$wgt1[quizdatadf$type=='K'],quizdatadf$wgt2[quizdatadf$type=='K'],col=quizdatadf$count2)
+10. 7

@@ -1,0 +1,74 @@
+Febrary 17th Notes: 
+Cont. Feb 14 bash scripting
+
+Make sure baker has a home directory on your machine. 
+baker wants the 3rd machine done by the end of the week and be sure to hand it
+in. 
+xwindows
+
+Conditionals:
+if <list>; then <list>;
+[elif <list>; then <list>;]...
+[else <list>;
+fi
+
+ex. if grep; then foo file &>/dev/null; then
+    "do something if foo is in the file." 
+    
+    else 
+    do something else if foo is not in the file. 
+    
+    elif [[-f file]]; then 
+    test if file exists
+   
+    elif ((s>2 )); then
+    check that s is still > 2.
+
+    else
+    do something else
+    fi
+         "fi is mandatory" we need the semi colons to seperate the lists from
+the grammar." 
+    
+case <word> in [[(] <pattern> [|<pattern>]...) <list>;;]
+ex.
+	case $var in 
+         foo|bar) echo foobar;;
+         *) echo a default case;;
+        esac
+
+select <name> [in <word>]; do
+   <list>;
+done
+   -prompts the user to select from a list optionals words, placing that
+    selection in name, executing <list> when the selection is made. 
+   -basically a loop that a have a user-defined break to exit (usally you
+    check that a proper selection has been made, then break. 
+
+ex. 
+	select file in *
+        do
+	  if [-f "$file"]; then break; fi
+        done
+
+        <(<list> ) -creates a named pipe w/ <list> running on one side of it. 
+        foo < <(<list>) -feed output of <list> into input of foo. 
+
+Bash Builtins:
+ cd 
+ alias <name>='<value>'
+   -creates a command alias. <name> is exponded (replaced with) <value>. any
+command lines params are placed after value. 
+ bg [<job specifier>]
+    -continue a stopped process in the background
+ fg [<job specifier>] 
+    -conitnue a job/bring a job to the foreground. 
+ jobs -list jobs, both running & stopped. 
+
+ echo [<string>]
+  -prints <strings> to the output, and a newline. 
+  -n supress newline
+  -e evaluate c-style escapes in the strings. 
+ printf [-v var] <format> [<arguments>]
+  -like the C printf funtion
+  -v var assigns output to var (like sprintf) 

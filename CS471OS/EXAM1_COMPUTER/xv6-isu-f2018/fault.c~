@@ -1,0 +1,35 @@
+#include "types.h"
+#include "stat.h"
+#include "user.h"
+
+int
+main(int argc, char *argv[])
+{
+  if (argc < 2) {
+    printf(1, "Usage: ./fault type\n");
+    printf(1, " 0 - none\n");
+    printf(1, " 1 - seg fault\n");
+    printf(2, " 2 - divide by 0\n");
+    exit();
+  }
+  int which = atoi(argv[1]);
+  int zero = 0;
+  int * bad_p =(int *) 0x80000000; 
+
+  printf(1,"Faulting, based on argument...\n");
+
+  if (which == 0)
+    ;
+  else if (which == 1) {
+    which = *bad_p;
+    printf(1, "which = %d", which);
+  }
+  else if (which == 2) {
+    which = which / zero;
+    printf(1, "which = %d", which);
+  }
+
+  printf(1,"Note - got here without dying...\n");
+  
+  exit();
+}

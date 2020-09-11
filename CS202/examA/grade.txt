@@ -1,0 +1,14 @@
+Note: if no grade given for problem, then 0 credit.  Each problem
+given 1, 2/3, 1/3, or 0.  If a program does not compile it is
+worth 0 credit.
+
+1) 1/2 - need { } to have outermost for loop do for and printf
+2) 2/3 - you flipped role of . and !
+3) 1
+4) 0
+5) 1
+
+Grading is: best program worth 12, next best worth 6, then 6, 3, and 3.
+
+total (out of 30): 12 + 6 + 4 + 1.5 = 23.5
+

@@ -1,0 +1,25 @@
+print("Dylan Gallup")
+print("votes.r problems")
+
+votes <- read.csv("/u1/junk/cs459/votes.csv")
+
+print("Problem 1")
+votetotal <- apply(votes[,3:16],2,sum)
+votetotal <- sort(votetotal,decreasing=TRUE)
+print(votetotal[1:3])
+
+print("Problem 2")
+namevot <- function(x) {return(names(votes[which.max(x)+2]))}
+votes$prewon <- apply(votes[,3:16],1,namevot)
+precount <- aggregate(votes$prewon,list(votes$prewon),length)
+names(precount) <- c("Candidate","Precincts_Won")
+p <- precount[order(precount$Precincts_Won,decreasing=TRUE),]
+print(p)
+print("Problem 3")
+agg <- aggregate(votes[,3:16],list(county=votes$county),sum)
+print(agg)
+agg$countwin <- apply(agg[,2:14],1,namevot)
+print(agg[,c(1,16)])
+
+print("Problem 4")
+

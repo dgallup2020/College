@@ -1,0 +1,22 @@
+Creating a xv6 utility:
+go into the Makefile
+then add _newprogram to UPROGS
+then add newprogram.c to EXTRA
+
+
+Creating a xv6 system call:
+newSysCall
+
+usys.S -> add a new line SYSCALL(newSysCall) to the end of file.
+syscall.h -> new line at end of file #define SYS_newSysCall 24 //whatever is
+next number
+user.h-> function prototype for newSysCall
+syscall.c -> add extern int sys_newSysCall(void); line
+syscall.c -> add[SYS_newSysCall] sys_newSysCall; line
+in some file, define the sys_newSysCall function. Sysproc.c, or somewhere
+else. 
+
+
+
+run xv6: make qemu-nox 
+quit xv6: ctrl-a x

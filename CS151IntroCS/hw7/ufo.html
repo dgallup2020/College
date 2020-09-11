@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html onkeydown='keyd(event);' onkeyup='keyu(event);'>
+<head>
+	<title></title>
+	<meta charset='utf-8'>
+<style>
+#c { border: 1px solid black; }
+</style>
+<script>
+  var _ctx;
+  var _shipx, _shipy, _shipangle;
+  var _rotating = 0, _thrusting = false, _shields = false; 
+  var _dx=0, _dy=0;
+  var _ufoangle = 90;
+  var _ufox = 0;
+  var _ufoy = 0;
+  var distance=40, travelled=0, radius = 50;
+
+  function ship() {
+     _ctx.save();
+     _ctx.translate(_shipx, _shipy);
+     _ctx.strokeStyle = "black";
+     _ctx.lineWidth = 2;
+     _ctx.rotate((_shipangle*Math.PI)/180);
+     _ctx.beginPath();
+     _ctx.moveTo(20,0);
+     _ctx.lineTo(-20,10);
+     _ctx.lineTo(-16,7);
+     _ctx.lineTo(-16,-7);
+     _ctx.lineTo(-20,-10);
+     _ctx.closePath();
+     _ctx.stroke();
+ 
+     if (_thrusting) {
+       _ctx.strokeStyle = 'red';
+       _ctx.beginPath();
+       _ctx.moveTo(-18,6);
+       _ctx.lineTo(-35,0);
+       _ctx.lineTo(-18,-6);
+       _ctx.moveTo(-18,6);
+       _ctx.closePath();
+       _ctx.stroke();
+     }
+     if (_shields) {
+       _ctx.strokeStyle = 'lightblue';
+       _ctx.beginPath();
+       _ctx.arc(0,0,30,0, Math.PI*2);
+       _ctx.closePath();
+       _ctx.stroke();
+     }
+     _ctx.restore();
+   }
+  function ufo () {
+    _ctx.save();
+    _ctx.translate(_ufox, _ufoy);// create two random angle functions
+    _ctx.scale(.25,.25);
+    _ctx.strokeStyle = "black";
+    _ctx.lineWidth = 2;
+    _ctx.beginPath();
+    _ctx.moveTo(100,300);
+    _ctx.lineTo(200,250);
+    _ctx.lineTo(225,190);
+    _ctx.lineTo(375,190);
+    _ctx.lineTo(400,250);
+    _ctx.lineTo(500,300);
+    _ctx.lineTo(400,350);
+    _ctx.lineTo(200,350);
+    _ctx.lineTo(100,300);                                                                                                         
+    _ctx.closePath();                                                                                                             
+    _ctx.stroke();                                                                                                                  
+    _ctx.strokeStyle = "black";                                                                                                           
+    _ctx.lineWidth = 6;                                                                                                                   
+    _ctx.beginPath();                                                                                                                     
+    _ctx.moveTo(100,300);                                                                                                                 
+    _ctx.lineTo(500,300);                                                                                                                 
+    _ctx.closePath();                                                                                                                     
+    _ctx.stroke();                                                                                                                        
+    _ctx.strokeStyle = "black";                                                                                                           
+    _ctx.lineWidth = 4.5;                                                                                                                 
+    _ctx.moveTo(200,250);                                                                                                                 
+    _ctx.lineTo(400,250);                                                                                                                 
+    _ctx.closePath();                                                                                                                     
+    _ctx.stroke();
+    _ctx.restore();
+     
+   }
+   
+   
+   
+   function update() {
+     _ctx.clearRect(0,0,800,600);
+     if (_rotating) {
+       _shipangle = (_shipangle+_rotating)%360;
+       if (_shipangle < 0) _shipangle = 356;
+     }
+     if (_thrusting) {
+       var r = (_shipangle*Math.PI)/180;
+       _dx += 0.15*Math.cos(r);
+       _dy += 0.15*Math.sin(r);
+       //console.log(_dx, _dy);
+     }
+     if (_dx || _dy) {
+       _shipx = (_shipx+_dx)%800;
+       _shipy = (_shipy+_dy)%600;
+       if (_shipx < 0) _shipx += 800;
+       if (_shipy < 0) _shipy += 600;
+       if (!_thrusting) {
+	 _dx *= 0.996;
+	 _dy *= 0.996;
+       }
+       
+     }
+     /*
+     if (_ufox || _ufoy) {
+       _ufox = (_ufox+_dx)%800;
+       _ufoy = (_ufoy+_dy)%600;
+       if (_ufox < 0) _ufox += 800;
+       if (_ufoy < 0) _ufoy += 600;
+      }
+      */
+    _ufox +=(Math.cos(_ufoangle))%(800-(radius*2));
+    _ufoy +=(Math.sin(_ufoangle))%(600-(radius*2));
+    if(_ufox < 0 - (radius * 2)) _ufox+= (800 - (radius * 2));
+    if(_ufoy < 0 - (radius * 2)) _ufoy+= (600 - (radius * 2));
+    if (travelled >= distance){
+      travelled = 0;
+      var a = [30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330];
+      _ufoangle = a[Math.floor(Math.random()*a.length)];
+      distance = Math.random()*100+40;
+    }
+    travelled++;
+    
+     ship();
+     ufo();
+   }
+   
+   function init() {
+     _ctx = document.getElementById("c").getContext("2d");
+     
+     _shipx = 400;
+     _shipy = 300;
+     _shipangle = 0;
+     setInterval(update, 20);
+     _ufox = 300;
+     _ufoy = 50;
+   }
+   function keyd(ev) {
+     switch(ev.keyCode) {
+       case 37:	// Left-arrow
+	 _rotating = -4;
+	 break;
+       case 39: // Right-arrow
+	 _rotating = 4;
+	 break;
+       case 38: // Up-arrow;
+	 _thrusting = true;
+	 break;
+       case 40: // Down-arrow:
+	 _shields = true;
+	 break;
+     }
+   }
+   function keyu(ev) {
+     switch(ev.keyCode) {
+       case 37:	// Left-arrow
+       case 39: // Right-arrow
+	 _rotating = 0;
+	 break;
+       case 38: // Up-arrow;
+	 _thrusting = false;
+	 break;
+       case 40: // Down-arrow:
+	 _shields = false;
+	 break;
+     }
+   }
+ </script>
+</head>
+<body onload='init();'>
+ <canvas id='c' width=800 height=600></canvas>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+March 3rd Notes:
+More Bash Coding
+Since we didn't do the last 2 homework. get good at BASH and think about an
+extra credit project of something. perhaps something socket related?
+Spend an hour a day on BASH. 
+
+LIBRARIES:
+-linux-vdso.so.1
+ -Virtual Dynamic Shared Object -- provided by the kernel for fast-path
+non-glibc direct to kernel memory system calls for frequenlty used syscalls
+such as gettimeofday. 
+ -Shared (.so) vs. Static (.a) libs.
+   -Static Libraries end w/ a .a extension & are linked to a progra at compile
+time. static libraries are archive files that contain unlinked .o files that
+are linked to the program w/ the id program(the compile time linker.) 
+   -Shared Libraries end w/ .so.<version> and are linked to a program at
+run time by the dynamic linker, an external program, the location of which is
+usually included w/ the executible. 
+   run ls > runs ld.so > loads /bin/ls > louds the shared libs > resolves the
+symbols > turns over control to _start. 
+ -Dynamic Linker (man 8 ld.so), located in /lib or /lib64 directory as
+ld-<libc_version>.so (usually linked from ld-linux*.so (usually linked from
+ld-linux*.so* is a program that locates the shared libraries needed by a
+program, loads them into memory, prepares the program to run by resolving the
+undefined symbols within the program with symbols present in the shared
+libraries, then finally runs the program. 
+ -it can be used to load and run a prgram:
+ >/lib64/ld-2.30.so[<options>][<program>[<options>]]
+
+the linker is modified by environment vars such as: 
+LD_LIBRARY_PATH -Additional paths to search for libraries. 
+LD_PRELOAD - Libraries to link first, userful for overiding other libraries
+or specific function calls. 
+
+Reading: 
+ man 7 libc
+ man 8 ld.so
+ >ldconfig:
+   -Maintains links to shared libraries and updates the linker cache files
+(/etc/ld.so.cache) /etc/ld.so.conf is used to determine library locations that
+hte ldconfig program should keep up to date. 
+ >ldd <program|library> 
+    -lists the shared libraries/objects used by a particular program
+    -LD_TRACE_LOADED_OBJECTS=1 LD_DEBUG=files \ /lib64/ld-linux-x86-64.so.2
+/bin/cat
+Note: libraries are programs without mains and that's it. 
+ >nm <object file|library|executible w/ symbols>
+  -list symbols from an object. 
+ >ar
+  -create/modify/extract from archive (.a) files. 
+ >ranlib
+  -creates an index to the archive, same as ar -s
+ >strace [-p pid | <program>]
+  -Trace system calls made by a running executable
+
+

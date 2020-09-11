@@ -1,0 +1,778 @@
+0:ls
+0:feb02x
+0:feb02x <- df2['TMAX']
+0:feb02y <- df2['TMAX']
+0:feb02x <- df2['Date']
+0:head(feb02y)
+0:feb02 <- data.frame(feb02x,feb02y)
+0:head(feb02)
+0:feb02$Year <- sapply(feb02@Date,1,4)
+0:str(feb02[
+0:'Date']
+0:)
+0:sapply(ffeb02['Date'],substr(1,4))
+0:sapply(feb02['Date'],substr(1,4))
+0:sapply(feb02['Date'],substr(feb02['Date'],1,4))
+0:substr(feb02['Date'],1,4))
+0:substr(feb02['Date'],1,4)
+0:substr(feb02@Date,1,4)
+0:substr(feb02x,1,4)
+0:substr(feb02x,1,9)
+0:substr(feb02x,4,9)
+0:substr(feb02x,4,6)
+0:substr(feb02x,4,7)
+0:feb02@Year <- substr(feb02x,4,7)
+0:substr(feb02['Date'],4,7)
+0:feb02["Year"]
+0:feb02["Year"] <- NA
+0:head(feb02)
+0:feb02["Year"] <- substr(feb02x,4,7)
+0:head('feb02')
+0:head(feb02)
+0:feb02['Year' == 1950]
+0:grep(feb02['Year'],'2010')
+0:grep(feb02@Year,'2010')
+0:q()
+0:ls()
+0:z
+0:ls()
+0:head(feb02)
+0:substr(feb02['Date'],'-02-02')
+0:grep(feb02['Date'],'-..-..')
+0:grep(feb02['Date'],'-02-02')
+0:grep(feb02['Date'],'-02-02')
+0:which(match(df2['Date'],'....-02-02')
+0:)
+0:head(df2)
+0:head(feb02)
+0:substr(feb02[1],3,5)
+0:substr(feb02[1],7,9)
+0:substr(feb02[1],6,7)
+0:substr(feb02[1],6,8)
+0:substr(feb02[1],9,11)
+0:substr(feb02[1],9,10)
+0:feb02['Month']
+0:feb02['Month'] <- NA
+0:head(feb02)
+0:feb02['Month'] <- substr(feb02[1],9,10)
+0:head(feb02)
+0:for(i in feb02['Date']){print i}
+0:for(i in feb02['Date']){print(i)}
+0:for(i in feb02['Date']){if(grepl(i,'....-02-02'))print(i)}
+0:for(i in feb02['Date']){if(grepl(i,'....-02-02')){print(i)}}
+0:for(i in feb02['Date']){if(grepl('....-02-02',i)){print(i)}}
+0:for(i in feb02['Date']){if(grep('....-02-02',i)){print(i)}}
+0:for(i in feb02['Date']){if(grepl('....-02-02',i)){print(i)}}
+0:for(i in feb02['Date']){if(grepl('....-02-02',i)==True){print(i)}}
+0:head(feb02)
+0:substr(feb02['Date'],'-02-02')
+0:substr(feb02[1],9,11)
+0:substr(feb02[1],12,13)
+0:substr(feb02[1],12,14)
+0:substr(feb02[1],12,13)
+0:feb02["Day"] <- NA
+0:feb02["Day"] <- substr(feb02[1],12,14)
+0:head(feb02)
+0:feb02["Day"] <- NA
+0:head(feb02)
+0:substr(feb02[1],12,)
+0:substr(feb02[1],9,14)
+0:substr(feb02[1],9,12)
+0:substr(feb02[1],9,13)
+0:substr(feb02[1],11,13)
+0:substr(feb02[1],12,13)
+0:feb02["Day"] <- substr(feb02[1],12,13)
+0:head(feb02)
+0:feb02["Day"]
+0:sapply(feb02['Day'],substr(feb02[1],12,13))
+0:sapply(feb02["Day"],substr(feb02["Date"],12,13))
+0:sapply(feb02['Date'],substr(x,12,13))
+0:sapply(feb02['Date'],substr(feb02['Date'],12,13))
+0:dayfun <- function(x) {substr(x,12,13)}
+0:dayfun
+0:sapply(feb02['Date'],dayfun)
+0:dayfun <- function(x) {z = substr(x,12,13) return z}
+0:dayfun <- function(x) {substr(x,12,13)}
+0:sapply(feb02['Date'],dayfun)
+0:dayfun <- function(x) {substr(x,1,13)}
+0:sapply(feb02['Date'],dayfun)
+0:dayfun <- function(x) {substr(x,11,13)}
+0:sapply(feb02['Date'],dayfun)
+0:dayfun <- function(x) {substr(x,10,13)}
+0:sapply(feb02['Date'],dayfun)
+0:dayfun <- function(x) {substr(x,9,13)}
+0:sapply(feb02['Date'],dayfun)
+0:feb02['Day'] <- sapply(feb02['Date'],dayfun)
+0:head(feb02)
+0:monfun <- function(x) {substr(x,9,13)}
+0:monfun <- function(x) {substr(x,6,11)}
+0:sapply(feb02['Date'],monfun)
+0:monfun <- function(x) {substr(x,6,8)}
+0:sapply(feb02['Date'],monfun)
+0:monfun <- function(x) {substr(x,6,7)}
+0:\
+0:monfun <- function(x) {substr(x,6,7)}
+0:sapply(feb02['Date'],monfun)
+0:feb02['Month'] <- sapply(feb02['Date'],monfun)
+0:head(feb02)
+0:feb02[1:20,]
+0:feb02[1:40,]
+0:colname(feb02)
+0:colnames(feb02)
+0:head(feb02)
+0:colnames(feb02)[colnames(feb02[1])]
+0:colnames(feb02)[colnames(feb02[2])]
+0:names(feb02)
+0:L = feb02@Month == 02 && feb02@Day == 02
+0:L <- feb02@Month == 02 && feb02@Day == 02
+0:L <- feb02@Year == 1950
+0:L <- feb02['Year'] == 1950
+0:L <- feb02['Month'] == 02 && feb02['Day'] == 02
+0:feb02[L,]
+0:feb02[L,]$Date
+0:str(feb02['Month']
+0:)
+0:L <- feb02['Month'] == "02" && feb02['Day'] == "02"
+0:feb02[L,]$Date
+0:feb02[L,]
+0:feb02[L]
+0:feb02[c("02-02")]
+0:feb02[feb02['Month'==02]
+0:}
+0:feb02[feb02['Month'==02]]
+0:head(df2)
+0:grep('....-02-02',feb02['Date'])
+0:grep('....-02-02',feb02@DAte)
+0:grep('....-02-02',feb02@Date)
+0:grep('....-02-02',feb02['Data'])
+0:head(feb02)
+0:L <= grepl('....-02-02'
+0:)
+0:L <- grepl('....-02-02',feb02[1])
+0:feb02[L,]
+0:L <- grep('....-02-02',feb02[1])
+0:feb02[L,]
+0:L <- grep('-02-02',feb02[1])
+0:feb02[L,]
+0:L <- grepl('-02-02',feb02[1])
+0:feb02[L,]
+0:L <- grepl('^....-02-02',feb02[1])
+0:feb02[L,]
+0:L <- grepl('....-02-02',feb02[1])==True
+0:L <- grepl('....-02-02',feb02[1])==TRUE
+0:feb02[L,]
+0:L <- grepl('02',feb02[5])==TRUE
+0:feb02[L,]
+0:D <- feb02['Month'] == "02"
+0:feb02[D,]
+0:D <- feb02['Month'] == "02" && feb02['Day'] == "02"
+0:feb02[D,]
+0:D <- (feb02['Month'] == "02") && (feb02['Day'] == "02")
+0:feb02[D,]
+0:D <- (feb02['Month'] == "02")
+0:feb02[D,]
+0:D <- (feb02['Day'] == "02")
+0:feb02[D,]
+0:febdaydf <- feb02[D,]
+0:head(febdaydf)
+0:M <- (feb02['Month'] == "02")
+0:febmondaydf <- febdaydf[M,]
+0:daydf <- febdaydf[M,]
+0:head(febdaydf)
+0:febdaydf[1:40]
+0:D <- (feb02['Month'] == "02") || (feb02['Day'] == "02")
+0:feb02[D,]
+0:ls()
+0:febdaydf
+0:M
+0:ls()
+0:str(M)
+0:D
+0:D <- (feb02['Month'] == "02")
+0:febdaydf
+0:D <- (febdaydf['Month'] == "02")
+0:febdaydf[D,]
+0:MAXTEMPFEB <- febdaydf[D,]
+0:head(MAXTEMPFEB)
+0:save(MAXTEMPFEB, file = "maxtempfeb.rda")
+0:ls()
+0:head(df2)
+0:febdaydf
+0:ls()
+0:str(D)
+0:D <- (feb02['Month'] == "02")
+0:febmondf <- feb02[D,]
+0:head(febmondf)
+0:febmondf[1:40]
+0:febmondf[1:40,]
+0:q()
+0:ls()
+0:i
+0:ls()
+0:head(febmondf)
+0:aggregate(febmondf, by = list(febmondf$Year),FUN = mean)
+0:aggregate(febmondf, by = list(febmondf@Year),FUN = mean)
+0:aggregate(febmondf, by = list(febmondf['Year']),FUN = mean)
+0:febmondf$year
+0:febmondf$Year
+0:clear
+0:ls()
+0:d
+0:D
+0:ls(0
+0:)
+0:ls()
+0:str(D)
+0:head(feb02)
+0:str(feb02$Date)
+0:str(feb02$Date,1,4)
+0:substr(feb02$Date,1,4
+0:)
+0:ls()
+0:head(febdaydf)
+0:feb02$Year
+0:ls()
+0:df2$year
+0:df2@Year
+0:df2@Year
+0:df2$Year
+0:feb02$Year <- substr(feb02$Date,1,4)
+0:feb02$Year
+0:ls()
+0:head(febdaydf)
+0:febmondf
+0:ls(0
+0:)
+0:ls()
+0:monfun(feb02)
+0:monfun(feb02)
+0:monfun(feb02$Date)
+0:ls()
+0:febdaydf$Year
+0:febdaydf
+0:str(febmondf$Date,1,4)
+0:str(febmondf$Date,1,3)
+0:str(feb02$Date,1,3)
+0:febmondf$Year <- str(feb02$Date,1,4)
+0:febmondf
+0:head(febmondf)
+0:ls()
+0:febdaydf
+0:substr(febdaydf$Date,1,4)
+0:febdaydf$Year <- substr(febdaydf$Date,1,4)
+0:head(febdaydf)
+0:febdaydf
+0:ls()
+0:febmondf
+0:febmondf$Year
+0:febmondf$Year <- NA
+0:febmondf$Year <- substr(febmondf$Date,1,4)
+0:head(febmondf)
+0:ls()
+0:MAXTEMPFEB
+0:MAXTEMPFEB$Year <- substr(MAXTEMPFEB$Date,1,4)
+0:MAXTEMPFEB
+0:save(MAXTEMPFEB, file = "maxtempfeb.rda")
+0:ls()
+0:febmondf
+0:ls()
+0:df2
+0:head(df2)
+0:q()
+0:ls9)
+0:ls()
+0:df2
+0:head(df2)
+0:febmondf
+0:aggregate(df$Year,list(df$TMAX),mean)
+0:head(febmondf)
+0:aggregate(df$TMAX,list(df$Year),mean)
+0:aggregate(febmondf$TMAX,list(df$Year),mean)
+0:aggregate(febmondf$TMAX,list(febmondf$Year),mean)
+0:ag <- aggregate(febmondf$TMAX,list(febmondf$Year),mean)
+0:plot(ag)
+0:ls9)
+0:ls()
+0:str(ag)
+0:meantempag <- aggregate(febmondf$TMAX,list(febmondf$Year),mean)
+0:meantempag
+0:ls9)
+0:ls9)
+0:head(df2)
+0:grep('T',df2$SNOW)
+0:df2[SNOW == T]
+0:df2$SNOW == T
+0:df2[SNOW == m]
+0:df2[SNOW == M]
+0:df2$SNOW[1:40
+0:}
+0:]
+0:df2$SNOW[1:40]
+0:df2$SNOW[1:100]
+0:df2[1:100]
+0:df2[1:100,]
+0:df2[1:500,]
+0:substr(df2$date,7,9)
+0:substr(df2$Date,7,9)
+0:df2[1:100]
+0:df2[1:100,]
+0:df2$Month <- NA
+0:substr(df2$Date,1,9)
+0:substr(df2$Date,4,9)
+0:substr(df2$Date,5,9)
+0:substr(df2$Date,6,7)
+0:df2$Month <- substr(df2$Date,6,7)
+0:head(df2)
+0:df2$Month == '02'
+0:df2$Month = '02'
+0:head(df2)
+0:df2$Month <- as.integer(substr(df2$Date,6,7)
+0:)
+0:head(df2)
+0:df2$Month == 1
+0:head(df2)
+0:str(df2$SNOW)
+0:grep("2",df2$Month)
+0:grep("2",df2$Month)
+0:grepl("2",df2$Month)
+0:grepl("2",df2)
+0:grep('2',df2$Month)
+0:grep(,df2$Month)
+0:grep(.,df2$Month)
+0:grep(2,df2$Month)
+0:df2$Month == 2
+0:df2[df2$Month == 2]
+0:df2$Month[df2$Month == 2]
+0:df2[df2$Month == 2]
+0:[df2$Month == 2]
+0:df2$Month == 2
+0:df2['df2$Month' == 2]
+0:df2['df2$Month == 2']
+0:df2[df2$Month == 2]
+0:df2['df2$Month' == 2]
+0:grep(2,df2$Month)
+0:df2$Month == 2
+0:df2['df2$Month' == 2]
+0:df2[df2$Month == 2]
+0:df2[Month == 2]
+0:df2['Month' == 2]
+0:df2[Month == 2,]
+0:df2['Month' == 2,]
+0:df2['Month' = 2]
+0:df2[Month = 2]
+0:df2[df2$Month = 2]
+0:df2[df2$Month == 2]
+0:subset(df2,Month ==2)
+0:febmonsnowdf <- subset(df2,Month ==2)
+0:aggregate(febmonsnowdf$Year,list(df$SNOW),sum)
+0:aggregate(febmonsnowdf$Year,list(df$SNOW),sum)
+0:febmonsnowdf
+0:aggregate(febmonsnowdf$SNOW,list(df$Year),sum)
+0:aggregate(febmonsnowdf$SNOW,list(febmonsnowdf$Year),sum)
+0:febsnowdf <- subset(df2,Month ==2)
+0:aggregate(febsnowdf$SNOW,list(febsnowdf$Year),sum)
+0:febsdf <- subset(df2,Month ==2)
+0:aggregate(febsdf$SNOW,list(febsdf$Year),sum)
+0:febsdf
+0:febsnowdf$Year <- NA
+0:head(febsnowdf)
+0:substr(febsnowdf$Date,1,4)
+0:febsnowdf$Year <- substr(febsnowdf$Date,1,4)
+0:head(febsnowdf)
+0:aggregate(febsdf$SNOW,list(febsdf$Year),sum)
+0:aggregate(febsnowdf$SNOW,list(febsnowdf$Year),sum)
+0:aggregate(febsnowdf$SNOW,list(febsnowdf$Year),sum)
+0:ls()
+0:totalsnowag <- aggregate(febsnowdf$SNOW,list(febsnowdf$Year),sum)
+0:totalsnowag
+0:ls()
+0:save(meantempag,file='meantempag.rda')
+0:save(totalsnowag,file='totalsnowag.rda')
+0:ag
+0:ls9)
+0:ls()
+0:meantempag
+0:ls()
+0:rm(ag)
+0:D
+0:rm(D)
+0:ls9)
+0:ls()
+0:data
+0:rm(Data)
+0:ls()
+0:rm(data)
+0:ls()
+0:dayfun
+0:rm(dayfun)
+0:df
+0:head(df)
+0:ls()
+0:feb02
+0:head(feb02)
+0:ls()
+0:feb02x
+0:ls()
+0:febdaydf
+0:ls()
+0:rm(febsdf)
+0:i
+0:rm(i)
+0:ls()
+0:df
+0:str(df$SNOW)
+0:grep('T',df$SNOW)
+0:head(df)
+0:grep('.*\..*',df$SNOW)
+0:grep('.*\.',df$SNOW)
+0:grep('..',df$SNOW)
+0:grep('\d',df$SNOW)
+0:grep('\\d',df$SNOW)
+0:grep('M',df$SNOW)
+0:grep('T',df$SNOW)
+0:buDF <- df
+0:buDF
+0:gsub('T','0.0',df$SNOW)
+0:head(df)
+0:df[1:100,]
+0:df <- buDF
+0:df
+0:gsub('T','0.00',df$SNOW)
+0:df
+0:df$SNOW <- gsub('T','0.00',df$SNOW)
+0:df[1:100,]
+0:df <- buDF
+0:df[1:100,]
+0:sub('T',0.0,df$SNOW)
+0:df[1:100,]
+0:sub <- function(x) {if(x=='T'){return '0.0'}}
+0:sub <- function(x) {if(x=='T'){return "0.0"}}
+0:sub <- function(x) {if(x=='T')return "0.0"}
+0:sub <- function(x) {if(x == 'T') return "0.0"}
+0:str(df$SNOW)
+0:sub <- function(x) {if(x == 'T'){return("0.0")}}
+0:sub
+0:sapply(df,sub(df$SNOW))
+0:sapply(df$SNOW,sub("T","0.0",df$SNOW))
+0:sapply(df,sub("T","0.0",df$SNOW))
+0:sub("T","0.0",df$SNOW))
+0:sub("T","0.0",df$SNOW)
+0:sub('T',"0.0",df$SNOW)
+0:gsub('T','0.0',df$SNOW)
+0:gsub('T',"0.0",df$SNOW)
+0:gsub("T","0.0",df$SNOW)
+0:df$SNOW <- gsub("T","0.0",df$SNOW)
+0:df$SNOW
+0:head(df)
+0:df[1:100,]
+0:buDF[1:100,]
+0:buDF[1:20,]
+0:df[1:20,]
+0:df$Year <- NA
+0:df$Year <- substr(df$Date,1,4)
+0:df[1:20,]
+0:df[1:400,]
+0:df[1:20,]
+0:ls()
+0:str(totalsnowag)
+0:ls
+0:buDF2 <- df
+0:df
+0:aggregate(df$SNOW,list(df$Year),sum)
+0:str(df$SNOW)
+0:df$SNOW <- as.numeric(df$SNOW)
+0:str(df$SNOW)
+0:head(df$SNOW)
+0:head(df)
+0:df[1:100,]
+0:df[1:500,]
+0:aggregate(df$SNOW,list(df$Year),sum)
+0:ls()
+0:totalsnowag <- aggregate(df$SNOW,list(df$Year),sum)
+0:totalsnowag[-c(70),]
+0:totalsnowag <- totalsnowag[-c(70),]
+0:totalsnowag
+0:save(totalsnowag, file='totalsnowag.rda')
+0:q()
+0:df
+0:head(df)
+0:df[-c(1),]
+0:df <- df[-c(1),]
+0:df
+0:head(df)
+0:str(df$MEAN)
+0:as.numeric(MEAN)
+0:as.numeric(df$MEAN)
+0:df$MEAN <- as.numeric(df$MEAN)
+0:str(df$MEAN)
+0:aggregate(df$MEAN,list(df$Year),mean)
+0:meantempag <- aggregate(df$MEAN,list(df$Year),mean)
+0:ls()
+0:save(meantempag, file="meantempag.rda")
+0:q()
+1550083456129:load("~/Weather/maxtempfeb.rda")
+1550083468848:ls()
+1550083476647:MAXTEMPFEB
+1550083499597:plot(MAXTEMPFEB$Year,MAXTEMPFEB$TMAX)
+1550083552626:plot(MAXTEMPFEB$Year,MAXTEMPFEB$TMAX, main="Max Temperatures on February 2nd",xlab="Year",ylab="Temperature in Fahrenheit")
+1550083679992:load("~/Weather/meantempag.rda")
+1550083688372:meantempag
+1550083707303:plot(meantempag[1],meantempag[2])
+1550083726651:x <- as.numeric(unlist(x))
+1550083743447:x <- as.numeric(unlist(meantempag[1]))
+1550083761522:y <- as.numeric(unlist(meantempag[2]))
+1550083766222:plot(x,y)
+1550083809322:plot(x,y, main="Mean Temperatures in February",xlab = "Year", ylab = "Temperature in Fahrenheit")
+1550083850749:load("~/Weather/totalsnowag.rda")
+1550083856330:ls()
+1550083861876:totalsnowag
+1550083884172:x <- as.numeric(unlist(totalsnowag[1]))
+1550083901049:y <- as.numeric(unlist(totalsnowag[2]))
+1550083907147:plot(x,y)
+1550083958324:plot(x,y,main="Total Snowfall in February",xlab="Year",ylab="Total Snow in Inches")
+1550175736756:load("~/Weather/meantempag.rda")
+1550175746829:ls()
+1550175751547:meantempag
+1550175765986:x <- as.numeric(meantempag[1])
+1550175775454:x <- as.numeric(unlist(meantempag[1])
+1550175779431:)
+1550175803104:y <- as.numeric(unlist(meantempag[2]))
+1550175806547:plot(x,y)
+1550175826174:plot(x,y,main="Mean Maximum Temperatures in February")
+1550175835897:plot(x,y,main="Mean Maximum Temperatures in February",xlab = "Year")
+1550175850948:plot(x,y,main="Mean Maximum Temperatures in February",xlab = "Year", ylab = "Temperature in Fahrenheit")
+1550175871850:meanfebplot <- plot(x,y,main="Mean Maximum Temperatures in February",xlab = "Year", ylab = "Temperature in Fahrenheit")
+1550513036422:View(df)
+1550513036636:View(df)
+1550513063906:system("ls")
+1550513076402:system("cd Fun Stuff[")
+1550513082859:system("cd Fun Stuff")
+1550513141059:df <- read.csv("/Fun Stuff/skater_stats_2019-02-15")
+1550513175011:skater_stats_2019.02.15 <- read.csv("~/skater_stats_2019-02-15.csv", header=FALSE)
+1550513175049:View(skater_stats_2019.02.15)
+1550513237638:hockeydf <- skater_stats_2019.02.15
+1550513250020:names(hockeydf)
+1550513278246:hockeydf[1:10]
+1550513312455:hockeydf[1:10,]
+1550513347123:hockeydf[1:14]
+1550513355166:hockeydf <- hockeydf[1:14]
+1550513361468:head(hockeydf)
+1550513388584:names(hockeydf)
+1550513425279:names(hockeydf) <- c(Player, Season, Team)
+1550513438783:names(hockeydf) <- c("Player", "Season", "Team")
+1550513442277:names(hockeydf)
+1550513889198:header <- c("Player","Season","Team","Position", "Games Played","Time on Ice", "Goals", "Assists", "Points", "Plays","Points/Game")
+1550513897981:names(hockeydf)
+1550513914231:names(hockeydf) <- header
+1550513916266:names(hockeydf)
+1550513932722:hockeydf[1:11]
+1550513954500:hockeydf <- hockeydf[1:11]
+1550513962176:head(hockeydf)
+1550514009875:hockeydf <- hockeydf[2:]
+1550514012703:hockeydf <- hockeydf[2:,]
+1550514019917:hockeydf <- hockeydf[2:]
+1550514028337:hockeydf <- hockeydf$Player[2:]
+1550514043541:hockeydf <- hockeydf$Player[2:]
+1550514046432:hockeydf <- hockeydf$Player[]
+1550514051635:hockeydf <- hockeydf$Player[]
+1550514059664:head(hockeydf)
+1550514072192:hockeydf[1:11]
+1550514085753:hockeydf <- skater_stats_2019.02.15
+1550514095411:header <- c("Player","Season","Team","Position", "Games Played","Time on Ice", "Goals", "Assists", "Points", "Plays","Points/Game")
+1550514097770:head(hockeydf)
+1550514117010:names(hockeydf) <- header
+1550514121128:head(hockeydf)
+1550514163350:hockeydf[-1,]
+1550514175213:hockeydf<-hockeydf[-1,]
+1550514186442:hockeydf<-hockeydf[1:11]
+1550514190060:hockeydf
+1550514309584:grep(".*/.*",hockeydf$Team)
+1550514358668:hockeydf[hockeydf$Team == "VGK"]
+1550514361983:hockeydf[hockeydf$Team == "VGK",]
+1550514376018:vegasstats <- hockeydf[hockeydf$Team == "VGK",]
+1550514395827:sort(hockeydf$`Time on Ice`)
+1550514417196:vegasstats[sort(hockeydf$`Time on Ice`),]
+1550514568774:VGKtoi <- aggregate(vegasstats$`Time on Ice`,vegasstats$Player,max)
+1550514583245:VGKtoi <- aggregate(vegasstats$`Time on Ice`,by =vegasstats$Player,max)
+1550514590429:VGKtoi <- aggregate(vegasstats$`Time on Ice`,by=vegasstats$Player,max)
+1550514652495:vegasstats[order(vegasstats$`Time on Ice`)]
+1550514683699:vegasstats[order(vegasstats['Time on Ice'])]
+1550514713502:vegasstats[order(vegasstats[7])]
+1550514720794:vegasstats[7])
+1550514724386:vegasstats[7,])
+1550514728443:vegasstats[7,]
+1550514731641:vegasstats[7]
+1550514734546:vegasstats[8]
+1550514736883:vegasstats[9]
+1550514742660:vegasstats[6]
+1550514755452:order(vegasstats[6])
+1550514766651:vegasstats[order(vegasstats[6])]
+1550514774206:vegasstats[order(vegasstats[6]),]
+1550514879514:order(vegasstats[6])
+1550514881063:vegasstats[order(vegasstats[6]),]
+1550514889882:vegasstats[order(vegasstats[6]),]
+1550514928262:vegasstats[order.pop(vegasstats[6]),]
+1550514962875:vegasstats[order(vegasstats[6]),decreasing = TRUE]
+1550514970866:vegasstats[order(vegasstats[6]),decreasing = TRUE,]
+1550514990821:vegasstats[order(vegasstats[6], decreasing=TRUE),]
+1550515024052:vegasstats[order(vegasstats['Goals'], decreasing=TRUE),]
+1550515056513:str(vegasstats$Goals)
+1550515097530:vegasstats$Goals <- as.numeric(vegasstats$Goals)
+1550515099712:str(vegasstats$Goals)
+1550515103744:vegasstats[order(vegasstats['Goals'], decreasing=TRUE),]
+1550515212593:vegasstats <- hockeydf[hockeydf$Team == "VGK",]
+1550515216860:str(vegasstats$Goals)
+1550515239784:options[StringsAsFactors]=FALSE
+1550515268270:options(StringsAsFactors=FALSE)
+1550515274248:vegasstats <- hockeydf[hockeydf$Team == "VGK",]
+1550515276638:str(vegasstats$Goals)
+1550515287650:vegasstats
+1550515300926:count(vegasstats$Player)
+1550515313094:lenght(vegasstats$Player)
+1550515316708:length(vegasstats$Player)
+1550515400965:hockeydf[hockeydf$Team == "VGK" | substr(hockeydf$Team,5,7) == "VGK"]
+1550515422732:substr(hockeydf$Team,5,7) == "VGK'
+1550515429969:)
+1550515436154:)
+1550515443931:lsdf
+1550515445000:asdlfkjasdf
+1550515445920:askldjfslakdfj
+1550515446977:aasdklfjaslkdfj
+1550515448445:no
+1550515451611:stop
+1550515452947:quit\
+1550515468221:)))))))
+1550515471085:))))))
+1550515471087:""
+1550515473723:>
+1550515489261:View(hockeydf)
+1550515490908:View(hockeydf)
+1550515505872:View(vegasstats)
+1550515506070:View(vegasstats)
+1550515547778:substr(hockeydf$Team,1,3)
+1550515559185:substr(hockeydf$Team,4,7)
+1550515563784:substr(hockeydf$Team,5,7)
+1550515630232:str(vegasstats$Points)
+1550515661937:L <- as.integer(unlist(vegasstats$Points))
+1550515664777:L
+1550515694461:L <- as.numeric(unlist(vegasstats$Points))
+1550515696460:L <- as.numeric(unlist(vegasstats$Points))
+1550515697648:L
+1550515743222:options(stringsAsFactors = FALSE)
+1550515818161:hockeyset2 <- read.csv("~/skater_stats_2019-02-15.csv")
+1550515818181:View(hockeyset2)
+1550515832057:str(hockeyset2$Player)
+1550515879872:str(hockeyset2$G)
+1550515921647:vegasstats <- hockeyset2[hockeyset2$Team == "VGK",]
+1550515926003:vegasstats
+1550515946757:vegasstats <- vegasstats[1:11]
+1550515948756:vegasstats
+1550515981206:vegasstats[order(vegasstats$G),]
+1550516013622:vegasstats[order(vegasstats$G,decreasing=TRUE),]
+1550516076622:save(vegasstats,"vegasstate.rda")
+1550516084572:save(vegasstats,"vegasstats.rda")
+1550516110529:save(vegasstats,file = "vegasstats.rda")
+1550516124953:save(hockeyset2,file = "hockey.rda")
+1550519744007:load("vegasstats.rda")
+1550519748228:ls()
+1550519752676:vegasstate
+1550519754199:vegasstats
+1550519764850:vegasstats
+1550519775973:length(vegasstats$Player)
+1550519802149:plot(vegasstats$TOI)
+1550519876482:lm(vegasstats$TOI,index)
+1550519946241:v <- vector()
+1550519990226:vegasstats$Index <- NA
+1550519991349:ls
+1550519993698:ls()
+1550519998289:vegasstats
+1550520066929:for(i in vegasstats){vegasstats$Index <- i}
+1550520072528:head(vegasstats)
+1550520089009:for(i in vegasstats){vegasstats$Index <- as.integer(i)}
+1550520100176:vegasstats$Index <- 0
+1550520102483:head(vegasstats)
+1550520104689:for(i in vegasstats){vegasstats$Index <- as.integer(i)}
+1550520110676:for(i in vegasstats){vegasstats$Index <- i}
+1550520112979:head(vegasstats)
+1550520123952:for(i in vegasstats){vegasstats$Index <- i+1}
+1550520133249:for(i in vegasstats){vegasstats$Index=i}
+1550520135349:head(vegasstats)
+1550521640099:quizdatadf <- read.csv("quizdata.csv")
+1550521651999:str(quizdatadf)
+1550521674140:options(stringsAsFactors = FALSE)
+1550521675726:quizdatadf <- read.csv("quizdata.csv")
+1550521678099:str(quizdatadf)
+1550521700861:quizdatadf
+1550521716109:head(quizdatadf)
+1550521730461:?read
+1550521741052:?read.csv
+1550521769212:quizdatadf <- read.csv("quizdata.csv", sep=".")
+1550521821440:?read.csv
+1550521832175:quizdatadf <- read.csv("quizdata.csv", sep=".",)
+1550521865981:quizdatadf <- read.csv("quizdata.csv", sep=":",)
+1550521869824:head(quizdatadf)
+1550521893724:mean(quizdatadf$wgt1)
+1550521960675:mean(quizdatadf$wgt1[quizdatadf[type='Q'])
+1550521970651:mean(quizdatadf$wgt1[quizdatadf$type == Q)
+1550521981709:mean(quizdatadf$wgt1[quizdatadf$type == 'Q'])
+1550522018849:quizdatadf$wgt1[quizdatadf$type == 'Q']
+1550522045565:mean(quizdatadf$wgt1[quizdatadf$type == 'Q'])
+1550522132974:quizdatadf[quizdatadf$type = 'C' | quizdatadf$count1 = 4]
+1550522140059:quizdatadf[quizdatadf$type == 'C' | quizdatadf$count1 == 4]
+1550522144812:quizdatadf[quizdatadf$type == 'C' | quizdatadf$count1 == 4,]
+1550522162059:quizdatadf[quizdatadf$type == 'C' & quizdatadf$count1 == 4,]
+1550522187874:quizdatadf$type[quizdatadf$type == 'C' & quizdatadf$count1 == 4,]
+1550522190954:quizdatadf$type[quizdatadf$type == 'C' & quizdatadf$count1 == 4]
+1550522200762:quizdatadf$type[quizdatadf$type == 'C' & quizdatadf$count1 == 4] <- "B"
+1550522254674:quizdatadf$total
+1550522263562:head(quizdatadf)
+1550522275178:quizdatadf$total <- 0
+1550522282586:str(quizdatadf$total)
+1550522316874:quizdatadf$total <- quizdatadf$wgt1 + quizdatadf$wgt2
+1550522321101:head(quizdatadf)
+1550522408635:aggregate(quizdatadf,quizdatadf$id,count)
+1550522419548:aggregate(quizdatadf,quizdatadf$id,sum())
+1550522422186:aggregate(quizdatadf,quizdatadf$id,sum
+1550522423962:aggregate(quizdatadf,quizdatadf$id,sum)
+1550522426798:aggregate(quizdatadf,quizdatadf$id,sum)
+1550522496539:aggregate(quizdatadf$id,sum)
+1550522522223:aggregate(quizdatadf$id,quizdatadf,sum)
+1550522529292:aggregate(quizdatadf$id,quizdatadf$id,sum)
+1550522615835:max(quizdatadf$wgt2)
+1550522680586:quizdatadf[max(quizdatadf$w) / quizdatadf$wgt2 >= 2]
+1550522696250:quizdatadf[max(quizdatadf$w)/quizdatadf$wgt2 >= 2,]
+1550522708890:quizdatadf[max(quizdatadf$w)/quizdatadf$wgt2 > 2]
+1550522737341:quizdatadf[(8.85295/quizdatadf$wgt2) > 2]
+1550522739657:quizdatadf[(8.85295/quizdatadf$wgt2) > 2,]
+1550522747110:quizdatadf[(8.85295/quizdatadf$wgt2) >= 2,]
+1550522754537:length(quizdatadf[(8.85295/quizdatadf$wgt2) >= 2,])
+1550522836524:sort(quizdatadf$id)
+1550522868123:aggregate(sort(quizdatadf$id),quizdatadf$id,count),sum)
+1550522882825:aggregate(sort(quizdatadf$id),quizdatadf$id,sum)
+1550522893211:aggregate(sort(quizdatadf$id),quizdatadf,sum)
+1550522956876:plot(quizdatadf$wgt1[type=='K'],quizdatadf$wgt2[type=='K'])
+1550522979467:plot(quizdatadf$wgt1[quizdatadf$type=='K'],quizdatadf$wgt2[quizdatadf$type=='K'])
+1550523006602:plot(quizdatadf$wgt1[quizdatadf$type=='K'],quizdatadf$wgt2[quizdatadf$type=='K'],col=quizdatadf$count2)
+1550523076955:barplot(quizdatadf$type)
+1550523081800:barplot(quizdatadf$type,)
+1550523089976:?barplot
+1550523156012:quit()
+1555529232876:View(ag)
+1555529233031:View(ag)
+1555529237627:View(hockeydf)
+1555529237817:View(hockeydf)
+1555529243143:View(skater_stats_2019.02.15)
+1555529243304:View(skater_stats_2019.02.15)
+1555529246068:View(votes)
+1555529246242:View(votes)
+1555529248993:View(x)
+1555529249217:View(x)
+1555529273143:library(ggplot2)
+1555529463121:ggplot(mpg,aes(x=displ,y=cty))
+1555529544968:ggplot(mpg,aes(x=displ,y=cty)) + geom_point(size) + geom_smooth()
+1555529556743:ggplot(mpg,aes(x=displ,y=cty)) + geom_point(size=2) + geom_smooth()
+1555529630226:ggplot(mpg,aes(x=displ,y=cty)) + geom_point(size=mpg$cyl) + geom_smooth()
+1555529637968:ggplot(mpg,aes(x=displ,y=cty)) + geom_point(size=mpg$cyl-2) + geom_smooth()
+1555529641492:ggplot(mpg,aes(x=displ,y=cty)) + geom_point(size=mpg$cyl-5) + geom_smooth()
+1555529645968:ggplot(mpg,aes(x=displ,y=cty)) + geom_point(size=mpg$cyl-3) + geom_smooth()
+1555529685027:ggplot(mpg,aes(x=displ,y=cty)) + geom_point(size=mpg$cyl-3,col=mpg$year-1998) + geom_smooth()

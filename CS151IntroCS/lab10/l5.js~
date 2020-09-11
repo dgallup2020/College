@@ -1,0 +1,15 @@
+#!/usr/local/bin/node
+
+const fs = require("fs");
+var data = fs.readFileSync(process.argv[2], {encoding: 'utf8'});
+
+/**
+ * Using the file input in data above, count the number of spaces, the number
+ * of numbers and the number of letters and return a count for each of them.
+ *
+ * Example input/output:
+ * ./l5.js l4.js
+ * Spaces : 147
+ * Letters: 571
+ * Numbers: 6
+ */

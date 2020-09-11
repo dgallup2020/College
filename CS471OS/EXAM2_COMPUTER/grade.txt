@@ -1,0 +1,4 @@
+0) -1/10 for wait'ing on child causing different behavior than demo
+1) 2/3 credit since weren't able to put string together.  Note that you needed to copy into fullpath, not just set the pointer
+
+Total score = 45 + 17 = 62/75

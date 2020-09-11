@@ -1,0 +1,36 @@
+OSTEP CHAPTER REVIEW: Dylan Gallup
+
+Chapter 16: Segmentation
+The Big Issue:
+How to support a large address space with a lot of free space between
+the stack and heap.
+
+- Segmentation Generalized: Bases and Bounds
+
+Segment: A contiguous portion of the address space of a particular length.
+in this case we have the stack, heap, and the code.
+
+Segmentation: Implementing a base and bounds pair per logical segment of the
+address space. Segmentation allows the OS to put each of the different
+segments to different parts of physical memory. 
+
+Sparse Address Spaces: Large address spaces with large amounts of unused
+address space. 
+
+Segmentation Fault: Happens when memory accesss on a segmented machine is to
+an illegal address. Specifically - the hardware traps into the OS and ending
+that process. 
+
+- Knowing Which Segment We Are Refering To?
+
+The Explicit Approach: to chop up the address space into segements based on
+the top few bits of the Virtual Address.
+
+The Implicit Approach: the hardware deteremines the segment by noticing how
+the address was formed. Relating where the address was generated to where it
+should be segmented. stuff from the stack must be in the stack segment.
+
+- What About The Stack?
+
+The Stack is different because it grows larger backwards compared to the code
+and the heap segment. Stack has to be translated differently because of this. 

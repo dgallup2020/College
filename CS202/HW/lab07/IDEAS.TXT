@@ -1,0 +1,40 @@
+tHIS IS WHERE I PUT MY IDEAS DOWN:
+
+
+BATTLE SYSTEM CODE:
+struct player battle(struct player p, struct player mon){
+    
+    int pAttack = p.strength * ((rand() % 6 + 1) + (rand() % 6 + 1));
+    int monAttack = mon.strength * ((rand() % 6 + 1) + (rand() % 6 + 1)); 
+    struct player result = p;
+    
+    
+    if(pAttack >= monAttack)
+      result.health -= 10;
+    
+    else{
+      result = mon;
+      result.health -= 10;
+    }
+    
+    return result;
+  
+}
+
+
+player drive code:
+if(p1.health>0){ //character goes through MONSTER because of order in comparision???)
+      p1 = movement(chTyped, p1);
+      p1 = sc(chTyped, p1);
+      if(p1.row == m1.row && m1.col == p1.col){
+	if(m1.health>0){
+	  struct player result = battle(p1,m1);
+	  if(result.sprite[0] == 'M')
+	    m1 = result;
+	  else
+	    p1 = result;
+	}
+      }
+      
+      //p1 = heal_dc(chTyped, p1,m1);
+  }

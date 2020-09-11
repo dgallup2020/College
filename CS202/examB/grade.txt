@@ -1,0 +1,7 @@
+1) 1/1
+2) 1/2
+3) 2/3 - problem asked for percentage of different words, not counts, you would have seen that by testing my program
+4) 0
+5) 1/1 - note that your program happens to give the right answers, but is somewhat lucky in doing so
+
+total: 12 + 6 + 6*2/3 + 3*1/2 = 23.5

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> </title>
+ <meta charset='utf-8'>
+ <style>
+  /* Place a 1 pixel border around the canvas: */
+  #c { border: 1px solid black; }
+	ctx: {border: 1px solid black;}
+ </style>
+ <script>
+ function draw() {
+   // ctx holds the canvas 2D rendering context:
+   var ctx = document.getElementById("c").getContext("2d");
+   // Fill out the rest of the drawing function here:
+   ctx.strokeStyle = "black";
+   ctx.lineWidth = 5;
+   ctx.beginPath();
+	ctx.moveTo(100,300);
+	ctx.lineTo(200,250);
+	ctx.lineTo(225,190);
+	ctx.lineTo(375,190);
+	ctx.lineTo(400,250);
+	ctx.lineTo(500,300);
+	ctx.lineTo(400,350);
+	ctx.lineTo(200,350);
+	ctx.lineTo(100,300);
+	ctx.closePath();
+      ctx.stroke(); 
+ctx.strokeStyle = "black";
+ctx.lineWidth = 6;
+ctx.beginPath();
+ctx.moveTo(100,300);
+ctx.lineTo(500,300);
+ctx.closePath();
+ctx.stroke();
+ctx.strokeStyle = "black";
+ctx.lineWidth = 4.5;
+ctx.moveTo(200,250);
+ctx.lineTo(400,250);
+ctx.closePath();
+ctx.stroke();
+
+    }
+ </script>
+</head>
+<!-- The draw() function defined above is called when the body finishes loading: -->
+<body onload='draw();'>
+<!-- A 800x600 canvas with the ID 'c' -->
+<canvas id='c' width=800 height=600></canvas>
+</body>
+</html>

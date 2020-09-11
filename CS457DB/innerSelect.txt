@@ -1,0 +1,15 @@
+SELECT a.Name, COUNT() AS 'Num Tracks', x.Num_Al
+FROM artists AS a
+JOIN albums AS al
+ON a.artistid = al.artistid
+JOIN tracks AS t
+ON t.albumid = al.albumid
+JOIN (
+  SELECT a.artistID AS aid, COUNT() AS Num_Al
+  FROM artists AS a
+  JOIN albums AS al
+  ON a.artistid = al.artistid
+  GROUP BY a.artistid
+  ) AS x
+ ON a.artistid = x.aid
+GROUP BY a.Name

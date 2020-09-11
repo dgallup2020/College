@@ -1,0 +1,17 @@
+Creating filesystem with 20480 1k blocks and 5136 inodes
+Filesystem UUID: 52aed773-a3ee-4bca-a966-e3c6988832c9
+Superblock backups stored on blocks: 
+	8193
+
+Allocating group tables: 0/3   done                            
+Writing inode tables: 0/3   done                            
+Copying files into the device: Creating filesystem with 20480 1k blocks and 5136 inodes
+Filesystem UUID: 1b8e889d-9054-4679-a56e-ec4ee506d347
+Superblock backups stored on blocks: 
+	8193
+
+Allocating group tables: 0/3   done                            
+Writing inode tables: 0/3   done                            
+Copying files into the device: done
+Writing superblocks and filesystem accounting information: 0/3   done
+

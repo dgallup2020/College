@@ -1,0 +1,40 @@
+Quiz B, CS 202 fall 2017
+
+Make a directory in your account ~/QUIZ/quizB/ and put your files in that directory.
+
+Make each of the following programs, and make sure they exactly match the reference
+programs in ~jkinne/public_html/cs202-f2017/QUIZ/quizB/
+
+Points - 6 points for the first one you solve, 3 points for the second.
+
+NOTE ** - Only 2 problems will be graded.  You can skip one.
+
+
+Time - until the end.  When you're done you can ask me to take a look at something else (i.e., HW).
+
+1) quizB1.c reads an integer k using scanf and then prints a "boolean or" table with all numbers
+   printed both in hex and decimal.  An example for k = 4
+             0 (  0)    1 (  1)    2 (  2)    3 (  3)    4 (  4)  
+------------------------------------------------------------------
+  0 (  0) |   0 (  0)    1 (  1)    2 (  2)    3 (  3)    4 (  4)  
+  1 (  1) |   1 (  1)    1 (  1)    3 (  3)    3 (  3)    5 (  5)  
+  2 (  2) |   2 (  2)    3 (  3)    2 (  2)    3 (  3)    6 (  6)  
+  3 (  3) |   3 (  3)    3 (  3)    3 (  3)    3 (  3)    7 (  7)  
+  4 (  4) |   4 (  4)    5 (  5)    6 (  6)    7 (  7)    4 (  4)  
+
+  Hint: use %3i or %3d to print the integers
+
+2) quizB2.c takes all of its command-line arguments, converts them to integers, and
+   prints their sum and product.  For example,
+   ./a.out 2 3 7
+     sum:     12
+     product: 42
+
+3) quizB3.c takes the first command-line argument as a file name, opens the file,
+   and prints the percentage of characters in the file that are letters, punctuation,
+   and whitespace.
+
+   Hint: use fgetc, isalpha, isspace, isdigit, ispunct
+   Hint: use %.0lf or %.0f
+
+   

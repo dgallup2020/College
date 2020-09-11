@@ -1,0 +1,32 @@
+CS151 Lab exercise #4 (10 pts)
+
+The following are to be done in your CS151 class account.  Use the "man" command
+for more information on specific commands.  You may need to use the following
+commands: cd, ls, cp, mkdir, more or less, and an editor of some kind.
+
+NOTE: To check your progress run the "labcheck 4" command to check for errors
+and to see if you've successfully completed the lab.
+
+Make a directory called lab4 in your CS151 accounts' home directory.  Inside
+this directory perform the following:
+
+1) Copy the file located at ~sbaker/public_html/cs151/class/ex4.html to your
+   lab4 directory. (1pt)
+
+2) Make sure the ex4.html file permissions are read/write for user, none
+   for group and read only for other. (1pt)
+
+3) Edit the ex4.html file and follow the instructions inside it.  Compare your
+   result to: http://cs.indstate.edu/~sbaker/cs151/class/lab4/ref.png
+   8 points possible:
+     +3 points for no HTML warnings or errors and matches the reference
+     +5 points if your page matches the reference image:
+        +2 points for a working table
+        +3 points for correct CSS styling.
+
+Note: If the 'labcheck 4' program detects that your page and the reference page
+  do not match, it will install a web comparator page into your public_html
+  page as the directory lab4, which will contain an index.html file and an image
+  of your results.  Use the mouse and hover over the boxes below the image to
+  switch back and forth between your result and the reference image to determine
+  what needs to be fixed to make them match up.

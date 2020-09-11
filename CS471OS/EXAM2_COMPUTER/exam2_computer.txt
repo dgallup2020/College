@@ -1,0 +1,233 @@
+Exam 2 computer portion, CS 471/571/ fall 2018, taught by Jeff Kinne
+
+Start by running the following -
+cd ~jkinne/public_html/cs471-f2018
+./star2_exam1_computer.sh
+
+
+Due - Sunday Dec 16 AOE (8am EST Monday morning)
+
+Scoring
+- Choose 2 out of 3 problems to complete.  2 solved problems is 100%.
+- Test is out of 75 points (same as on paper test).  Best problem is worth 50 points,
+  second problem is worth 25, third (optional) is worth 10.  So you could get an 85/75
+  if you complete all three problems correctly.
+- zero completely correct problems is < a C.
+
+
+0) A regular C program using linux system calls
+
+** NOTE - do not run this program on CS.  Login to one of the c machines to run this.
+
+Write a program sleepy.c that takes 0 command-line arguments.  Build your program up in
+stages as follows.
+
+A - program forks.  The child prints that is the child and exits.  The parent prints that
+    it is the parent and exits.
+
+B - get a line from the user (using getline or doing it character by character).  in your
+    printf to prompt for input, use the prompt "sleepy> ".  if the string entered
+    starts with fork (using strncmp) then do the fork, otherwise print
+    something like "unknown command".  the child should print that it is the child and exit.
+    the parent should print the pid of the child and continue its loop.  If they typed
+    quit, then quit the program.
+    
+    main program outline
+
+    do {
+       printf sleepy>
+       getline s from user
+       if (s starts with fork (or sleep)) {
+         fork
+	 child - print it's the child and exit
+	 parent - prints it's the parent and continue
+       }
+    } while (not quit);
+
+C - make the child sleep for 3 seconds before exiting.  Use sleep(3).
+    note - they can type "sleep 10", but just ignore the 10.
+
+D - make the keyword for doing the fork-and-sleep "sleep" rather than "fork".
+
+E - parse the line they entered so you are looking for an integer after sleep, which will
+    be the number of seconds to sleep.  Enforce boundaries on the amount they will sleep,
+    must be between 1 and 60.  If outside that range, then set it to 1 or 60.
+
+Note that in your final version you have a program that waits for the user to type
+a command.  If they type quit, the program is done.  If they type "sleep 5" it forks, and
+the child process sleeps for 5 second before exiting.  If you type in a bunch of "sleep 60"'s
+in a row you'll have a bunch of child processes that are sleeping.  You could see this
+by running top in a separate terminal window.
+
+An example transcript of the finished program is as follows.
+bash-4.4$ gcc sleepy.c -o sleepy
+bash-4.4$ ./sleepy
+sleep n - to create a process that sleeps for n seconds
+quit    - to quit
+
+sleepy> hello
+  unknown command
+sleepy> why?
+  unknown command
+sleepy> sleep 1
+Created process 25783.
+sleepy> This is process 25783, signing off after 1 seconds.
+
+  unknown command
+sleepy> sleep 3
+Created process 25784.
+sleepy> sleep 3
+Created process 25785.
+sleepy> This is process 25784, signing off after 3 seconds.
+This is process 25785, signing off after 3 seconds.
+
+  unknown command
+sleepy> sleep -123
+Created process 25786.
+sleepy> Setting sleepAmount=1, that is the min allowed.
+This is process 25786, signing off after 1 seconds.
+
+  unknown command
+sleepy> sleep 1234124142124
+Created process 25788.
+sleepy> Setting sleepAmount=60, that is the max allowed.
+This is process 25788, signing off after 60 seconds.
+
+  unknown command
+sleepy> quit
+bash-4.4$ 
+
+
+
+1) An xv6 user program that is mildly interesting.
+
+Do this in your ~/EXAM2_COMPUTER/xv6-isu-2018f/ directory.
+
+Create a new user program pwd.c  You can copy ls.c as a starting point.  You can search
+for primes in the Makefile to see where you need to add pwd in the Makefile
+
+Your program will print the current working directory.  You will complete this in stages.
+
+Note - in xv6, the shell only looks in the current directory for commands.  If you are
+creating directories and going into them, prepend commands with / to tell the shell to
+get the commands from /.  For example,
+$ mkdir
+$ cd hello
+$ /mkdir bob
+$ cd bob
+$ /ls
+
+A - get it to compile and print "hello from pwd"
+
+B - get the inode of the current directory (use stat with filename ".") and print it
+    also for the parent directory (use stat with filename "..");
+    will have something like -
+      struct stat st, st_parent;
+      stat(".", &st);
+      stat(".", &st_parent);
+    and see stat.h for the definition of struct stat.
+
+C - get the inode of the parent of the current directory (use stat with filename "..") and print it.  Compare the two inodes and print whether you are at / or not (if the inode of the parent directory is the same as the inode of the current directory then you are at /)
+
+D - get the name of the current directory within the parent directory by mimic'ing how ls prints a directory.  You need to open the file ".." for reading and read directory entries until you find one with the same inode as your current directory inode that you retrieved in part B.
+
+E - now make it a loop - you get the inode and name of the current directory, then do chdir("..") in your code, then repeat to get the inode/name of the parent, and this should continue until you are at /
+
+Note - for any of your loops, you can put a counter that counts up to 10 and break out of the loop if you get up to 10.  This is as a failsafe in case you get into an infinite loop situation.
+
+A sample transcript is as follows.
+make clean
+make
+make qemu-nox
+make: Warning: File 'sh.d' has modification time 89 s in the future
+/u1/junk/qemu-3.0.0/i386-softmmu/qemu-system-i386 -nographic -drive file=fs.img,index=1,media=disk,format=raw -drive file=xv6.img,index=0,media=disk,format=raw -smp 2 -m 512 
+cSeaBIOS (version rel-1.11.2-0-gf9626ccb91-prebuilt.qemu-project.org)
+
+
+iPXE (http://ipxe.org) 00:03.0 C980 PCI2.10 PnP PMM+1FF91530+1FEF1530 C980
+                                                                               
+
+
+Booting from Hard Disk..xv6...
+cpu1: starting 1
+cpu0: starting 0
+sb: size 1000 nblocks 941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
+init: starting sh
+$ pwd
+pwd
+ pwd: A - hello from pwd!
+ pwd: B - inode of current directory: 1
+ pwd: B - inode of parent directory: 1
+ pwd: C - parent=current, so we're at /
+
+ pwd: E - full path is /
+$ mkdir hello
+mkdir hello
+$ cd hello
+cd hello
+$ /pwd
+/pwd
+ pwd: A - hello from pwd!
+ pwd: B - inode of current directory: 27
+ pwd: B - inode of parent directory: 1
+ pwd: C - parent!=current, so not at /
+  pwd: D -  name of current working directory: hello
+ cd ..
+
+ pwd: B - inode of current directory: 1
+ pwd: B - inode of parent directory: 1
+ pwd: C - parent=current, so we're at /
+
+ pwd: E - full path is /hello/
+$ mkdir bob
+mkdir bob
+exec: fail
+exec mkdir failed
+$ /mkdir bob
+/mkdir bob
+$ cd bob
+cd bob
+$ pwd
+pwd
+exec: fail
+exec pwd failed
+$ /pwd
+/pwd
+ pwd: A - hello from pwd!
+ pwd: B - inode of current directory: 28
+ pwd: B - inode of parent directory: 27
+ pwd: C - parent!=current, so not at /
+  pwd: D -  name of current working directory: bob
+ cd ..
+
+ pwd: B - inode of current directory: 27
+ pwd: B - inode of parent directory: 1
+ pwd: C - parent!=current, so not at /
+  pwd: D -  name of current working directory: hello
+ cd ..
+
+ pwd: B - inode of current directory: 1
+ pwd: B - inode of parent directory: 1
+ pwd: C - parent=current, so we're at /
+
+ pwd: E - full path is /hello/bob/
+$
+
+
+2) Complete the code for dump_ext2.c that is in ~jkinne/public_html/cs471-f2018/ext2/
+   You will also need ext2.h that is in that directory.  cs471disk.img is an ext2 image
+   that you can use for testing.  It is an ext2 image of ~jkinne/public_html/cs471-f2018/HW/
+   
+   You can refer to documentation at http://www.nongnu.org/ext2-doc/ext2.html about the ext2 file system.
+
+   The dump_ext2.c file is a start to reading an ext2 file system image.  For full credit
+   your program needs to do the following -
+
+   1) list the directory contents (names of files/directories) of the top-most directory
+      in the file system.
+      
+   2) print the first 50 bytes of the first .txt file encountered in the top-most directory.
+   
+   3) check the file system - traverse the file system and verify the total # of inodes used
+      and total # of data blocks used.  These are values that are given in the superblock,
+      you need to traverse the file system to verify them.

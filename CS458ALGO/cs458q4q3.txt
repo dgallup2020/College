@@ -1,0 +1,22 @@
+We are given a grid of size 1 * n. The grid has n cells. Inside each cell, there is a set of points (the coordinate of each point is given). 
+
+Suppose we pick one point from each cell and connected the selected point from cell i to the selected point to cell i+1 ( 1 <= i <= n-1). 
+Let P be the path we obtain this way. 
+Let w(P) be the length of the path in which the weight of each edge "e" of P is the Euclidean distance between the two endpoints of "e". 
+The goal is to pick the points so that the length of the path P is minimized. 
+
+Desing an algorithm for finding such a path. The input consists of triples (x,y, i) where x,y are the coordinates of a point and i is the cell number.
+
+Algorithm:
+We are given a grid of 1*n cells and each has a set of points. 
+We start with the a root connected to the first cell.
+From there we choose one of the points in the first cell (i = 1),
+	we will be coming back to the other points in the first cell in a bit.
+We compare the Euclidean distances between the first point and the points in the next
+cell. We use Pythagorean Theorem, via hypothenuse, to calculate the distances between each point w(P),
+and the shortest w(P) will be added to the length of the path. 
+We continue traversing each cell in this manner until we reach n - 1 cells.
+Once we create one path from another point in the first cell,
+	run through the shortest path once again and compare for the shortest
+	path between them. This continues until we run out of points in the first cell. 
+

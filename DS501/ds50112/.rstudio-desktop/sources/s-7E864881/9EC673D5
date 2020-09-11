@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555529237668.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9EC673D5",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1555529237668,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "20141D65",
+        "caption" : "hockeydf",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=hockeydf&cache_key=20141D65",
+        "displayedObservations" : "758",
+        "environment" : "",
+        "object" : "hockeydf",
+        "preview" : "0",
+        "totalObservations" : "758",
+        "variables" : "11"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

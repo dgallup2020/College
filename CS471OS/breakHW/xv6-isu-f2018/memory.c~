@@ -1,0 +1,28 @@
+#include "types.h"
+#include "stat.h"
+#include "user.h"
+
+int globalVar = 42;
+
+
+int
+main(int argc, char *argv[])
+{
+  printf(1, "Memory addresses...\n");
+  printf(1, "address of main:  %p\n", main);
+  printf(1, "data, &globalVar: %p\n", &globalVar);
+  printf(1, "stack, &argc:     %p\n", &argc);
+  char *s = (char *) malloc(10 * sizeof(char));
+  strcpy(s,"abcdefg");
+  printf(1, "heap, s:          %p\n", s);
+
+  if (argc > 1) {
+    char *p = (char *) atoi(argv[1]);
+    printf(1, "&%p = %x\n", p, *p);
+  }
+
+  printf(1, "now sleeping forever 1000000 ticks at a time\n");
+  while (1) sleep(1000000);
+  
+  exit();
+}

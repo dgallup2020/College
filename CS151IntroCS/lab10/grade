@@ -1,0 +1,8 @@
+lab exercise #10:
+- Formatting needs improvement.
+l3.js:
+-1/2 output of program (l3.js) is not correct.
+ - i should start at a, not 0 and should be incremented after the console.log,
+   not before.
+
+9.50 out of 10 points.
